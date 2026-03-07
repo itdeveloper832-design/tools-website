@@ -29,6 +29,20 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://toolspark.store/privacy-policy.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://toolspark.store/terms-of-service.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
   <!-- Tool Pages -->
   <url>
     <loc>https://toolspark.store/tools/text-case.html</loc>
