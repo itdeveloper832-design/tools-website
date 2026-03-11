@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Free Schema Markup Generator - JSON-LD Schema Generator Tool | Tools Park</title>
+  <meta name="description" content="Generate schema markup easily with our free JSON-LD schema generator. Create Article, FAQ, Product, Organization, LocalBusiness, and more schema types for better SEO.">
+  <meta name="keywords" content="schema markup generator, free schema generator, JSON-LD schema generator, SEO schema generator tool, generate structured data, schema.org generator">
+  <meta name="author" content="Tools Park">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://toolspark.store/schema-generator.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://toolspark.store/schema-generator.html">
+  <meta property="og:title" content="Free Schema Markup Generator - JSON-LD Schema Tool">
+  <meta property="og:description" content="Create professional schema markup for better SEO. Generate Article, FAQ, Product, and more schema types instantly.">
+  <meta property="og:image" content="https://toolspark.store/assets/schema-generator-og.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://toolspark.store/schema-generator.html">
+  <meta property="twitter:title" content="Free Schema Markup Generator Tool">
+  <meta property="twitter:description" content="Generate schema markup for better SEO rankings.">
+  <meta property="twitter:image" content="https://toolspark.store/assets/schema-generator-twitter.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#2563EB">
+  
+  <!-- Fonts - Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/premium.css">
+  <link rel="stylesheet" href="css/schema-generator.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-container">
+          <!-- Brand -->
+          <a href="/" class="brand-link">
+            <div class="brand-logo">
+              <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <span class="brand-name">Tools Park</span>
+          </a>
+          
+          <!-- Desktop Navigation -->
+          <div class="nav-menu-desktop">
+            <a href="/" class="nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+              Home
+            </a>
+            <a href="tools.html" class="nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+              Tools
+            </a>
+            <a href="about.html" class="nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              About
+            </a>
+            <a href="contact.html" class="nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              Contact
+            </a>
+          </div>
+          
+          <!-- Mobile Menu Button -->
+          <div class="nav-mobile-toggle">
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+              <svg class="menu-icon menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+              <svg class="menu-icon menu-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="nav-menu-mobile hidden" id="mobile-menu">
+          <div class="mobile-menu-content">
+            <a href="/" class="mobile-nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+              Home
+            </a>
+            <a href="tools.html" class="mobile-nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+              Tools
+            </a>
+            <a href="about.html" class="mobile-nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              About
+            </a>
+            <a href="contact.html" class="mobile-nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              Contact
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+            Free SEO Tool
+          </div>
+          
+          <h1 class="hero-title">
+            Schema Markup Generator
+          </h1>
+          
+          <p class="hero-description">
+            Generate professional schema markup for better SEO rankings. Create JSON-LD structured data for articles, products, organizations, and more. Boost your search visibility with our free schema generator tool.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schema Generator Tool -->
+    <section class="tool-section">
+      <div class="container">
+        <div class="tool-container">
+          <!-- Schema Type Selection -->
+          <div class="schema-selector">
+            <h2>Select Schema Type</h2>
+            <div class="schema-types">
+              <button class="schema-type-btn active" data-type="article">Article</button>
+              <button class="schema-type-btn" data-type="blogposting">BlogPosting</button>
+              <button class="schema-type-btn" data-type="faq">FAQ</button>
+              <button class="schema-type-btn" data-type="howto">HowTo</button>
+              <button class="schema-type-btn" data-type="product">Product</button>
+              <button class="schema-type-btn" data-type="organization">Organization</button>
+              <button class="schema-type-btn" data-type="localbusiness">LocalBusiness</button>
+              <button class="schema-type-btn" data-type="breadcrumb">Breadcrumb</button>
+              <button class="schema-type-btn" data-type="website">Website</button>
+            </div>
+          </div>
+
+          <!-- Input Form -->
+          <div class="schema-form">
+            <h2>Schema Details</h2>
+            <div id="schema-inputs">
+              <!-- Dynamic form inputs will be inserted here -->
+            </div>
+            <div class="form-actions">
+              <button id="generate-schema" class="btn btn-primary">Generate Schema</button>
+              <button id="clear-form" class="btn btn-secondary">Clear Form</button>
+            </div>
+          </div>
+
+          <!-- Output -->
+          <div class="schema-output">
+            <h2>Generated Schema Markup</h2>
+            <div class="output-actions">
+              <button id="copy-schema" class="btn btn-small">Copy to Clipboard</button>
+              <button id="download-schema" class="btn btn-small">Download JSON</button>
+              <button id="validate-schema" class="btn btn-small">Validate Schema</button>
+            </div>
+            <div class="schema-preview">
+              <pre id="schema-result"><code>// Your generated schema markup will appear here</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+      <div class="container">
+        <article class="content-article">
+          <h2>What is Schema Markup?</h2>
+          <p>Schema markup is a form of structured data that helps search engines understand your website content better. By implementing schema markup using JSON-LD format, you can enhance your search engine listings with rich snippets, improving click-through rates and SEO performance.</p>
+
+          <h3>Why Schema Markup is Important for SEO</h3>
+          <p>Schema markup provides several SEO benefits that can significantly impact your website's search performance:</p>
+          <ul>
+            <li><strong>Enhanced Search Results:</strong> Rich snippets make your listings more attractive and informative</li>
+            <li><strong>Better Click-Through Rates:</strong> Enhanced listings typically receive more clicks</li>
+            <li><strong>Improved Search Understanding:</strong> Help search engines understand your content context</li>
+            <li><strong>Voice Search Optimization:</strong> Structured data helps with voice search queries</li>
+            <li><strong>Featured Snippets:</strong> Increase chances of appearing in featured snippets</li>
+          </ul>
+
+          <h3>How to Use the Schema Generator</h3>
+          <p>Our free schema markup generator makes it easy to create professional structured data:</p>
+          <ol>
+            <li>Select the appropriate schema type for your content</li>
+            <li>Fill in the required fields with your content information</li>
+            <li>Click "Generate Schema" to create your JSON-LD markup</li>
+            <li>Copy the generated code and add it to your website's HTML</li>
+            <li>Test your schema using Google's Rich Results Test tool</li>
+          </ol>
+
+          <h3>Benefits of Structured Data</h3>
+          <p>Implementing structured data through our schema generator tool provides numerous advantages:</p>
+          <ul>
+            <li>Increased visibility in search results</li>
+            <li>Better user experience with rich snippets</li>
+            <li>Higher click-through rates from search results</li>
+            <li>Improved local SEO for business listings</li>
+            <li>Enhanced product visibility for e-commerce</li>
+          </ul>
+
+          <h3>Common Schema Types Explained</h3>
+          <div class="schema-types-explanation">
+            <div class="schema-type-card">
+              <h4>Article Schema</h4>
+              <p>Perfect for blog posts, news articles, and editorial content. Helps search engines understand your article's headline, author, publication date, and content structure.</p>
+            </div>
+            <div class="schema-type-card">
+              <h4>Product Schema</h4>
+              <p>Essential for e-commerce websites. Displays product information including price, availability, reviews, and ratings directly in search results.</p>
+            </div>
+            <div class="schema-type-card">
+              <h4>FAQ Schema</h4>
+              <p>Ideal for frequently asked questions pages. Can trigger FAQ rich snippets that display questions and answers directly in search results.</p>
+            </div>
+            <div class="schema-type-card">
+              <h4>LocalBusiness Schema</h4>
+              <p>Crucial for local businesses. Helps display business information, hours, location, and contact details in local search results.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-container">
+            <div class="faq-item">
+              <h3>What is JSON-LD schema markup?</h3>
+              <p>JSON-LD (JavaScript Object Notation for Linked Data) is the recommended format by Google for implementing structured data. It's easier to implement and maintain compared to other formats like Microdata or RDFa.</p>
+            </div>
+            <div class="faq-item">
+              <h3>How do I add schema markup to my website?</h3>
+              <p>After generating your schema markup with our tool, copy the JSON-LD code and paste it into the &lt;head&gt; section of your HTML page, wrapped in &lt;script type="application/ld+json"&gt; tags.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Is this schema generator free to use?</h3>
+              <p>Yes, our schema markup generator is completely free to use. There are no limitations, registration requirements, or hidden costs.</p>
+            </div>
+            <div class="faq-item">
+              <h3>How can I test my generated schema markup?</h3>
+              <p>Use Google's Rich Results Test tool or Schema.org validator to test your generated markup. These tools will identify any errors and show how your content might appear in search results.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Related Tools -->
+        <section class="related-tools">
+          <h2>Related SEO Tools</h2>
+          <div class="tools-grid">
+            <a href="meta-tag-generator.html" class="tool-card">
+              <div class="tool-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
+                </svg>
+              </div>
+              <h3>Meta Tag Generator</h3>
+              <p>Generate SEO-optimized meta tags for better search rankings</p>
+            </a>
+            <a href="sitemap-generator.html" class="tool-card">
+              <div class="tool-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                </svg>
+              </div>
+              <h3>Sitemap Generator</h3>
+              <p>Create XML sitemaps to help search engines crawl your site</p>
+            </a>
+            <a href="robots-txt-generator.html" class="tool-card">
+              <div class="tool-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+              </div>
+              <h3>Robots.txt Generator</h3>
+              <p>Generate robots.txt files to control search engine crawling</p>
+            </a>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="footer-brand-name">Tools Park</h3>
+          <p class="footer-description">
+            Your ultimate collection of free online tools. Fast, secure, and easy to use. Empowering professionals, students, and creators worldwide.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">SEO Tools</h4>
+          <ul class="footer-links">
+            <li><a href="schema-generator.html" class="footer-link">Schema Generator</a></li>
+            <li><a href="meta-tag-generator.html" class="footer-link">Meta Tag Generator</a></li>
+            <li><a href="sitemap-generator.html" class="footer-link">Sitemap Generator</a></li>
+            <li><a href="robots-txt-generator.html" class="footer-link">Robots.txt Generator</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Tools</h4>
+          <ul class="footer-links">
+            <li><a href="tools.html" class="footer-link">All Tools</a></li>
+            <li><a href="tools.html#text" class="footer-link">Text Tools</a></li>
+            <li><a href="tools.html#calculator" class="footer-link">Calculators</a></li>
+            <li><a href="tools.html#converter" class="footer-link">Converters</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html" class="footer-link">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 Tools Park. All rights reserved. Made with ❤️ for productivity.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Schema Markup Generator",
+    "description": "Free schema markup generator tool to create JSON-LD structured data for better SEO. Generate Article, FAQ, Product, Organization, and more schema types.",
+    "url": "https://toolspark.store/schema-generator.html",
+    "applicationCategory": "SEOApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "Article Schema Generation",
+      "FAQ Schema Creation",
+      "Product Schema Markup",
+      "Organization Schema",
+      "LocalBusiness Schema",
+      "JSON-LD Format Output",
+      "Copy to Clipboard",
+      "Download JSON File"
+    ]
+  }
+  </script>
+
+  <!-- Scripts -->
+  <script src="js/schema-generator.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
