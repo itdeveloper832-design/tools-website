@@ -332,28 +332,70 @@
           <h2>Frequently Asked Questions</h2>
           <div class="faq-container">
             <div class="faq-item">
-              <h3>What types of schema markup can this tool detect?</h3>
-              <p>Our schema markup detector can identify JSON-LD, Microdata, and RDFa formats. It detects common schema types including Article, Product, Organization, LocalBusiness, FAQ, HowTo, Review, Event, and Breadcrumb markup.</p>
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>What types of schema markup can this tool detect?</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>Our schema markup detector can identify JSON-LD, Microdata, and RDFa formats. It detects common schema types including Article, Product, Organization, LocalBusiness, FAQ, HowTo, Review, Event, and Breadcrumb markup.</p>
+              </div>
             </div>
             <div class="faq-item">
-              <h3>Is this schema checker tool free to use?</h3>
-              <p>Yes, our schema markup detector is completely free to use with no limitations. You can analyze as many websites as needed without any registration or subscription requirements.</p>
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Is this schema checker tool free to use?</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>Yes, our schema markup detector is completely free to use with no limitations. You can analyze as many websites as needed without any registration or subscription requirements.</p>
+              </div>
             </div>
             <div class="faq-item">
-              <h3>How accurate is the schema detection?</h3>
-              <p>Our tool uses advanced parsing algorithms to accurately detect and extract schema markup from web pages. It identifies both valid and potentially problematic structured data implementations.</p>
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>How accurate is the schema detection?</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>Our tool uses advanced parsing algorithms to accurately detect and extract schema markup from web pages. It identifies both valid and potentially problematic structured data implementations.</p>
+              </div>
             </div>
             <div class="faq-item">
-              <h3>Can I use this tool to check my competitor's schema markup?</h3>
-              <p>Absolutely! This is one of the most popular use cases. You can analyze any public website to understand their structured data strategy and identify opportunities for your own SEO improvements.</p>
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Can I use this tool to check my competitor's schema markup?</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>Absolutely! This is one of the most popular use cases. You can analyze any public website to understand their structured data strategy and identify opportunities for your own SEO improvements.</p>
+              </div>
             </div>
             <div class="faq-item">
-              <h3>What should I do if no schema markup is detected?</h3>
-              <p>If no schema is found, it means the website doesn't have structured data implemented. Consider using our Schema Markup Generator to create and implement schema markup for better SEO performance.</p>
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>What should I do if no schema markup is detected?</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>If no schema is found, it means the website doesn't have structured data implemented. Consider using our Schema Markup Generator to create and implement schema markup for better SEO performance.</p>
+              </div>
             </div>
             <div class="faq-item">
-              <h3>How often should I check my website's schema markup?</h3>
-              <p>We recommend checking your schema markup after any major website updates, content changes, or at least monthly as part of your regular SEO audit process.</p>
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>How often should I check my website's schema markup?</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>We recommend checking your schema markup after any major website updates, content changes, or at least monthly as part of your regular SEO audit process.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -473,7 +515,81 @@
   }
   </script>
 
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of schema markup can this tool detect?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our schema markup detector can identify JSON-LD, Microdata, and RDFa formats. It detects common schema types including Article, Product, Organization, LocalBusiness, FAQ, HowTo, Review, Event, and Breadcrumb markup."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this schema checker tool free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our schema markup detector is completely free to use with no limitations. You can analyze as many websites as needed without any registration or subscription requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How accurate is the schema detection?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our tool uses advanced parsing algorithms to accurately detect and extract schema markup from web pages. It identifies both valid and potentially problematic structured data implementations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use this tool to check my competitor's schema markup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! This is one of the most popular use cases. You can analyze any public website to understand their structured data strategy and identify opportunities for your own SEO improvements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I do if no schema markup is detected?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If no schema is found, it means the website doesn't have structured data implemented. Consider using our Schema Markup Generator to create and implement schema markup for better SEO performance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should I check my website's schema markup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We recommend checking your schema markup after any major website updates, content changes, or at least monthly as part of your regular SEO audit process."
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Scripts -->
+  <script>
+    function toggleFAQ(button) {
+      const faqItem = button.parentElement;
+      const isActive = faqItem.classList.contains('active');
+      
+      // Close all FAQ items
+      document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      
+      // Open clicked item if it wasn't active
+      if (!isActive) {
+        faqItem.classList.add('active');
+      }
+    }
+  </script>
   <script src="js/schema-detector.js"></script>
   <script src="js/main.js"></script>
 </body>

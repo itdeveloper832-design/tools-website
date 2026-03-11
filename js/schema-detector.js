@@ -2,7 +2,7 @@
 
 class SchemaDetector {
   constructor() {
-    this.apiEndpoint = 'https://api.allorigins.win/get?url=';
+    this.apiEndpoint = 'https://corsproxy.io/?';
     this.detectedSchemas = [];
     this.init();
   }
@@ -75,8 +75,8 @@ class SchemaDetector {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       
-      const data = await response.json();
-      return data.contents;
+      const htmlContent = await response.text();
+      return htmlContent;
     } catch (error) {
       throw new Error('Unable to fetch page content. The website may be blocking cross-origin requests.');
     }

@@ -411,6 +411,48 @@
   }
   </script>
 
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is JSON-LD schema markup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JSON-LD (JavaScript Object Notation for Linked Data) is the recommended format by Google for implementing structured data. It's easier to implement and maintain compared to other formats like Microdata or RDFa."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I add schema markup to my website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After generating your schema markup with our tool, copy the JSON-LD code and paste it into the <head> section of your HTML page, wrapped in <script type=\"application/ld+json\"> tags."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this schema generator free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our schema markup generator is completely free to use. There are no limitations, registration requirements, or hidden costs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I test my generated schema markup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use Google's Rich Results Test tool or Schema.org validator to test your generated markup. These tools will identify any errors and show how your content might appear in search results."
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Scripts -->
   <script src="js/schema-generator.js"></script>
   <script src="js/main.js"></script>
