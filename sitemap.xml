@@ -90,4 +90,12 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Text Case Converter Tool -->
+  <url>
+    <loc>https://toolspark.store/text-case-converter.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
