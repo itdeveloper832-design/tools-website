@@ -536,3 +536,84 @@
   font-weight: 500;
   margin-bottom: 1rem;
 }
+
+/* Related Tools */
+.related-tools {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.related-tools h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.tool-card {
+  background: #FFFFFF;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #E5E7EB;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tool-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  border-color: #2563EB;
+}
+
+.tool-card:hover .tool-icon {
+  background: linear-gradient(135deg, #2563EB 0%, #6366F1 100%);
+}
+
+.tool-card:hover .tool-icon svg {
+  color: white;
+}
+
+.tool-icon {
+  width: 48px;
+  height: 48px;
+  background: #EFF6FF;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.tool-icon svg {
+  width: 24px;
+  height: 24px;
+  color: #2563EB;
+}
+
+.tool-card h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0F172A;
+  margin-bottom: 0.75rem;
+}
+
+.tool-card p {
+  font-family: 'Outfit', sans-serif;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+}

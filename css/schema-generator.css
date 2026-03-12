@@ -348,6 +348,14 @@
   border-color: #2563EB;
 }
 
+.tool-card:hover .tool-icon {
+  background: linear-gradient(135deg, #2563EB 0%, #6366F1 100%);
+}
+
+.tool-card:hover .tool-icon svg {
+  color: white;
+}
+
 .tool-icon {
   width: 48px;
   height: 48px;
