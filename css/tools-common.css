@@ -1,0 +1,207 @@
+/* Common Tool Styles - Shared across all tools */
+
+/* Ensure consistent icon display across all tools */
+.logo-icon {
+  width: 24px !important;
+  height: 24px !important;
+  color: white !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.brand-logo {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%) !important;
+  border-radius: 0.75rem !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+/* Fix navigation icons */
+.nav-icon {
+  width: 20px !important;
+  height: 20px !important;
+  color: var(--text-secondary) !important;
+}
+
+.nav-link:hover .nav-icon {
+  color: var(--primary) !important;
+}
+
+/* Tool badge consistency */
+.tool-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  padding: 0.25rem 0.75rem !important;
+  background: linear-gradient(135deg, #2563EB 0%, #6366F1 100%) !important;
+  color: white !important;
+  border-radius: 2rem !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.025em !important;
+}
+
+.tool-badge.coming-soon {
+  background: linear-gradient(135deg, #94A3B8 0%, #64748B 100%) !important;
+}
+
+/* Ensure consistent button styling */
+.btn {
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+  border: none !important;
+  border-radius: 0.5rem !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.5rem !important;
+}
+
+.btn:hover {
+  transform: translateY(-1px) !important;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2563EB 0%, #6366F1 100%) !important;
+  color: white !important;
+}
+
+.btn-secondary {
+  background: #F1F5F9 !important;
+  color: #374151 !important;
+  border: 1px solid #E5E7EB !important;
+}
+
+.btn-secondary:hover {
+  background: #E2E8F0 !important;
+}
+
+/* Fix form inputs */
+input, textarea, select {
+  transition: all 0.3s ease !important;
+  border: 2px solid #E2E8F0 !important;
+  border-radius: 0.5rem !important;
+  padding: 0.75rem !important;
+  font-family: 'Outfit', sans-serif !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none !important;
+  border-color: #2563EB !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+}
+
+/* Tool card consistency */
+.tool-card {
+  background: #FFFFFF !important;
+  padding: 2rem !important;
+  border-radius: 1rem !important;
+  border: 1px solid #E5E7EB !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.tool-card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1) !important;
+  border-color: #2563EB !important;
+}
+
+.tool-icon {
+  width: 48px !important;
+  height: 48px !important;
+  background: #EFF6FF !important;
+  border-radius: 0.75rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 1rem !important;
+}
+
+.tool-icon svg {
+  width: 24px !important;
+  height: 24px !important;
+  color: #2563EB !important;
+}
+
+.tool-card:hover .tool-icon {
+  background: linear-gradient(135deg, #2563EB 0%, #6366F1 100%) !important;
+}
+
+.tool-card:hover .tool-icon svg {
+  color: white !important;
+}
+
+/* Ensure proper spacing and layout */
+.container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+}
+
+.section-title {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  color: #0F172A !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.75rem !important;
+  }
+  
+  .tool-card {
+    padding: 1.5rem !important;
+  }
+  
+  .btn {
+    font-size: 0.875rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+}
+
+/* Fix any potential z-index issues */
+.tool-hero-content,
+.tool-container,
+.tool-input,
+.tool-output {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Ensure proper text rendering */
+body {
+  font-family: 'Outfit', sans-serif !important;
+  line-height: 1.6 !important;
+  color: #374151 !important;
+}
+
+/* Fix any overflow issues */
+.tool-section {
+  overflow: hidden !important;
+}
+
+/* Ensure proper focus states */
+.btn:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #2563EB !important;
+  outline-offset: 2px !important;
+}
