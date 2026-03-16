@@ -101,7 +101,15 @@
   <!-- Word Counter Tool -->
   <url>
     <loc>https://toolspark.store/word-counter.html</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Image Compressor Tool -->
+  <url>
+    <loc>https://toolspark.store/image-compressor.html</loc>
+    <lastmod>2024-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
