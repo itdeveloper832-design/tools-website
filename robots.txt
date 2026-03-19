@@ -1,11 +1,1 @@
-# robots.txt for Tools Park
-User-agent: *
-Allow: /
-Disallow: /admin/
-Disallow: /private/
-
-# Sitemap location
-Sitemap: https://toolspark.store/sitemap.xml
-
-# Crawl-delay
-Crawl-delay: 1
+User-agent: *\nAllow: /\nDisallow: /admin/\nSitemap: https://toolspark.store/sitemap.xml\n\n# Optimized for 2026 Indexing\nCrawl-delay: 1
