@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>CSS Minifier Online - Free CSS Compressor Tool | ToolsPark</title>
+  <meta name="description" content="Minify CSS files instantly online. Reduce CSS file size up to 80% for faster website loading. Free, secure, and no data sent to servers.">
+  <meta name="keywords" content="css minifier, css compressor, css optimizer, minify css, compress css, css size reducer, css optimization tool, free css minifier">
+  <meta name="author" content="Tools Park">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://toolspark.store/css-minifier.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://toolspark.store/css-minifier.html">
+  <meta property="og:title" content="CSS Minifier - Free Online CSS Compressor">
+  <meta property="og:description" content="Minify CSS files instantly and reduce file size up to 80%. Fast, secure, and completely free.">
+  <meta property="og:image" content="https://toolspark.store/assets/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://toolspark.store/css-minifier.html">
+  <meta property="twitter:title" content="CSS Minifier - Free Online Tool">
+  <meta property="twitter:description" content="Minify CSS files instantly and reduce file size up to 80%. Fast, secure, and completely free.">
+  <meta property="twitter:image" content="https://toolspark.store/assets/twitter-image.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#2563EB">
+  
+  <!-- Fonts - Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/premium.css">
+  <link rel="stylesheet" href="css/css-minifier.css">
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="css/premium.css" as="style">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-container">
+          <!-- Brand -->
+          <a href="/" class="brand-link">
+            <div class="brand-logo">
+              <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <span class="brand-name">Tools Park</span>
+          </a>
+          
+          <!-- Desktop Navigation -->
+          <div class="nav-menu-desktop">
+            <a href="/" class="nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+              Home
+            </a>
+            <a href="tools.html" class="nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+              Tools
+            </a>
+            <a href="about.html" class="nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              About
+            </a>
+            <a href="contact.html" class="nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              Contact
+            </a>
+          </div>
+          
+          <!-- Mobile Menu Button -->
+          <div class="nav-mobile-toggle">
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+              <svg class="menu-icon menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+              <svg class="menu-icon menu-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="nav-menu-mobile hidden" id="mobile-menu">
+          <div class="mobile-menu-content">
+            <a href="/" class="mobile-nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+              Home
+            </a>
+            <a href="tools.html" class="mobile-nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+              Tools
+            </a>
+            <a href="about.html" class="mobile-nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              About
+            </a>
+            <a href="contact.html" class="mobile-nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              Contact
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+            CSS Optimization Tool
+          </div>
+          
+          <h1 class="hero-title">
+            CSS Minifier Online
+          </h1>
+          
+          <p class="hero-description">
+            Minify CSS files instantly and reduce file size up to 80%. Optimize your website's performance with our free, secure CSS compressor that works entirely in your browser.
+          </p>
+          
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">80%</span>
+              <span class="stat-label">Size Reduction</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Privacy</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">0s</span>
+              <span class="stat-label">Processing Time</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tool Section -->
+    <section class="tool-section">
+      <div class="container">
+        <div class="tool-container">
+          <!-- Tool Header -->
+          <div class="tool-header">
+            <h2 class="tool-title">CSS Minifier Tool</h2>
+            <p class="tool-description">
+              Paste your CSS code below and watch it get minified instantly. All processing happens locally in your browser for complete privacy.
+            </p>
+          </div>
+
+          <!-- Tool Options -->
+          <div class="tool-options">
+            <div class="option-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="remove-comments" checked>
+                <span class="checkbox-custom"></span>
+                Remove Comments
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" id="remove-whitespace" checked>
+                <span class="checkbox-custom"></span>
+                Remove Whitespace
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" id="remove-last-semicolon" checked>
+                <span class="checkbox-custom"></span>
+                Remove Last Semicolon
+              </label>
+            </div>
+            <div class="option-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="optimize-colors" checked>
+                <span class="checkbox-custom"></span>
+                Optimize Colors
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" id="optimize-units" checked>
+                <span class="checkbox-custom"></span>
+                Optimize Units
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" id="merge-selectors" checked>
+                <span class="checkbox-custom"></span>
+                Merge Selectors
+              </label>
+            </div>
+          </div>
+
+          <!-- Editor Area -->
+          <div class="editor-container">
+            <div class="editor-header">
+              <div class="editor-tab active" id="input-tab">
+                <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                </svg>
+                Input CSS
+              </div>
+              <div class="editor-tab" id="output-tab">
+                <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+                Minified CSS
+              </div>
+            </div>
+            
+            <div class="editor-content">
+              <div class="editor-panel active" id="input-panel">
+                <textarea 
+                  id="css-input" 
+                  class="css-editor"
+                  placeholder="Paste your CSS code here...&#10;&#10;Example:&#10;body {&#10;    background-color: #ffffff;&#10;    margin: 0px;&#10;    padding: 20px;&#10;}&#10;&#10;.container {&#10;    max-width: 1200px;&#10;    margin: 0 auto;&#10;}"
+                  spellcheck="false"
+                ></textarea>
+                <div class="editor-actions">
+                  <button class="btn btn-secondary" id="clear-input">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                    </svg>
+                    Clear
+                  </button>
+                  <button class="btn btn-primary" id="minify-css">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                    Minify CSS
+                  </button>
+                </div>
+              </div>
+              
+              <div class="editor-panel" id="output-panel">
+                <textarea 
+                  id="css-output" 
+                  class="css-editor"
+                  placeholder="Minified CSS will appear here..."
+                  readonly
+                  spellcheck="false"
+                ></textarea>
+                <div class="editor-actions">
+                  <div class="size-info">
+                    <span class="size-label">Original: <span id="original-size">0 KB</span></span>
+                    <span class="size-label">Minified: <span id="minified-size">0 KB</span></span>
+                    <span class="size-label saved">Saved: <span id="saved-size">0 KB (0%)</span></span>
+                  </div>
+                  <button class="btn btn-secondary" id="copy-css">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                    </svg>
+                    Copy CSS
+                  </button>
+                  <button class="btn btn-primary" id="download-css">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Download
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sample CSS -->
+          <div class="sample-section">
+            <h3 class="sample-title">Try Sample CSS</h3>
+            <div class="sample-buttons">
+              <button class="sample-btn" data-sample="basic">Basic CSS</button>
+              <button class="sample-btn" data-sample="bootstrap">Bootstrap Style</button>
+              <button class="sample-btn" data-sample="animation">Animation CSS</button>
+              <button class="sample-btn" data-sample="responsive">Responsive Design</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Features</span>
+          <h2 class="section-title">Why Use Our CSS Minifier?</h2>
+          <p class="section-description">
+            Professional-grade CSS optimization with advanced features for maximum performance.
+          </p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Lightning Fast</h3>
+            <p class="feature-description">
+              Minify CSS files instantly with our optimized algorithm. No waiting, no delays - just instant results.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">100% Private</h3>
+            <p class="feature-description">
+              Your CSS code never leaves your browser. All minification happens locally for complete privacy and security.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Smart Optimization</h3>
+            <p class="feature-description">
+              Advanced optimization techniques including color compression, unit optimization, and selector merging.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Detailed Statistics</h3>
+            <p class="feature-description">
+              See exactly how much space you're saving with detailed file size comparisons and percentage reductions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">How It Works</span>
+          <h2 class="section-title">CSS Minification in 3 Simple Steps</h2>
+        </div>
+        
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3 class="step-title">Paste Your CSS</h3>
+            <p class="step-description">
+              Copy and paste your CSS code into the input area or use one of our sample templates.
+            </p>
+          </div>
+          
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3 class="step-title">Configure Options</h3>
+            <p class="step-description">
+              Choose which optimization features you want to apply - comments, whitespace, colors, and more.
+            </p>
+          </div>
+          
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3 class="step-title">Get Minified CSS</h3>
+            <p class="step-description">
+              Click "Minify CSS" and instantly get your optimized code with size reduction statistics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="footer-brand-name">Tools Park</h3>
+          <p class="footer-description">
+            Your ultimate collection of free online tools. Fast, secure, and easy to use. Empowering professionals, students, and creators worldwide.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">SEO Tools</h4>
+          <ul class="footer-links">
+            <li><a href="schema-generator.html" class="footer-link">Schema Generator</a></li>
+            <li><a href="schema-detector.html" class="footer-link">Schema Detector</a></li>
+            <li><a href="meta-tag-generator.html" class="footer-link">Meta Tag Generator</a></li>
+            <li><a href="sitemap-generator.html" class="footer-link">Sitemap Generator</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Optimization Tools</h4>
+          <ul class="footer-links">
+            <li><a href="css-minifier.html" class="footer-link">CSS Minifier</a></li>
+            <li><a href="html-minifier.html" class="footer-link">HTML Minifier</a></li>
+            <li><a href="json-formatter.html" class="footer-link">JSON Formatter</a></li>
+            <li><a href="image-compressor.html" class="footer-link">Image Compressor</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="developer-notes.html" class="footer-link">Developer Notes</a></li>
+            <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html" class="footer-link">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 Tools Park. All rights reserved. Made with ❤️ for productivity.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuOpenIcon = document.querySelector('.menu-open');
+      const menuCloseIcon = document.querySelector('.menu-close');
+
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', function() {
+          const isHidden = mobileMenu.classList.contains('hidden');
+          
+          if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            menuOpenIcon.classList.add('hidden');
+            menuCloseIcon.classList.remove('hidden');
+          } else {
+            mobileMenu.classList.add('hidden');
+            menuOpenIcon.classList.remove('hidden');
+            menuCloseIcon.classList.add('hidden');
+          }
+        });
+      }
+    });
+  </script>
+
+  <!-- CSS Minifier Tool Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const cssInput = document.getElementById('css-input');
+      const cssOutput = document.getElementById('css-output');
+      const minifyBtn = document.getElementById('minify-css');
+      const copyBtn = document.getElementById('copy-css');
+      const downloadBtn = document.getElementById('download-css');
+      const clearBtn = document.getElementById('clear-input');
+      const inputTab = document.getElementById('input-tab');
+      const outputTab = document.getElementById('output-tab');
+      const inputPanel = document.getElementById('input-panel');
+      const outputPanel = document.getElementById('output-panel');
+
+      // Sample CSS templates
+      const sampleCSS = {
+        basic: `/* Basic CSS Example */
+body {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 15px;
+}
+
+.button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}`,
+
+        bootstrap: `/* Bootstrap-style CSS */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out;
+}`,
+
+        animation: `/* Animation CSS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}`,
+
+        responsive: `/* Responsive Design CSS */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 5px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}`
+      };
+
+      // Tab switching
+      inputTab.addEventListener('click', function() {
+        inputTab.classList.add('active');
+        outputTab.classList.remove('active');
+        inputPanel.classList.add('active');
+        outputPanel.classList.remove('active');
+      });
+
+      outputTab.addEventListener('click', function() {
+        outputTab.classList.add('active');
+        inputTab.classList.remove('active');
+        outputPanel.classList.add('active');
+        inputPanel.classList.remove('active');
+      });
+
+      // Sample buttons
+      document.querySelectorAll('.sample-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const sampleType = this.getAttribute('data-sample');
+          cssInput.value = sampleCSS[sampleType];
+        });
+      });
+
+      // CSS Minification function
+      function minifyCSS(css, options) {
+        let minified = css;
+
+        // Remove comments
+        if (options.removeComments) {
+          minified = minified.replace(/\/\*[\s\S]*?\*\//g, '');
+        }
+
+        // Remove whitespace
+        if (options.removeWhitespace) {
+          minified = minified.replace(/\s+/g, ' ');
+          minified = minified.replace(/\s*([{}:;,>+~])\s*/g, '$1');
+          minified = minified.replace(/;}/g, '}');
+        }
+
+        // Remove last semicolon
+        if (options.removeLastSemicolon) {
+          minified = minified.replace(/;}/g, '}');
+        }
+
+        // Optimize colors
+        if (options.optimizeColors) {
+          // Convert long color codes to short
+          minified = minified.replace(/#([0-9a-fA-F])\1([0-9a-fA-F])\2([0-9a-fA-F])\3/g, '#$1$2$3');
+          
+          // Convert rgb() to hex when possible
+          minified = minified.replace(/rgb\((\d+),\s*(\d+),\s*(\d+)\)/g, function(match, r, g, b) {
+            const toHex = (n) => {
+              const hex = parseInt(n).toString(16);
+              return hex.length === 1 ? '0' + hex : hex;
+            };
+            return '#' + toHex(r) + toHex(g) + toHex(b);
+          });
+        }
+
+        // Optimize units
+        if (options.optimizeUnits) {
+          // Remove units for zero values
+          minified = minified.replace(/(\d+)px/g, '$1px');
+          minified = minified.replace(/(\d+)em/g, '$1em');
+          minified = minified.replace(/(\d+)rem/g, '$1rem');
+          minified = minified.replace(/0px/g, '0');
+          minified = minified.replace(/0em/g, '0');
+          minified = minified.replace(/0rem/g, '0');
+        }
+
+        // Merge selectors (basic implementation)
+        if (options.mergeSelectors) {
+          // This is a simplified version - full selector merging is complex
+          const rules = {};
+          const ruleRegex = /([^{]+)\{([^}]*)\}/g;
+          let match;
+          
+          while ((match = ruleRegex.exec(minified)) !== null) {
+            const selector = match[1].trim();
+            const properties = match[2].trim();
+            
+            if (rules[selector]) {
+              rules[selector] += properties;
+            } else {
+              rules[selector] = properties;
+            }
+          }
+          
+          let merged = '';
+          for (const selector in rules) {
+            merged += selector + '{' + rules[selector] + '}';
+          }
+          
+          if (merged) {
+            minified = merged;
+          }
+        }
+
+        return minified.trim();
+      }
+
+      // Calculate file sizes
+      function calculateSizes(original, minified) {
+        const originalBytes = new Blob([original]).size;
+        const minifiedBytes = new Blob([minified]).size;
+        const savedBytes = originalBytes - minifiedBytes;
+        const savedPercent = originalBytes > 0 ? ((savedBytes / originalBytes) * 100).toFixed(1) : 0;
+
+        return {
+          original: (originalBytes / 1024).toFixed(2) + ' KB',
+          minified: (minifiedBytes / 1024).toFixed(2) + ' KB',
+          saved: savedBytes.toFixed(0) + ' bytes (' + savedPercent + '%)'
+        };
+      }
+
+      // Minify button
+      minifyBtn.addEventListener('click', function() {
+        const css = cssInput.value;
+        if (!css.trim()) {
+          alert('Please enter some CSS code to minify.');
+          return;
+        }
+
+        const options = {
+          removeComments: document.getElementById('remove-comments').checked,
+          removeWhitespace: document.getElementById('remove-whitespace').checked,
+          removeLastSemicolon: document.getElementById('remove-last-semicolon').checked,
+          optimizeColors: document.getElementById('optimize-colors').checked,
+          optimizeUnits: document.getElementById('optimize-units').checked,
+          mergeSelectors: document.getElementById('merge-selectors').checked
+        };
+
+        const minified = minifyCSS(css, options);
+        cssOutput.value = minified;
+
+        // Update size information
+        const sizes = calculateSizes(css, minified);
+        document.getElementById('original-size').textContent = sizes.original;
+        document.getElementById('minified-size').textContent = sizes.minified;
+        document.getElementById('saved-size').textContent = sizes.saved;
+
+        // Switch to output tab
+        outputTab.click();
+      });
+
+      // Copy button
+      copyBtn.addEventListener('click', function() {
+        cssOutput.select();
+        document.execCommand('copy');
+        
+        // Show success feedback
+        const originalText = copyBtn.innerHTML;
+        copyBtn.innerHTML = '<svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>Copied!';
+        copyBtn.classList.add('success');
+        
+        setTimeout(() => {
+          copyBtn.innerHTML = originalText;
+          copyBtn.classList.remove('success');
+        }, 2000);
+      });
+
+      // Download button
+      downloadBtn.addEventListener('click', function() {
+        const css = cssOutput.value;
+        if (!css.trim()) {
+          alert('No CSS to download. Please minify some CSS first.');
+          return;
+        }
+
+        const blob = new Blob([css], { type: 'text/css' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'minified.css';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      });
+
+      // Clear button
+      clearBtn.addEventListener('click', function() {
+        cssInput.value = '';
+        cssOutput.value = '';
+        document.getElementById('original-size').textContent = '0 KB';
+        document.getElementById('minified-size').textContent = '0 KB';
+        document.getElementById('saved-size').textContent = '0 KB (0%)';
+      });
+    });
+  </script>
+</body>
+</html>
