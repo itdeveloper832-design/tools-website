@@ -1,8 +1,55 @@
-// Performance Optimization Script for Tools Park
-
-// Lazy Loading Images
+// Performance Optimization Script for Core Web Vitals
 document.addEventListener('DOMContentLoaded', function() {
-  // Lazy load images
+  // Core Web Vitals Measurement
+  function measureWebVitals() {
+    // Largest Contentful Paint (LCP)
+    new PerformanceObserver((entryList) => {
+      const entries = entryList.getEntries();
+      const lastEntry = entries[entries.length - 1];
+      const lcp = lastEntry.renderTime || lastEntry.loadTime;
+      
+      // Log in development
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        console.log('LCP:', lcp + 'ms');
+        if (lcp > 2500) console.warn('LCP needs optimization');
+      }
+    }).observe({ entryTypes: ['largest-contentful-paint'] });
+    
+    // First Input Delay (FID)
+    new PerformanceObserver((entryList) => {
+      const entries = entryList.getEntries();
+      entries.forEach((entry) => {
+        const fid = entry.processingStart - entry.startTime;
+        
+        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+          console.log('FID:', fid + 'ms');
+          if (fid > 100) console.warn('FID needs optimization');
+        }
+      });
+    }).observe({ entryTypes: ['first-input'] });
+    
+    // Cumulative Layout Shift (CLS)
+    let clsScore = 0;
+    new PerformanceObserver((entryList) => {
+      for (const entry of entryList.getEntries()) {
+        if (!entry.hadRecentInput) {
+          clsScore += entry.value;
+        }
+      }
+      
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        console.log('CLS:', clsScore.toFixed(3));
+        if (clsScore > 0.1) console.warn('CLS needs optimization');
+      }
+    }).observe({ entryTypes: ['layout-shift'] });
+  }
+  
+  // Run measurements in development
+  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+    measureWebVitals();
+  }
+  
+  // Lazy Loading Images for LCP
   const images = document.querySelectorAll('img[data-src]');
   const imageObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
@@ -10,14 +57,38 @@ document.addEventListener('DOMContentLoaded', function() {
         const img = entry.target;
         img.src = img.dataset.src;
         img.removeAttribute('data-src');
+        img.classList.add('loaded');
         imageObserver.unobserve(img);
       }
     });
+  }, {
+    rootMargin: '50px 0px',
+    threshold: 0.01
   });
 
   images.forEach(img => imageObserver.observe(img));
 
-  // Preload critical resources
+  // Optimize Critical Rendering Path
+  function optimizeCriticalPath() {
+    // Preload critical fonts
+    const fontPreload = document.createElement('link');
+    fontPreload.rel = 'preload';
+    fontPreload.href = 'https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap';
+    fontPreload.as = 'style';
+    fontPreload.onload = function() {
+      this.rel = 'stylesheet';
+    };
+    document.head.appendChild(fontPreload);
+    
+    // Mark fonts as loaded
+    if ('fonts' in document) {
+      document.fonts.load('400 1em Outfit').then(() => {
+        document.documentElement.classList.add('fonts-loaded');
+      });
+    }
+  }
+  
+  optimizeCriticalPath();
   const preloadLink = document.createElement('link');
   preloadLink.rel = 'preload';
   preloadLink.as = 'style';
