@@ -181,4 +181,49 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+<!-- Unit Converter Tool -->
+  <url>
+    <loc>https://toolspark.store/unit-converter.html</loc>
+    <lastmod>2024-03-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Loan Calculator Tool -->
+  <url>
+    <loc>https://toolspark.store/loan-calculator.html</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- XML Sitemap Generator Tool -->
+  <url>
+    <loc>https://toolspark.store/xml-sitemap-generator.html</loc>
+    <lastmod>2024-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://toolspark.store/blog-unit-converter.html</loc>
+    <lastmod>2024-03-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://toolspark.store/blog-loan-calculator.html</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://toolspark.store/blog-xml-sitemap-generator.html</loc>
+    <lastmod>2024-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
