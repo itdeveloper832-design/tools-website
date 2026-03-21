@@ -6,7 +6,17 @@
     { "source": "/contact", "destination": "/contact.html" },
     { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
     { "source": "/terms-of-service", "destination": "/terms-of-service.html" },
-    { "source": "/tools/:tool", "destination": "/tools/:tool.html" }
+    { "source": "/tools/:tool", "destination": "/tools/:tool.html" },
+    { "source": "/age-calculator", "destination": "/age-calculator.html" },
+    { "source": "/percentage-calculator", "destination": "/percentage-calculator.html" },
+    { "source": "/unit-converter", "destination": "/unit-converter.html" },
+    { "source": "/loan-calculator", "destination": "/loan-calculator.html" },
+    { "source": "/xml-sitemap-generator", "destination": "/xml-sitemap-generator.html" },
+    { "source": "/blog-age-calculator", "destination": "/blog-age-calculator.html" },
+    { "source": "/blog-percentage-calculator", "destination": "/blog-percentage-calculator.html" },
+    { "source": "/blog-unit-converter", "destination": "/blog-unit-converter.html" },
+    { "source": "/blog-loan-calculator", "destination": "/blog-loan-calculator.html" },
+    { "source": "/blog-xml-sitemap-generator", "destination": "/blog-xml-sitemap-generator.html" }
   ],
   "headers": [
     {
