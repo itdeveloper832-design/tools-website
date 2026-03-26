@@ -205,3 +205,83 @@ select:focus {
   outline: 2px solid #2563EB !important;
   outline-offset: 2px !important;
 }
+
+/* How to Use Section Styles */
+.how-to-use-section {
+  padding: 4rem 0 !important;
+  background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%) !important;
+  border-top: 1px solid #E2E8F0 !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+}
+
+.how-to-use-content {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 2rem !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+}
+
+.how-to-use-text h2 {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #0F172A !important;
+  margin-bottom: 1rem !important;
+}
+
+.how-to-use-text p {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 1.125rem !important;
+  color: #475569 !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+.btn-outline-primary {
+  background: transparent !important;
+  color: #2563EB !important;
+  border: 2px solid #2563EB !important;
+  padding: 0.75rem 1.5rem !important;
+  font-weight: 600 !important;
+  border-radius: 0.5rem !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-outline-primary:hover {
+  background: #2563EB !important;
+  color: white !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3) !important;
+}
+
+/* Responsive styles for How to Use section */
+@media (max-width: 768px) {
+  .how-to-use-section {
+    padding: 3rem 0 !important;
+  }
+  
+  .how-to-use-content {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 1.5rem !important;
+  }
+  
+  .how-to-use-text h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  .how-to-use-text p {
+    font-size: 1rem !important;
+  }
+  
+  .btn-outline-primary {
+    padding: 0.625rem 1.25rem !important;
+    font-size: 0.875rem !important;
+  }
+}
