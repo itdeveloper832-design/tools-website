@@ -2,6 +2,12 @@
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
     { "source": "/tools", "destination": "/tools.html" },
+    { "source": "/blog", "destination": "/blog.html" },
+    { "source": "/blog/:slug", "destination": "/blog-:slug.html" },
+    { "source": "/pages/about", "destination": "/about.html" },
+    { "source": "/pages/contact", "destination": "/contact.html" },
+    { "source": "/pages/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/pages/terms", "destination": "/terms-of-service.html" },
     { "source": "/about", "destination": "/about.html" },
     { "source": "/contact", "destination": "/contact.html" },
     { "source": "/privacy-policy", "destination": "/privacy-policy.html" },

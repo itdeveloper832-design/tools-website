@@ -1,1 +1,8 @@
-User-agent: *\nAllow: /\nDisallow: /admin/\nSitemap: https://toolspark.store/sitemap.xml\n\n# Optimized for 2026 Indexing\nCrawl-delay: 1
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://toolspark.store/sitemap.xml
+
+# Balanced crawl rate for static pages
+Crawl-delay: 1
