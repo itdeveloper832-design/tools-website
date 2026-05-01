@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Age Calculator - Calculate Your Exact Age Online | ToolsPark</title>
+  <meta name="description" content="Calculate your exact age in years, months, days, hours, minutes, and seconds. Free online age calculator with birth date and current date options.">
+  <meta name="keywords" content="age calculator, calculate age, age calculator online, exact age, birthday calculator, age in years, age in months, age in days, current age">
+  <meta name="author" content="Tools Park">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://toolspark.store/age-calculator">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://toolspark.store/age-calculator">
+  <meta property="og:title" content="Age Calculator - Calculate Your Exact Age Online">
+  <meta property="og:description" content="Calculate your exact age in years, months, days, hours, minutes, and seconds. Free online tool.">
+  <meta property="og:image" content="https://toolspark.store/assets/age-calculator.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://toolspark.store/age-calculator">
+  <meta property="twitter:title" content="Age Calculator - Calculate Your Exact Age">
+  <meta property="twitter:description" content="Calculate your exact age in years, months, days, hours, minutes, and seconds.">
+  <meta property="twitter:image" content="https://toolspark.store/assets/age-calculator.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#2563EB">
+  
+  <!-- Core Web Vitals Optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  
+  <!-- Critical CSS -->
+  <style>
+    body{font-family:'Outfit',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6;color:#0F172A;background:#F8FAFC;margin:0;padding:0}
+    .container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+    .header{background:#fff;border-bottom:1px solid #E2E8F0;position:sticky;top:0;z-index:100}
+    .navbar{padding:1rem 0}
+    .nav-container{display:flex;justify-content:space-between;align-items:center}
+    .brand-link{display:flex;align-items:center;gap:.75rem;text-decoration:none}
+    .brand-name{font-size:1.5rem;font-weight:700;color:#0F172A}
+    .hero{padding:80px 0;background:linear-gradient(135deg,#f8fafc 0%,#e2e8f0 100%)}
+    .hero-title{font-size:3rem;font-weight:700;color:#0F172A;margin-bottom:1rem}
+    .hero-description{font-size:1.25rem;color:#475569;margin-bottom:2rem}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:12px 24px;border:none;border-radius:8px;font-weight:600;text-decoration:none;transition:all 0.2s ease}
+    .btn-primary{background:#2563EB;color:#fff}
+    .btn-primary:hover{background:#1D4ED8;transform:translateY(-1px)}
+  </style>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/premium.css">
+  <link rel="stylesheet" href="css/core-web-vitals.css">
+  <link rel="stylesheet" href="css/age-calculator.css">
+  
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Age Calculator",
+    "description": "Calculate your exact age in years, months, days, hours, minutes, and seconds",
+    "url": "https://toolspark.store/age-calculator",
+    "applicationCategory": "Utility",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  
+  <header class="header">
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-container">
+          <a href="/" class="brand-link">
+            <div class="brand-logo">
+              <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <span class="brand-name">Tools Park</span>
+          </a>
+          <div class="nav-menu-desktop">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/tools" class="nav-link">Tools</a>
+            <a href="/blog" class="nav-link">Blog</a>
+            <a href="/about" class="nav-link">About</a>
+            <a href="/contact" class="nav-link">Contact</a>
+            <a href="/tools" class="btn btn-primary">Use Tools Free</a>
+          </div>
+          <div class="nav-mobile-toggle">
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+              <svg class="menu-icon menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+              <svg class="menu-icon menu-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="nav-menu-mobile hidden" id="mobile-menu">
+          <div class="mobile-menu-content">
+            <a href="/" class="mobile-nav-link">Home</a>
+            <a href="/tools" class="mobile-nav-link">Tools</a>
+            <a href="/blog" class="mobile-nav-link">Blog</a>
+            <a href="/about" class="mobile-nav-link">About</a>
+            <a href="/contact" class="mobile-nav-link">Contact</a>
+            <a href="/tools" class="mobile-nav-link">Use Tools Free</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            Time & Date Calculator
+          </div>
+          
+          <h1 class="hero-title">
+            Age Calculator
+          </h1>
+          
+          <p class="hero-description">
+            Calculate your exact age in years, months, days, hours, minutes, and seconds. Find out how old you are right now with our precise age calculator.
+          </p>
+          
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Accurate</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">Instant</span>
+              <span class="stat-label">Results</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">Free</span>
+              <span class="stat-label">Forever</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section class="how-to-use-section">
+      <div class="container">
+        <div class="how-to-use-content">
+          <div class="how-to-use-text">
+            <h2>How to Use This Tool</h2>
+            <p>Learn the best practices and get the most out of our Age Calculator with our comprehensive guide.</p>
+          </div>
+          <div class="how-to-use-button">
+            <a href="blog-age-calculator.html" class="btn btn-outline-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+              View Guide
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Age Calculator Section -->
+    <section class="calculator-section">
+      <div class="container">
+        <div class="calculator-container">
+          <div class="calculator-header">
+            <h2>Calculate Your Age</h2>
+            <p>Enter your birth date to find your exact age</p>
+          </div>
+          
+          <div class="calculator-content">
+            <div class="input-section">
+              <div class="date-inputs">
+                <div class="input-group">
+                  <label for="birth-date">Date of Birth</label>
+                  <input type="date" id="birth-date" max="">
+                </div>
+                
+                <div class="input-group">
+                  <label for="current-date">Current Date (Optional)</label>
+                  <input type="date" id="current-date">
+                  <small>Leave blank to use today's date</small>
+                </div>
+              </div>
+              
+              <button class="btn btn-primary btn-lg calculate-btn" onclick="calculateAge()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                </svg>
+                Calculate Age
+              </button>
+            </div>
+            
+            <div class="results-section" id="age-results" style="display: none;">
+              <h3>Your Exact Age</h3>
+              
+              <div class="age-display">
+                <div class="age-main">
+                  <div class="age-value" id="years">0</div>
+                  <div class="age-label">Years</div>
+                </div>
+                
+                <div class="age-separator">:</div>
+                
+                <div class="age-main">
+                  <div class="age-value" id="months">0</div>
+                  <div class="age-label">Months</div>
+                </div>
+                
+                <div class="age-separator">:</div>
+                
+                <div class="age-main">
+                  <div class="age-value" id="days">0</div>
+                  <div class="age-label">Days</div>
+                </div>
+              </div>
+              
+              <div class="age-details">
+                <div class="detail-item">
+                  <span class="detail-label">Total Days:</span>
+                  <span class="detail-value" id="total-days">0</span>
+                </div>
+                
+                <div class="detail-item">
+                  <span class="detail-label">Total Hours:</span>
+                  <span class="detail-value" id="total-hours">0</span>
+                </div>
+                
+                <div class="detail-item">
+                  <span class="detail-label">Total Minutes:</span>
+                  <span class="detail-value" id="total-minutes">0</span>
+                </div>
+                
+                <div class="detail-item">
+                  <span class="detail-label">Total Seconds:</span>
+                  <span class="detail-value" id="total-seconds">0</span>
+                </div>
+              </div>
+              
+              <div class="age-facts">
+                <h4>Interesting Facts</h4>
+                <div class="facts-grid">
+                  <div class="fact-item">
+                    <span class="fact-label">Next Birthday:</span>
+                    <span class="fact-value" id="next-birthday">-</span>
+                  </div>
+                  
+                  <div class="fact-item">
+                    <span class="fact-label">Days Until Birthday:</span>
+                    <span class="fact-value" id="days-until-birthday">-</span>
+                  </div>
+                  
+                  <div class="fact-item">
+                    <span class="fact-label">Zodiac Sign:</span>
+                    <span class="fact-value" id="zodiac-sign">-</span>
+                  </div>
+                  
+                  <div class="fact-item">
+                    <span class="fact-label">Birth Day:</span>
+                    <span class="fact-value" id="birth-day">-</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="action-buttons">
+                <button class="btn btn-secondary" onclick="shareResult()">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"></path>
+                    <polyline points="16 6 12 2 8 6"></polyline>
+                    <line x1="12" y1="2" x2="12" y2="15"></line>
+                  </svg>
+                  Share Result
+                </button>
+                
+                <button class="btn btn-secondary" onclick="resetCalculator()">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 4v6h6"></path>
+                    <path d="M3.51 15a9 9 0 102.13-9.36L1 10"></path>
+                  </svg>
+                  Calculate Again
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why Use Our Age Calculator?</h2>
+          <p class="section-description">The most accurate and feature-rich age calculator online</p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Real-Time Calculation</h3>
+            <p class="feature-description">Get your exact age down to the second with precise calculations</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Multiple Formats</h3>
+            <p class="feature-description">View your age in years, months, days, hours, minutes, and seconds</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Interesting Insights</h3>
+            <p class="feature-description">Discover fun facts about your age, zodiac sign, and next birthday</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">100% Private</h3>
+            <p class="feature-description">All calculations happen in your browser. No data is sent to servers</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Free Forever</h3>
+            <p class="feature-description">No registration, no ads, no limits. Completely free to use</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Mobile Friendly</h3>
+            <p class="feature-description">Works perfectly on all devices - desktop, tablet, and mobile</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">How to Use Age Calculator</h2>
+          <p class="section-description">Calculate your age in just 3 simple steps</p>
+        </div>
+        
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3 class="step-title">Enter Your Birth Date</h3>
+            <p class="step-description">Select your date of birth from the calendar picker</p>
+          </div>
+          
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3 class="step-title">Choose Current Date (Optional)</h3>
+            <p class="step-description">Leave blank to use today's date or select a specific date</p>
+          </div>
+          
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3 class="step-title">Get Your Results</h3>
+            <p class="step-description">View your exact age in multiple formats with interesting facts</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Tools -->
+    <section class="related-tools">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Related Tools</h2>
+          <p class="section-description">Other calculators you might find useful</p>
+        </div>
+        
+        <div class="tools-grid">
+          <a href="percentage-calculator.html" class="tool-card">
+            <div class="tool-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="tool-title">Percentage Calculator</h3>
+            <p class="tool-description">Calculate percentages instantly with various calculation types</p>
+          </a>
+          
+          <a href="unit-converter.html" class="tool-card">
+            <div class="tool-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path>
+              </svg>
+            </div>
+            <h3 class="tool-title">Unit Converter</h3>
+            <p class="tool-description">Convert between different units of measurement</p>
+          </a>
+          
+          <a href="loan-calculator.html" class="tool-card">
+            <div class="tool-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+              </svg>
+            </div>
+            <h3 class="tool-title">Loan Calculator</h3>
+            <p class="tool-description">Calculate EMI and loan payments instantly</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  
+  <section class="tool-seo-content">
+    <div class="container">
+      <h2>Age Calculator Free Online Tool</h2>
+      <p>Calculate exact age in years, months, and days for forms, planning, and personal records. This tool runs in your browser, works on mobile, and requires no signup.</p>
+      <p>Use this page as your quick workflow utility: paste input, get instant output, and copy results confidently for projects, client work, or daily tasks.</p>
+      <h3>How to Use Age Calculator</h3>
+      <ol>
+        <li>Open the tool and enter your input data.</li>
+        <li>Adjust settings if needed for your exact output format.</li>
+        <li>Run the tool and verify the output in real time.</li>
+        <li>Copy or export the result and continue your workflow.</li>
+      </ol>
+      <h3>Why Users Choose This Tool</h3>
+      <ul>
+        <li>Fast processing with a clean interface.</li>
+        <li>No account required and free to use.</li>
+        <li>Useful for SEO, development, and productivity workflows.</li>
+        <li>Works across desktop and mobile browsers.</li>
+      </ul>
+      <h3>FAQ</h3>
+      <p><strong>Is this tool free?</strong> Yes, completely free with no login required.</p>
+      <p><strong>Can I use it on mobile?</strong> Yes, the interface is mobile responsive.</p>
+      <p><strong>Is my input private?</strong> Inputs are processed in-browser for better privacy.</p>
+      <p>Related resources: <a href="/tools">All tools</a>, <a href="/blog/age-calculator">step-by-step guide</a>, and <a href="/blog">blog tutorials</a>.</p>
+    </div>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="footer-brand-name">Tools Park</h3>
+          <p class="footer-description">
+            Tools Park provides fast, free, and practical tools for SEO, calculators, text formatting, and developer workflows.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-title">Popular Tools</h4>
+          <ul class="footer-links">
+            <li><a href="/word-counter">Word Counter</a></li>
+            <li><a href="/age-calculator">Age Calculator</a></li>
+            <li><a href="/json-formatter">JSON Formatter</a></li>
+            <li><a href="/xml-sitemap-generator">XML Sitemap Generator</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms-of-service">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Connect</h4>
+          <ul class="footer-links">
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="https://x.com" rel="nofollow noopener" target="_blank">X</a></li>
+            <li><a href="https://www.linkedin.com" rel="nofollow noopener" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com" rel="nofollow noopener" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Tools Park. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is the Age Calculator tool free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, this tool is free to use with no signup required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does this tool work on mobile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, the tool is mobile-friendly and works on modern browsers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data stored?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, your data is processed in-browser to protect privacy."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuOpenIcon = document.querySelector('.menu-open');
+      const menuCloseIcon = document.querySelector('.menu-close');
+
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', function() {
+          const isHidden = mobileMenu.classList.contains('hidden');
+          
+          if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            menuOpenIcon.classList.add('hidden');
+            menuCloseIcon.classList.remove('hidden');
+          } else {
+            mobileMenu.classList.add('hidden');
+            menuOpenIcon.classList.remove('hidden');
+            menuCloseIcon.classList.add('hidden');
+          }
+        });
+      }
+      
+      // Set max date to today for birth date
+      const today = new Date().toISOString().split('T')[0];
+      document.getElementById('birth-date').max = today;
+      document.getElementById('current-date').value = today;
+    });
+  </script>
+
+  <!-- Age Calculator Script -->
+  <script>
+    function calculateAge() {
+      const birthDate = document.getElementById('birth-date').value;
+      const currentDate = document.getElementById('current-date').value || new Date().toISOString().split('T')[0];
+      
+      if (!birthDate) {
+        alert('Please enter your birth date');
+        return;
+      }
+      
+      const birth = new Date(birthDate);
+      const current = new Date(currentDate);
+      
+      if (birth > current) {
+        alert('Birth date cannot be in the future');
+        return;
+      }
+      
+      // Calculate age
+      let years = current.getFullYear() - birth.getFullYear();
+      let months = current.getMonth() - birth.getMonth();
+      let days = current.getDate() - birth.getDate();
+      
+      if (days < 0) {
+        months--;
+        const lastMonth = new Date(current.getFullYear(), current.getMonth(), 0);
+        days += lastMonth.getDate();
+      }
+      
+      if (months < 0) {
+        years--;
+        months += 12;
+      }
+      
+      // Calculate total time
+      const totalMs = current - birth;
+      const totalDays = Math.floor(totalMs / (1000 * 60 * 60 * 24));
+      const totalHours = Math.floor(totalMs / (1000 * 60 * 60));
+      const totalMinutes = Math.floor(totalMs / (1000 * 60));
+      const totalSeconds = Math.floor(totalMs / 1000);
+      
+      // Calculate next birthday
+      const nextBirthday = new Date(current.getFullYear(), birth.getMonth(), birth.getDate());
+      if (nextBirthday < current) {
+        nextBirthday.setFullYear(current.getFullYear() + 1);
+      }
+      const daysUntilBirthday = Math.ceil((nextBirthday - current) / (1000 * 60 * 60 * 24));
+      
+      // Get zodiac sign
+      const zodiacSign = getZodiacSign(birth.getMonth() + 1, birth.getDate());
+      
+      // Get birth day
+      const birthDay = birth.toLocaleDateString('en-US', { weekday: 'long' });
+      
+      // Update display
+      document.getElementById('years').textContent = years;
+      document.getElementById('months').textContent = months;
+      document.getElementById('days').textContent = days;
+      document.getElementById('total-days').textContent = totalDays.toLocaleString();
+      document.getElementById('total-hours').textContent = totalHours.toLocaleString();
+      document.getElementById('total-minutes').textContent = totalMinutes.toLocaleString();
+      document.getElementById('total-seconds').textContent = totalSeconds.toLocaleString();
+      document.getElementById('next-birthday').textContent = nextBirthday.toLocaleDateString();
+      document.getElementById('days-until-birthday').textContent = daysUntilBirthday;
+      document.getElementById('zodiac-sign').textContent = zodiacSign;
+      document.getElementById('birth-day').textContent = birthDay;
+      
+      // Show results
+      document.getElementById('age-results').style.display = 'block';
+      
+      // Scroll to results
+      document.getElementById('age-results').scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    function getZodiacSign(month, day) {
+      const signs = [
+        { name: 'Capricorn', start: [12, 22], end: [1, 19] },
+        { name: 'Aquarius', start: [1, 20], end: [2, 18] },
+        { name: 'Pisces', start: [2, 19], end: [3, 20] },
+        { name: 'Aries', start: [3, 21], end: [4, 19] },
+        { name: 'Taurus', start: [4, 20], end: [5, 20] },
+        { name: 'Gemini', start: [5, 21], end: [6, 20] },
+        { name: 'Cancer', start: [6, 21], end: [7, 22] },
+        { name: 'Leo', start: [7, 23], end: [8, 22] },
+        { name: 'Virgo', start: [8, 23], end: [9, 22] },
+        { name: 'Libra', start: [9, 23], end: [10, 22] },
+        { name: 'Scorpio', start: [10, 23], end: [11, 21] },
+        { name: 'Sagittarius', start: [11, 22], end: [12, 21] }
+      ];
+      
+      for (const sign of signs) {
+        if ((month === sign.start[0] && day >= sign.start[1]) || 
+            (month === sign.end[0] && day <= sign.end[1])) {
+          return sign.name;
+        }
+      }
+      return 'Capricorn';
+    }
+    
+    function shareResult() {
+      const years = document.getElementById('years').textContent;
+      const months = document.getElementById('months').textContent;
+      const days = document.getElementById('days').textContent;
+      
+      const text = `I am ${years} years, ${months} months, and ${days} days old! Calculate your age at: ${window.location.href}`;
+      
+      if (navigator.share) {
+        navigator.share({
+          title: 'My Age Calculation',
+          text: text
+        });
+      } else {
+        navigator.clipboard.writeText(text);
+        alert('Result copied to clipboard!');
+      }
+    }
+    
+    function resetCalculator() {
+      document.getElementById('birth-date').value = '';
+      document.getElementById('current-date').value = new Date().toISOString().split('T')[0];
+      document.getElementById('age-results').style.display = 'none';
+      
+      // Scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+  <!-- Performance Script -->
+  <script src="js/performance.js"></script>
+</body>
+</html>

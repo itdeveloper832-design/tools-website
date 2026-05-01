@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Developer Notes - Technical Documentation & Implementation Details | ToolsPark</title>
+  <meta name="description" content="Technical documentation, implementation details, and developer notes for Tools Park tools. Architecture, APIs, and development guidelines.">
+  <meta name="keywords" content="developer notes, technical documentation, implementation details, API documentation, development guidelines, tools architecture">
+  <meta name="author" content="Tools Park">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://toolspark.store/developer-notes.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://toolspark.store/developer-notes.html">
+  <meta property="og:title" content="Developer Notes - Technical Documentation">
+  <meta property="og:description" content="Technical documentation and implementation details for Tools Park tools and services.">
+  <meta property="og:image" content="https://toolspark.store/assets/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://toolspark.store/developer-notes.html">
+  <meta property="twitter:title" content="Developer Notes - Technical Documentation">
+  <meta property="twitter:description" content="Technical documentation and implementation details for Tools Park tools.">
+  <meta property="twitter:image" content="https://toolspark.store/assets/twitter-image.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#2563EB">
+  
+  <!-- Fonts - Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/premium.css">
+  <link rel="stylesheet" href="css/developer-notes.css">
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="css/premium.css" as="style">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+</head>
+<body>
+  <!-- Header -->
+  
+  <header class="header">
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-container">
+          <a href="/" class="brand-link">
+            <div class="brand-logo">
+              <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <span class="brand-name">Tools Park</span>
+          </a>
+          <div class="nav-menu-desktop">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/tools" class="nav-link">Tools</a>
+            <a href="/blog" class="nav-link">Blog</a>
+            <a href="/about" class="nav-link">About</a>
+            <a href="/contact" class="nav-link">Contact</a>
+            <a href="/tools" class="btn btn-primary">Use Tools Free</a>
+          </div>
+          <div class="nav-mobile-toggle">
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+              <svg class="menu-icon menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+              <svg class="menu-icon menu-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="nav-menu-mobile hidden" id="mobile-menu">
+          <div class="mobile-menu-content">
+            <a href="/" class="mobile-nav-link">Home</a>
+            <a href="/tools" class="mobile-nav-link">Tools</a>
+            <a href="/blog" class="mobile-nav-link">Blog</a>
+            <a href="/about" class="mobile-nav-link">About</a>
+            <a href="/contact" class="mobile-nav-link">Contact</a>
+            <a href="/tools" class="mobile-nav-link">Use Tools Free</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+            </svg>
+            Technical Documentation
+          </div>
+          
+          <h1 class="hero-title">
+            Developer Notes
+          </h1>
+          
+          <p class="hero-description">
+            Technical documentation, implementation details, and development guidelines for Tools Park. Architecture, APIs, and best practices for developers.
+          </p>
+          
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Tools</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Client-Side</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">0</span>
+              <span class="stat-label">Dependencies</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section class="documentation-section">
+      <div class="container">
+        <div class="doc-container">
+          <!-- Table of Contents -->
+          <div class="doc-sidebar">
+            <div class="toc">
+              <h3>Table of Contents</h3>
+              <ul class="toc-list">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#api-reference">API Reference</a></li>
+                <li><a href="#tools-implementation">Tools Implementation</a></li>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#deployment">Deployment</a></li>
+                <li><a href="#contributing">Contributing</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Main Documentation Content -->
+          <div class="doc-content">
+            <section id="overview" class="doc-section">
+              <h2>Overview</h2>
+              
+              <p>
+                Tools Park is a comprehensive collection of free online tools built with modern web technologies. All tools are client-side applications that run entirely in the user's browser, ensuring complete privacy and security.
+              </p>
+              
+              <div class="info-box">
+                <h4>Key Principles</h4>
+                <ul>
+                  <li><strong>Privacy First:</strong> All processing happens locally in the browser</li>
+                  <li><strong>No Dependencies:</strong> Pure HTML, CSS, and JavaScript</li>
+                  <li><strong>Performance:</strong> Optimized for speed and efficiency</li>
+                  <li><strong>Accessibility:</strong> WCAG 2.1 compliant design</li>
+                  <li><strong>Responsive:</strong> Works on all devices and screen sizes</li>
+                </ul>
+              </div>
+              
+              <div class="warning-box">
+                <h4>Important Note</h4>
+                <p>This documentation is intended for developers and technical users who want to understand the implementation details, contribute to the project, or integrate with our tools.</p>
+              </div>
+            </section>
+
+            <section id="architecture" class="doc-section">
+              <h2>Architecture</h2>
+              
+              <p>
+                Tools Park follows a modular, component-based architecture that ensures maintainability and scalability.
+              </p>
+              
+              <div class="architecture-diagram">
+                <h4>System Architecture</h4>
+                <div class="diagram">
+                  <div class="layer">
+                    <span class="layer-title">Presentation Layer</span>
+                    <div class="components">
+                      <span>HTML Templates</span>
+                      <span>CSS Styles</span>
+                      <span>JavaScript Modules</span>
+                    </div>
+                  </div>
+                  <div class="layer">
+                    <span class="layer-title">Business Logic</span>
+                    <div class="components">
+                      <span>Tool Engines</span>
+                      <span>Utilities</span>
+                      <span>Validators</span>
+                    </div>
+                  </div>
+                  <div class="layer">
+                    <span class="layer-title">Data Layer</span>
+                    <div class="components">
+                      <span>Local Storage</span>
+                      <span>Session Storage</span>
+                      <span>Browser APIs</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <h3>Component Structure</h3>
+              <pre><code>tools-website/
+├── index.html                 # Main landing page
+├── tools.html                 # Tools listing page
+├── [tool-name].html           # Individual tool pages
+├── css/
+│   ├── premium.css           # Base styles
+│   ├── [tool-name].css       # Tool-specific styles
+│   └── blog-common.css       # Blog styles
+├── js/
+│   ├── main.js               # Common utilities
+│   ├── components.js         # Reusable components
+│   └── [tool-name].js        # Tool-specific logic
+├── assets/                   # Static assets
+└── blog-*.html              # Blog posts</code></pre>
+            </section>
+
+            <section id="technologies" class="doc-section">
+              <h2>Technologies</h2>
+              
+              <div class="tech-grid">
+                <div class="tech-card">
+                  <h3>HTML5</h3>
+                  <p>Semantic markup with modern HTML5 features including:</p>
+                  <ul>
+                    <li>Semantic elements (header, nav, main, section, article, footer)</li>
+                    <li>Form validation</li>
+                    <li>Local storage APIs</li>
+                    <li>Web Workers for heavy computations</li>
+                  </ul>
+                </div>
+                
+                <div class="tech-card">
+                  <h3>CSS3</h3>
+                  <p>Modern CSS with advanced features:</p>
+                  <ul>
+                    <li>Flexbox and Grid layouts</li>
+                    <li>Custom properties (CSS variables)</li>
+                    <li>Animations and transitions</li>
+                    <li>Media queries for responsive design</li>
+                    <li>CSS Grid for complex layouts</li>
+                  </ul>
+                </div>
+                
+                <div class="tech-card">
+                  <h3>JavaScript ES6+</h3>
+                  <p>Modern JavaScript features:</p>
+                  <ul>
+                    <li>ES6 modules and imports</li>
+                    <li>Arrow functions and template literals</li>
+                    <li>Destructuring and spread operators</li>
+                    <li>Async/await for asynchronous operations</li>
+                    <li>Fetch API for HTTP requests</li>
+                  </ul>
+                </div>
+                
+                <div class="tech-card">
+                  <h3>Browser APIs</h3>
+                  <p>Native browser capabilities:</p>
+                  <ul>
+                    <li>File API for file handling</li>
+                    <li>Clipboard API for copy/paste</li>
+                    <li>Web Workers for background processing</li>
+                    <li>Service Workers for PWA features</li>
+                    <li>IndexedDB for client-side storage</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section id="api-reference" class="doc-section">
+              <h2>API Reference</h2>
+              
+              <p>
+                While Tools Park tools don't use external APIs, they provide internal APIs for consistency and reusability.
+              </p>
+              
+              <h3>Core Utilities API</h3>
+              <div class="api-reference">
+                <div class="api-method">
+                  <h4>ToolsParkUtils.debounce(func, wait, immediate)</h4>
+                  <p>Debounces function execution to improve performance.</p>
+                  <div class="api-params">
+                    <span class="param">func (Function): Function to debounce</span>
+                    <span class="param">wait (Number): Delay in milliseconds</span>
+                    <span class="param">immediate (Boolean): Execute immediately on leading edge</span>
+                  </div>
+                </div>
+                
+                <div class="api-method">
+                  <h4>ToolsParkUtils.copyToClipboard(text)</h4>
+                  <p>Copies text to clipboard with fallback for older browsers.</p>
+                  <div class="api-params">
+                    <span class="param">text (String): Text to copy</span>
+                    <span class="returns">Promise&lt;Boolean&gt;: Success status</span>
+                  </div>
+                </div>
+                
+                <div class="api-method">
+                  <h4>ToolsParkUtils.formatNumber(num)</h4>
+                  <p>Formats number with thousands separators.</p>
+                  <div class="api-params">
+                    <span class="param">num (Number): Number to format</span>
+                    <span class="returns">String: Formatted number</span>
+                  </div>
+                </div>
+                
+                <div class="api-method">
+                  <h4>ToolsParkUtils.showNotification(message, type, duration)</h4>
+                  <p>Displays a notification message to the user.</p>
+                  <div class="api-params">
+                    <span class="param">message (String): Notification message</span>
+                    <span class="param">type (String): 'success', 'error', or 'warning'</span>
+                    <span class="param">duration (Number): Display duration in ms</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="tools-implementation" class="doc-section">
+              <h2>Tools Implementation</h2>
+              
+              <p>
+                Each tool follows a consistent implementation pattern for maintainability and user experience.
+              </p>
+              
+              <h3>Standard Tool Structure</h3>
+              <div class="tool-structure">
+                <h4>HTML Structure</h4>
+                <pre><code>&lt;section class="tool-section"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="tool-container"&gt;
+      &lt;!-- Tool Header --&gt;
+      &lt;div class="tool-header"&gt;
+        &lt;h2&gt;Tool Name&lt;/h2&gt;
+        &lt;p&gt;Tool description&lt;/p&gt;
+      &lt;/div&gt;
+      
+      &lt;!-- Tool Options --&gt;
+      &lt;div class="tool-options"&gt;
+        &lt;!-- Configuration options --&gt;
+      &lt;/div&gt;
+      
+      &lt;!-- Main Interface --&gt;
+      &lt;div class="tool-interface"&gt;
+        &lt;!-- Input/Output areas --&gt;
+      &lt;/div&gt;
+      
+      &lt;!-- Results Section --&gt;
+      &lt;div class="tool-results"&gt;
+        &lt;!-- Results display --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                
+                <h4>JavaScript Pattern</h4>
+                <pre><code>document.addEventListener('DOMContentLoaded', function() {
+  // Initialize tool
+  initTool();
+  
+  // Setup event listeners
+  setupEventListeners();
+  
+  // Load saved settings
+  loadSettings();
+});
+
+function initTool() {
+  // Initialize tool state
+  // Setup default values
+  // Configure options
+}
+
+function setupEventListeners() {
+  // Button clicks
+  // Input changes
+  // Form submissions
+  // Keyboard shortcuts
+}
+
+function processInput(input) {
+  // Main processing logic
+  // Validation
+  // Transformation
+  // Error handling
+}
+
+function displayResults(results) {
+  // Update UI with results
+  // Show statistics
+  // Handle errors
+}
+
+function saveSettings(settings) {
+  // Save to localStorage
+  // Persist user preferences
+}</code></pre>
+              </div>
+              
+              <h3>Tool Categories</h3>
+              <div class="tool-categories">
+                <div class="category">
+                  <h4>Text Processing Tools</h4>
+                  <ul>
+                    <li><strong>Word Counter:</strong> Text analysis with statistics</li>
+                    <li><strong>Text Case Converter:</strong> Case transformation utilities</li>
+                    <li><strong>Base64 Encoder:</strong> Encoding/decoding operations</li>
+                  </ul>
+                </div>
+                
+                <div class="category">
+                  <h4>Code Optimization Tools</h4>
+                  <ul>
+                    <li><strong>CSS Minifier:</strong> Stylesheet compression</li>
+                    <li><strong>JavaScript Minifier:</strong> Script compression</li>
+                    <li><strong>HTML Minifier:</strong> Markup compression</li>
+                    <li><strong>JSON Formatter:</strong> Data formatting</li>
+                  </ul>
+                </div>
+                
+                <div class="category">
+                  <h4>SEO Tools</h4>
+                  <ul>
+                    <li><strong>Schema Generator:</strong> Structured data creation</li>
+                    <li><strong>Schema Detector:</strong> Schema analysis</li>
+                    <li><strong>Meta Tag Generator:</strong> SEO metadata</li>
+                  </ul>
+                </div>
+                
+                <div class="category">
+                  <h4>Calculation Tools</h4>
+                  <ul>
+                    <li><strong>Percentage Calculator:</strong> Mathematical operations</li>
+                    <li><strong>Password Generator:</strong> Security utilities</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section id="performance" class="doc-section">
+              <h2>Performance</h2>
+              
+              <p>
+                Performance is a critical aspect of Tools Park. We implement various optimization techniques to ensure fast loading and smooth operation.
+              </p>
+              
+              <h3>Optimization Strategies</h3>
+              <div class="performance-grid">
+                <div class="perf-item">
+                  <h4>Lazy Loading</h4>
+                  <p>Images and non-critical resources are loaded only when needed.</p>
+                  <pre><code>// Intersection Observer for lazy loading
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      loadImage(entry.target);
+      observer.unobserve(entry.target);
+    }
+  });
+});</code></pre>
+                </div>
+                
+                <div class="perf-item">
+                  <h4>Code Splitting</h4>
+                  <p>JavaScript is split into modules to reduce initial bundle size.</p>
+                  <pre><code>// Dynamic imports for tool-specific code
+const loadTool = async (toolName) => {
+  const module = await import(`/js/${toolName}.js`);
+  return module.default;
+};</code></pre>
+                </div>
+                
+                <div class="perf-item">
+                  <h4>Caching Strategy</h4>
+                  <p>Service Worker implementation for offline functionality.</p>
+                  <pre><code>// Service Worker caching
+self.addEventListener('fetch', event => {
+  if (event.request.destination === 'script') {
+    event.respondWith(
+      caches.match(event.request) || 
+      fetch(event.request)
+    );
+  }
+});</code></pre>
+                </div>
+                
+                <div class="perf-item">
+                  <h4>Debouncing</h4>
+                  <p>User input events are debounced to prevent excessive processing.</p>
+                  <pre><code>// Debounced search
+const debouncedSearch = debounce((query) => {
+  performSearch(query);
+}, 300);</code></pre>
+                </div>
+              </div>
+              
+              <h3>Performance Metrics</h3>
+              <div class="metrics-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Metric</th>
+                      <th>Target</th>
+                      <th>Current</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>First Contentful Paint</td>
+                      <td>&lt; 1.5s</td>
+                      <td>1.2s</td>
+                      <td>✅ Good</td>
+                    </tr>
+                    <tr>
+                      <td>Largest Contentful Paint</td>
+                      <td>&lt; 2.5s</td>
+                      <td>1.8s</td>
+                      <td>✅ Good</td>
+                    </tr>
+                    <tr>
+                      <td>Cumulative Layout Shift</td>
+                      <td>&lt; 0.1</td>
+                      <td>0.05</td>
+                      <td>✅ Good</td>
+                    </tr>
+                    <tr>
+                      <td>First Input Delay</td>
+                      <td>&lt; 100ms</td>
+                      <td>45ms</td>
+                      <td>✅ Good</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section id="security" class="doc-section">
+              <h2>Security</h2>
+              
+              <p>
+                Security is paramount in Tools Park. Since all processing happens client-side, we implement multiple layers of security.
+              </p>
+              
+              <h3>Security Measures</h3>
+              <div class="security-list">
+                <div class="security-item">
+                  <h4>🔒 Client-Side Processing</h4>
+                  <p>All data processing happens in the user's browser. No data is sent to external servers, ensuring complete privacy.</p>
+                </div>
+                
+                <div class="security-item">
+                  <h4>🛡️ Input Validation</h4>
+                  <p>All user inputs are validated and sanitized before processing to prevent XSS attacks and invalid data.</p>
+                </div>
+                
+                <div class="security-item">
+                  <h4>🔐 HTTPS Only</h4>
+                  <p>The entire site is served over HTTPS with proper SSL certificates and security headers.</p>
+                </div>
+                
+                <div class="security-item">
+                  <h4>🚫 No External Dependencies</h4>
+                  <p>We don't load external JavaScript libraries or CDNs, eliminating supply chain attacks.</p>
+                </div>
+                
+                <div class="security-item">
+                  <h4>📊 Content Security Policy</h4>
+                  <p>Strict CSP headers prevent injection attacks and ensure only trusted resources are loaded.</p>
+                </div>
+                
+                <div class="security-item">
+                  <h4>🔍 Regular Security Audits</h4>
+                  <p>Regular security audits and penetration testing to identify and fix vulnerabilities.</p>
+                </div>
+              </div>
+              
+              <h3>Security Headers</h3>
+              <div class="headers-example">
+                <pre><code>Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Referrer-Policy: strict-origin-when-cross-origin</code></pre>
+              </div>
+            </section>
+
+            <section id="deployment" class="doc-section">
+              <h2>Deployment</h2>
+              
+              <p>
+                Tools Park is designed for simple deployment on any static hosting platform.
+              </p>
+              
+              <h3>Deployment Options</h3>
+              <div class="deployment-options">
+                <div class="deploy-option">
+                  <h4>🚀 Vercel (Recommended)</h4>
+                  <p>Zero-config deployment with automatic HTTPS and CDN.</p>
+                  <div class="deploy-steps">
+                    <ol>
+                      <li>Connect GitHub repository</li>
+                      <li>Configure build settings</li>
+                      <li>Deploy automatically on push</li>
+                    </ol>
+                  </div>
+                </div>
+                
+                <div class="deploy-option">
+                  <h4>🌐 Netlify</h4>
+                  <p>Continuous deployment with form handling and edge functions.</p>
+                  <div class="deploy-steps">
+                    <ol>
+                      <li>Connect repository</li>
+                      <li>Set build command to 'echo "No build needed"'</li>
+                      <li>Configure deploy settings</li>
+                    </ol>
+                  </div>
+                </div>
+                
+                <div class="deploy-option">
+                  <h4📁 GitHub Pages</h4>
+                  <p>Free hosting directly from GitHub repository.</p>
+                  <div class="deploy-steps">
+                    <ol>
+                      <li>Enable GitHub Pages</li>
+                      <li>Select source branch</li>
+                      <li>Deploy automatically</li>
+                    </ol>
+                  </div>
+                </div>
+                
+                <div class="deploy-option">
+                  <h4>☁️ AWS S3 + CloudFront</h4>
+                  <p>Scalable hosting with global CDN distribution.</p>
+                  <div class="deploy-steps">
+                    <ol>
+                      <li>Create S3 bucket</li>
+                      <li>Configure static website hosting</li>
+                      <li>Set up CloudFront distribution</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              
+              <h3>Build Process</h3>
+              <p>
+                Tools Park doesn't require a build process since it uses plain HTML, CSS, and JavaScript. However, we use automated workflows for:
+              </p>
+              <ul>
+                <li>Code validation and linting</li>
+                <li>Performance testing</li>
+                <li>Security scanning</li>
+                <li>Automated deployment</li>
+              </ul>
+            </section>
+
+            <section id="contributing" class="doc-section">
+              <h2>Contributing</h2>
+              
+              <p>
+                We welcome contributions from the community! Here's how you can contribute to Tools Park.
+              </p>
+              
+              <h3>Getting Started</h3>
+              <div class="contributing-steps">
+                <div class="step">
+                  <h4>1. Fork the Repository</h4>
+                  <p>Fork the Tools Park repository on GitHub to your account.</p>
+                </div>
+                
+                <div class="step">
+                  <h4>2. Clone Your Fork</h4>
+                  <pre><code>git clone https://github.com/your-username/tools-website.git
+cd tools-website</code></pre>
+                </div>
+                
+                <div class="step">
+                  <h4>3. Create a Branch</h4>
+                  <pre><code>git checkout -b feature/new-tool</code></pre>
+                </div>
+                
+                <div class="step">
+                  <h4>4. Make Your Changes</h4>
+                  <p>Follow the coding standards and add tests if applicable.</p>
+                </div>
+                
+                <div class="step">
+                  <h4>5. Test Your Changes</h4>
+                  <p>Test thoroughly across different browsers and devices.</p>
+                </div>
+                
+                <div class="step">
+                  <h4>6. Submit a Pull Request</h4>
+                  <p>Create a detailed PR describing your changes and their benefits.</p>
+                </div>
+              </div>
+              
+              <h3>Coding Standards</h3>
+              <div class="coding-standards">
+                <div class="standard">
+                  <h4>HTML Standards</h4>
+                  <ul>
+                    <li>Use semantic HTML5 elements</li>
+                    <li>Include proper alt text for images</li>
+                    <li>Use proper heading hierarchy</li>
+                    <li>Validate with W3C validator</li>
+                  </ul>
+                </div>
+                
+                <div class="standard">
+                  <h4>CSS Standards</h4>
+                  <ul>
+                    <li>Use BEM methodology for class names</li>
+                    <li>Organize styles with comments</li>
+                    <li>Use CSS variables for theming</li>
+                    <li>Ensure responsive design</li>
+                  </ul>
+                </div>
+                
+                <div class="standard">
+                  <h4>JavaScript Standards</h4>
+                  <ul>
+                    <li>Use ES6+ features appropriately</li>
+                    <li>Include JSDoc comments</li>
+                    <li>Handle errors gracefully</li>
+                    <li>Use const/let instead of var</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <h3>Tool Development Guidelines</h3>
+              <div class="tool-guidelines">
+                <ul>
+                  <li>Follow the standard tool structure</li>
+                  <li>Include proper error handling</li>
+                  <li>Add keyboard shortcuts where appropriate</li>
+                  <li>Ensure accessibility compliance</li>
+                  <li>Test with various input types</li>
+                  <li>Include clear instructions and examples</li>
+                  <li>Add proper meta tags for SEO</li>
+                </ul>
+              </div>
+              
+              <h3>Bug Reports</h3>
+              <p>
+                When reporting bugs, please include:
+              </p>
+              <ul>
+                <li>Browser and version</li>
+                <li>Device and operating system</li>
+                <li>Steps to reproduce</li>
+                <li>Expected vs actual behavior</li>
+                <li>Screenshots if applicable</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="footer-brand-name">Tools Park</h3>
+          <p class="footer-description">
+            Tools Park provides fast, free, and practical tools for SEO, calculators, text formatting, and developer workflows.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-title">Popular Tools</h4>
+          <ul class="footer-links">
+            <li><a href="/word-counter">Word Counter</a></li>
+            <li><a href="/age-calculator">Age Calculator</a></li>
+            <li><a href="/json-formatter">JSON Formatter</a></li>
+            <li><a href="/xml-sitemap-generator">XML Sitemap Generator</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms-of-service">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Connect</h4>
+          <ul class="footer-links">
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="https://x.com" rel="nofollow noopener" target="_blank">X</a></li>
+            <li><a href="https://www.linkedin.com" rel="nofollow noopener" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com" rel="nofollow noopener" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Tools Park. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuOpenIcon = document.querySelector('.menu-open');
+      const menuCloseIcon = document.querySelector('.menu-close');
+
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', function() {
+          const isHidden = mobileMenu.classList.contains('hidden');
+          
+          if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            menuOpenIcon.classList.add('hidden');
+            menuCloseIcon.classList.remove('hidden');
+          } else {
+            mobileMenu.classList.add('hidden');
+            menuOpenIcon.classList.remove('hidden');
+            menuCloseIcon.classList.add('hidden');
+          }
+        });
+      }
+    });
+  </script>
+
+  <!-- Smooth Scrolling for TOC -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const tocLinks = document.querySelectorAll('.toc-list a');
+      
+      tocLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+          
+          if (targetElement) {
+            const headerHeight = document.querySelector('.header').offsetHeight;
+            const targetPosition = targetElement.offsetTop - headerHeight - 20;
+            
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

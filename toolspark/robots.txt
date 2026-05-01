@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://toolspark.store/sitemap.xml
+
+# Balanced crawl rate for static pages
+Crawl-delay: 1
