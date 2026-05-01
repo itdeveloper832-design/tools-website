@@ -3,44 +3,69 @@
     { "source": "/", "destination": "/index.html" },
     { "source": "/tools", "destination": "/tools.html" },
     { "source": "/blog", "destination": "/blog.html" },
-    { "source": "/blog/:slug", "destination": "/blog-:slug.html" },
-    { "source": "/pages/about", "destination": "/about.html" },
-    { "source": "/pages/contact", "destination": "/contact.html" },
-    { "source": "/pages/privacy-policy", "destination": "/privacy-policy.html" },
-    { "source": "/pages/terms", "destination": "/terms-of-service.html" },
     { "source": "/about", "destination": "/about.html" },
     { "source": "/contact", "destination": "/contact.html" },
     { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
     { "source": "/terms-of-service", "destination": "/terms-of-service.html" },
-    { "source": "/tools/:tool", "destination": "/tools/:tool.html" },
+    { "source": "/404", "destination": "/404.html" },
+    { "source": "/word-counter", "destination": "/word-counter.html" },
+    { "source": "/text-case-converter", "destination": "/text-case-converter.html" },
+    { "source": "/json-formatter", "destination": "/json-formatter.html" },
+    { "source": "/password-generator", "destination": "/password-generator.html" },
     { "source": "/age-calculator", "destination": "/age-calculator.html" },
-    { "source": "/percentage-calculator", "destination": "/percentage-calculator.html" },
     { "source": "/unit-converter", "destination": "/unit-converter.html" },
     { "source": "/loan-calculator", "destination": "/loan-calculator.html" },
+    { "source": "/percentage-calculator", "destination": "/percentage-calculator.html" },
+    { "source": "/image-compressor", "destination": "/image-compressor.html" },
+    { "source": "/base64-encoder", "destination": "/base64-encoder.html" },
+    { "source": "/schema-generator", "destination": "/schema-generator.html" },
+    { "source": "/schema-detector", "destination": "/schema-detector.html" },
+    { "source": "/meta-tag-generator", "destination": "/meta-tag-generator.html" },
     { "source": "/xml-sitemap-generator", "destination": "/xml-sitemap-generator.html" },
-    { "source": "/blog-age-calculator", "destination": "/blog-age-calculator.html" },
-    { "source": "/blog-percentage-calculator", "destination": "/blog-percentage-calculator.html" },
-    { "source": "/blog-unit-converter", "destination": "/blog-unit-converter.html" },
-    { "source": "/blog-loan-calculator", "destination": "/blog-loan-calculator.html" },
-    { "source": "/blog-xml-sitemap-generator", "destination": "/blog-xml-sitemap-generator.html" }
+    { "source": "/css-minifier", "destination": "/css-minifier.html" },
+    { "source": "/html-minifier", "destination": "/html-minifier.html" },
+    { "source": "/javascript-minifier", "destination": "/javascript-minifier.html" },
+    { "source": "/blog/word-counter-seo-post", "destination": "/blog-word-counter-seo-post.html" },
+    { "source": "/blog/age-calculator", "destination": "/blog-age-calculator.html" },
+    { "source": "/blog/base64-encoding", "destination": "/blog-base64-encoding.html" },
+    { "source": "/blog/css-minification", "destination": "/blog-css-minification.html" },
+    { "source": "/blog/html-minifier", "destination": "/blog-html-minifier.html" },
+    { "source": "/blog/image-compression-seo-post", "destination": "/blog-image-compression-seo-post.html" },
+    { "source": "/blog/javascript-minification", "destination": "/blog-javascript-minification.html" },
+    { "source": "/blog/json-formatter", "destination": "/blog-json-formatter.html" },
+    { "source": "/blog/loan-calculator", "destination": "/blog-loan-calculator.html" },
+    { "source": "/blog/percentage-calculator", "destination": "/blog-percentage-calculator.html" },
+    { "source": "/blog/strong-passwords", "destination": "/blog-strong-passwords.html" },
+    { "source": "/blog/unit-converter", "destination": "/blog-unit-converter.html" },
+    { "source": "/blog/xml-sitemap-generator", "destination": "/blog-xml-sitemap-generator.html" },
+    { "source": "/blog/2026", "destination": "/blog-2026.html" }
   ],
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/(.*)\\.html",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" }
       ]
     },
     {
-      "source": "/(.*).html",
+      "source": "/css/(.*)",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
     }
   ]

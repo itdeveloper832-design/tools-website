@@ -250,3 +250,12 @@ p:last-child{margin-bottom:0}
   .hero-stat-num{font-size:1.375rem}
   .tool-features-row{gap:1rem}
 }
+
+/* Breadcrumb Navigation */
+.breadcrumb-nav{padding:.625rem 0;background:var(--bg,#F8FAFC);border-bottom:1px solid var(--border,#E2E8F0)}
+.breadcrumb-nav .breadcrumb{display:flex;align-items:center;gap:.375rem;list-style:none;margin:0;padding:0;flex-wrap:wrap;font-size:.8rem}
+.breadcrumb-nav .breadcrumb li{display:flex;align-items:center;gap:.375rem;color:var(--text-muted,#64748B)}
+.breadcrumb-nav .breadcrumb li:not(:last-child)::after{content:"/";color:var(--border-dark,#CBD5E1)}
+.breadcrumb-nav .breadcrumb a{color:var(--text-muted,#64748B);text-decoration:none;transition:color .15s}
+.breadcrumb-nav .breadcrumb a:hover{color:var(--primary,#2563EB)}
+.breadcrumb-nav .breadcrumb li:last-child{color:var(--text,#0F172A);font-weight:500}

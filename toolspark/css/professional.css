@@ -2281,3 +2281,12 @@ body {
 .mobile-nav-item.active .mobile-nav-icon {
   stroke-width: 2.5;
 }
+
+/* ── Breadcrumb Navigation ── */
+.breadcrumb-nav{padding:.625rem 0;background:#F8FAFC;border-bottom:1px solid #E2E8F0}
+.breadcrumb-nav .breadcrumb{display:flex;align-items:center;gap:.375rem;list-style:none;margin:0;padding:0;flex-wrap:wrap;font-size:.8rem}
+.breadcrumb-nav .breadcrumb li{display:flex;align-items:center;gap:.375rem;color:#64748B}
+.breadcrumb-nav .breadcrumb li:not(:last-child)::after{content:"/";color:#CBD5E1;margin-left:.375rem}
+.breadcrumb-nav .breadcrumb a{color:#64748B;text-decoration:none;transition:color .15s}
+.breadcrumb-nav .breadcrumb a:hover{color:#2563EB}
+.breadcrumb-nav .breadcrumb li:last-child{color:#0F172A;font-weight:500}
