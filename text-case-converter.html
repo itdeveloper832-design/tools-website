@@ -12,24 +12,23 @@
   <meta name="keywords" content="text case converter, case converter online, text converter, uppercase converter, lowercase converter, title case converter, camel case converter, snake case converter, kebab case converter, text case changer, change text case, convert text case, online text converter, free text converter, text formatting tools, text case tools, case conversion tool, text case converter free, text formatter, text case changer online, text transformation tools">
   <meta name="author" content="Tools Park">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://toolspark.store/text-case-converter.html">
+  <link rel="canonical" href="https://toolspark.store/text-case-converter">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://toolspark.store/text-case-converter.html">
+  <meta property="og:url" content="https://toolspark.store/text-case-converter">
   <meta property="og:title" content="Free Text Case Converter - Convert Text Cases Online">
   <meta property="og:description" content="Convert text between uppercase, lowercase, title case, camel case, and more. Instant text transformation tool.">
   <meta property="og:image" content="https://toolspark.store/assets/text-case-converter-og.jpg">
   
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://toolspark.store/text-case-converter.html">
+  <meta property="twitter:url" content="https://toolspark.store/text-case-converter">
   <meta property="twitter:title" content="Free Text Case Converter Tool">
   <meta property="twitter:description" content="Convert text between different cases instantly. Free online text formatting tool.">
   <meta property="twitter:image" content="https://toolspark.store/assets/text-case-converter-twitter.jpg">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   
@@ -42,58 +41,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- Styles -->
+  <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/premium.css">
-  <link rel="stylesheet" href="css/schema-generator.css">
   <link rel="stylesheet" href="css/text-case-converter.css">
   <link rel="stylesheet" href="css/tools-common.css">
 </head>
 <body>
-  <!-- Header -->
-  
-  <header class="header">
-    <nav class="navbar">
-      <div class="container">
-        <div class="nav-container">
-          <a href="/" class="brand-link">
-            <div class="brand-logo">
-              <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
-            </div>
-            <span class="brand-name">Tools Park</span>
-          </a>
-          <div class="nav-menu-desktop">
-            <a href="/" class="nav-link">Home</a>
-            <a href="/tools" class="nav-link">Tools</a>
-            <a href="/blog" class="nav-link">Blog</a>
-            <a href="/about" class="nav-link">About</a>
-            <a href="/contact" class="nav-link">Contact</a>
-            <a href="/tools" class="btn btn-primary">Use Tools Free</a>
-          </div>
-          <div class="nav-mobile-toggle">
-            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
-              <svg class="menu-icon menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-              <svg class="menu-icon menu-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="nav-menu-mobile hidden" id="mobile-menu">
-          <div class="mobile-menu-content">
-            <a href="/" class="mobile-nav-link">Home</a>
-            <a href="/tools" class="mobile-nav-link">Tools</a>
-            <a href="/blog" class="mobile-nav-link">Blog</a>
-            <a href="/about" class="mobile-nav-link">About</a>
-            <a href="/contact" class="mobile-nav-link">Contact</a>
-            <a href="/tools" class="mobile-nav-link">Use Tools Free</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <div data-component="components/header.html"></div>
 
   <!-- Main Content -->
   <main>
@@ -156,21 +110,12 @@
               ></textarea>
               <div class="input-stats">
                 <span class="stat-item">
-                  <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                  </svg>
                   Characters: <span id="charCount">0</span>
                 </span>
                 <span class="stat-item">
-                  <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                  </svg>
                   Words: <span id="wordCount">0</span>
                 </span>
                 <span class="stat-item">
-                  <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                  </svg>
                   Lines: <span id="lineCount">0</span>
                 </span>
               </div>
@@ -178,16 +123,9 @@
             
             <div class="input-actions">
               <button id="clearText" class="btn btn-secondary">
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
-                </svg>
                 Clear Text
               </button>
               <button id="pasteText" class="btn btn-secondary">
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"></path>
-                  <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
-                </svg>
                 Paste
               </button>
             </div>
@@ -202,9 +140,7 @@
                 <div class="case-header">
                   <h3>UPPERCASE</h3>
                   <button class="copy-btn" data-case="uppercase">
-                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                    </svg>
+                    Copy
                   </button>
                 </div>
                 <div class="case-output" id="uppercase-output">YOUR TEXT WILL APPEAR IN UPPERCASE</div>
@@ -214,9 +150,7 @@
                 <div class="case-header">
                   <h3>lowercase</h3>
                   <button class="copy-btn" data-case="lowercase">
-                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                    </svg>
+                    Copy
                   </button>
                 </div>
                 <div class="case-output" id="lowercase-output">your text will appear in lowercase</div>
@@ -226,9 +160,7 @@
                 <div class="case-header">
                   <h3>Title Case</h3>
                   <button class="copy-btn" data-case="titlecase">
-                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                    </svg>
+                    Copy
                   </button>
                 </div>
                 <div class="case-output" id="titlecase-output">Your Text Will Appear In Title Case</div>
@@ -238,9 +170,7 @@
                 <div class="case-header">
                   <h3>Sentence case</h3>
                   <button class="copy-btn" data-case="sentencecase">
-                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                    </svg>
+                    Copy
                   </button>
                 </div>
                 <div class="case-output" id="sentencecase-output">Your text will appear in sentence case.</div>
@@ -250,9 +180,7 @@
                 <div class="case-header">
                   <h3>camelCase</h3>
                   <button class="copy-btn" data-case="camelcase">
-                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                    </svg>
+                    Copy
                   </button>
                 </div>
                 <div class="case-output" id="camelcase-output">yourTextWillAppearInCamelCase</div>
@@ -262,9 +190,7 @@
                 <div class="case-header">
                   <h3>PascalCase</h3>
                   <button class="copy-btn" data-case="pascalcase">
-                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                    </svg>
+                    Copy
                   </button>
                 </div>
                 <div class="case-output" id="pascalcase-output">YourTextWillAppearInPascalCase</div>
@@ -274,9 +200,7 @@
                 <div class="case-header">
                   <h3>snake_case</h3>
                   <button class="copy-btn" data-case="snakecase">
-                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                    </svg>
+                    Copy
                   </button>
                 </div>
                 <div class="case-output" id="snakecase-output">your_text_will_appear_in_snake_case</div>
@@ -286,9 +210,7 @@
                 <div class="case-header">
                   <h3>kebab-case</h3>
                   <button class="copy-btn" data-case="kebabcase">
-                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                    </svg>
+                    Copy
                   </button>
                 </div>
                 <div class="case-output" id="kebabcase-output">your-text-will-appear-in-kebab-case</div>
@@ -298,9 +220,7 @@
                 <div class="case-header">
                   <h3>aLtErNaTiNg CaSe</h3>
                   <button class="copy-btn" data-case="alternatingcase">
-                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                    </svg>
+                    Copy
                   </button>
                 </div>
                 <div class="case-output" id="alternatingcase-output">YoUr TeXt WiLl ApPeAr In AlTeRnAtInG CaSe</div>
@@ -316,7 +236,7 @@
       <div class="container">
         <h2>Related Text Tools</h2>
         <div class="tools-grid">
-          <a href="word-counter.html" class="tool-card">
+          <a href="/word-counter" class="tool-card">
             <div class="tool-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
@@ -324,9 +244,8 @@
             </div>
             <h3>Word Counter</h3>
             <p>Count words, characters, paragraphs, and reading time for your text content.</p>
-            <span class="tool-badge">New</span>
           </a>
-          <a href="text-formatter.html" class="tool-card">
+          <a href="/text-formatter" class="tool-card">
             <div class="tool-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
@@ -334,9 +253,8 @@
             </div>
             <h3>Text Formatter</h3>
             <p>Format and clean up text with various formatting options and text manipulation tools</p>
-            <span class="tool-badge coming-soon">Coming Soon</span>
           </a>
-          <a href="tools.html" class="tool-card">
+          <a href="/tools" class="tool-card">
             <div class="tool-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
@@ -403,106 +321,39 @@
         </div>
       </div>
     </section>
-  <section><h2>Ultimate Online Tool</h2><p>Free, fast, and secure utility for global users.</p></section></main>
-
-  <!-- Footer -->
-  
-  <footer class="footer">
+  <section class="tool-seo-content">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3 class="footer-brand-name">Tools Park</h3>
-          <p class="footer-description">
-            Tools Park provides fast, free, and practical tools for SEO, calculators, text formatting, and developer workflows.
-          </p>
-        </div>
-        <div>
-          <h4 class="footer-title">Popular Tools</h4>
-          <ul class="footer-links">
-            <li><a href="/word-counter">Word Counter</a></li>
-            <li><a href="/age-calculator">Age Calculator</a></li>
-            <li><a href="/json-formatter">JSON Formatter</a></li>
-            <li><a href="/xml-sitemap-generator">XML Sitemap Generator</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Company</h4>
-          <ul class="footer-links">
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/terms-of-service">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Connect</h4>
-          <ul class="footer-links">
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="https://x.com" rel="nofollow noopener" target="_blank">X</a></li>
-            <li><a href="https://www.linkedin.com" rel="nofollow noopener" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com" rel="nofollow noopener" target="_blank">GitHub</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="copyright">&copy; 2026 Tools Park. All rights reserved.</p>
-      </div>
+      <h2>Text Case Converter Free Online Tool</h2>
+      <p>Convert text between different cases instantly. Transform to uppercase, lowercase, title case, camel case, snake case, and more. Fast and easy to use.</p>
+      <p>Use this page as your quick workflow utility: paste input, get instant output, and copy results confidently for projects, client work, or daily tasks.</p>
+      <h3>How to Use Text Case Converter</h3>
+      <ol>
+        <li>Open the tool and enter your input text.</li>
+        <li>View the real-time conversion results in different cases.</li>
+        <li>Click the copy button next to the desired case to copy it to your clipboard.</li>
+        <li>Paste the converted text where needed in your workflow.</li>
+      </ol>
+      <h3>Why Users Choose This Tool</h3>
+      <ul>
+        <li>Fast processing with a clean interface.</li>
+        <li>No account required and free to use.</li>
+        <li>Useful for developers, writers, and content creators.</li>
+        <li>Works across desktop and mobile browsers.</li>
+      </ul>
+      <h3>FAQ</h3>
+      <p><strong>Is this tool free?</strong> Yes, completely free with no login required.</p>
+      <p><strong>Can I use it on mobile?</strong> Yes, the interface is mobile responsive.</p>
+      <p><strong>Is my input private?</strong> Inputs are processed in-browser for better privacy.</p>
+      <p>Related resources: <a href="/tools">All tools</a>, <a href="/blog/text-case-converter">step-by-step guide</a>, and <a href="/blog">blog tutorials</a>.</p>
     </div>
-  </footer>
+  </section>
+  </main>
 
-  <!-- Schema.org Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Text Case Converter - Tools Park",
-    "description": "Free online text case converter tool for converting text between uppercase, lowercase, title case, camel case, snake case, and more.",
-    "url": "https://toolspark.store/text-case-converter.html",
-    "applicationCategory": "UtilitiesApplication",
-    "operatingSystem": "Any",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "featureList": [
-      "Uppercase conversion",
-      "Lowercase conversion", 
-      "Title case conversion",
-      "Camel case conversion",
-      "Snake case conversion",
-      "Kebab case conversion",
-      "Real-time conversion",
-      "One-click copy"
-    ]
-  }
-  </script>
+  <div data-component="components/footer.html"></div>
 
-  <!-- Mobile Menu Script -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const menuOpenIcon = document.querySelector('.menu-open');
-      const menuCloseIcon = document.querySelector('.menu-close');
-
-      if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', function() {
-          const isHidden = mobileMenu.classList.contains('hidden');
-          
-          if (isHidden) {
-            mobileMenu.classList.remove('hidden');
-            menuOpenIcon.classList.add('hidden');
-            menuCloseIcon.classList.remove('hidden');
-          } else {
-            mobileMenu.classList.add('hidden');
-            menuOpenIcon.classList.remove('hidden');
-            menuCloseIcon.classList.add('hidden');
-          }
-        });
-      }
-    });
-  </script>
+  <!-- Scripts -->
+  <script src="js/components.js"></script>
+  <script src="js/site.js"></script>
 
   <!-- Text Case Converter Script -->
   <script>
@@ -550,12 +401,12 @@
           const text = outputElement.textContent;
           
           navigator.clipboard.writeText(text).then(() => {
-            const originalHTML = this.innerHTML;
-            this.innerHTML = '<svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>Copied!';
+            const originalText = this.textContent;
+            this.textContent = 'Copied!';
             this.classList.add('copied');
             
             setTimeout(() => {
-              this.innerHTML = originalHTML;
+              this.textContent = originalText;
               this.classList.remove('copied');
             }, 2000);
           });
@@ -637,6 +488,24 @@
       updateStats();
       updateConversions();
     });
+  </script>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Text Case Converter - Tools Park",
+    "description": "Free online text case converter tool for converting text between uppercase, lowercase, title case, camel case, snake case, and more.",
+    "url": "https://toolspark.store/text-case-converter",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
   </script>
 </body>
 </html>

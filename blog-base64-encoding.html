@@ -46,52 +46,7 @@
   <link rel="stylesheet" href="css/tools-common.css">
 </head>
 <body>
-  <!-- Header -->
-  
-  <header class="header">
-    <nav class="navbar">
-      <div class="container">
-        <div class="nav-container">
-          <a href="/" class="brand-link">
-            <div class="brand-logo">
-              <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
-            </div>
-            <span class="brand-name">Tools Park</span>
-          </a>
-          <div class="nav-menu-desktop">
-            <a href="/" class="nav-link">Home</a>
-            <a href="/tools" class="nav-link">Tools</a>
-            <a href="/blog" class="nav-link">Blog</a>
-            <a href="/about" class="nav-link">About</a>
-            <a href="/contact" class="nav-link">Contact</a>
-            <a href="/tools" class="btn btn-primary">Use Tools Free</a>
-          </div>
-          <div class="nav-mobile-toggle">
-            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
-              <svg class="menu-icon menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-              <svg class="menu-icon menu-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="nav-menu-mobile hidden" id="mobile-menu">
-          <div class="mobile-menu-content">
-            <a href="/" class="mobile-nav-link">Home</a>
-            <a href="/tools" class="mobile-nav-link">Tools</a>
-            <a href="/blog" class="mobile-nav-link">Blog</a>
-            <a href="/about" class="mobile-nav-link">About</a>
-            <a href="/contact" class="mobile-nav-link">Contact</a>
-            <a href="/tools" class="mobile-nav-link">Use Tools Free</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <div data-component="components/header.html"></div>
 
   <!-- Main Content -->
   <main>
@@ -332,7 +287,7 @@ Incorrect: SGVsbG8 (may fail in some decoders)</code></pre>
               <h2>Base64 Tools and Libraries</h2>
               
               <h3>Online Tools</h3>
-              <p>Our <a href="base64-encoder.html">free Base64 encoder</a> offers:</p>
+              <p>Our <a href="/base64-encoder">free Base64 encoder</a> offers:</p>
               <ul>
                 <li>Instant text and file encoding</li>
                 <li>Decoding capabilities</li>
@@ -345,23 +300,23 @@ Incorrect: SGVsbG8 (may fail in some decoders)</code></pre>
               
               <h4>JavaScript</h4>
               <pre><code>// Encoding
-const encoded = btoa('Hello World');
+const encoded = btoa(\'Hello World\');
 console.log(encoded); // SGVsbG8gV29ybGQ=
 
 // Decoding
-const decoded = atob('SGVsbG8gV29ybGQ=');
+const decoded = atob(\'SGVsbG8gV29ybGQ=\');
 console.log(decoded); // Hello World</code></pre>
               
               <h4>Python</h4>
               <pre><code>import base64
 
 # Encoding
-encoded = base64.b64encode(b'Hello World')
-print(encoded)  # b'SGVsbG8gV29ybGQ='
+encoded = base64.b64encode(b\'Hello World\')
+print(encoded)  # b\'SGVsbG8gV29ybGQ=\'
 
 # Decoding
 decoded = base64.b64decode(encoded)
-print(decoded)  # b'Hello World'</code></pre>
+print(decoded)  # b\'Hello World\'</code></pre>
               
               <h4>Java</h4>
               <pre><code>import java.util.Base64;
@@ -399,7 +354,7 @@ $encoded  # SGVsbG8gV29ybGQ=</code></pre>
                 <li>Base64 converts binary data to ASCII characters for text-safe transmission</li>
                 <li>It increases data size by ~33% but ensures universal compatibility</li>
                 <li>Common use cases include email attachments, data URLs, and API communication</li>
-                <li>It's encoding, not encryption—don't use it for security</li>
+                <li>It\'s encoding, not encryption—don\'t use it for security</li>
                 <li>Most programming languages have built-in Base64 support</li>
               </ul>
               
@@ -412,9 +367,9 @@ $encoded  # SGVsbG8gV29ybGQ=</code></pre>
                 <li>Never use Base64 for sensitive data protection</li>
               </ul>
               
-              <p>Ready to try Base64 encoding? Use our <a href="base64-encoder.html">free online Base64 encoder</a> to experiment with text and file encoding. It's the perfect tool for learning and practical applications.</p>
+              <p>Ready to try Base64 encoding? Use our <a href="/base64-encoder">free online Base64 encoder</a> to experiment with text and file encoding. It\'s the perfect tool for learning and practical applications.</p>
               
-              <p>Remember: understanding Base64 is not just about knowing how to encode and decode—it's about knowing when and why to use it in your applications.</p>
+              <p>Remember: understanding Base64 is not just about knowing how to encode and decode—it\'s about knowing when and why to use it in your applications.</p>
             </section>
           </article>
 
@@ -424,7 +379,7 @@ $encoded  # SGVsbG8gV29ybGQ=</code></pre>
             <div class="sidebar-card tool-card">
               <h3>Try Our Base64 Encoder</h3>
               <p>Encode and decode Base64 instantly with our free online tool. Support for text and files.</p>
-              <a href="base64-encoder.html" class="btn btn-primary btn-block">
+              <a href="/base64-encoder" class="btn btn-primary btn-block">
                 Encode Base64
               </a>
             </div>
@@ -434,13 +389,13 @@ $encoded  # SGVsbG8gV29ybGQ=</code></pre>
               <h3>Related Articles</h3>
               <ul>
                 <li>
-                  <a href="blog-json-formatter.html">Best JSON Formatter for Developers</a>
+                  <a href="/blog-json-formatter">Best JSON Formatter for Developers</a>
                 </li>
                 <li>
-                  <a href="blog-strong-passwords.html">How to Create Strong Passwords for Online Security</a>
+                  <a href="/blog-strong-passwords">How to Create Strong Passwords for Online Security</a>
                 </li>
                 <li>
-                  <a href="blog-image-compression-seo-post.html">How to Compress Images Without Losing Quality</a>
+                  <a href="/blog-image-compression-seo-post">How to Compress Images Without Losing Quality</a>
                 </li>
               </ul>
             </div>
@@ -461,96 +416,44 @@ $encoded  # SGVsbG8gV29ybGQ=</code></pre>
     </section>
   </main>
 
-  <!-- Footer -->
-  
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3 class="footer-brand-name">Tools Park</h3>
-          <p class="footer-description">
-            Tools Park provides fast, free, and practical tools for SEO, calculators, text formatting, and developer workflows.
-          </p>
-        </div>
-        <div>
-          <h4 class="footer-title">Popular Tools</h4>
-          <ul class="footer-links">
-            <li><a href="/word-counter">Word Counter</a></li>
-            <li><a href="/age-calculator">Age Calculator</a></li>
-            <li><a href="/json-formatter">JSON Formatter</a></li>
-            <li><a href="/xml-sitemap-generator">XML Sitemap Generator</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Company</h4>
-          <ul class="footer-links">
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/terms-of-service">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Connect</h4>
-          <ul class="footer-links">
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="https://x.com" rel="nofollow noopener" target="_blank">X</a></li>
-            <li><a href="https://www.linkedin.com" rel="nofollow noopener" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com" rel="nofollow noopener" target="_blank">GitHub</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="copyright">&copy; 2026 Tools Park. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <div data-component="components/footer.html"></div>
 
   <!-- JavaScript -->
+  <script src="js/components.js"></script>
+  <script src="js/site.js"></script>
   <script>
-    // Mobile menu toggle
-    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-      const mobileMenu = document.getElementById('mobile-menu');
-      const menuOpen = this.querySelector('.menu-open');
-      const menuClose = this.querySelector('.menu-close');
-      
-      mobileMenu.classList.toggle('hidden');
-      menuOpen.classList.toggle('hidden');
-      menuClose.classList.toggle('hidden');
-    });
-
     // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+    document.querySelectorAll(\'a[href^="#"]\').forEach(anchor => {
+      anchor.addEventListener(\'click\', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const target = document.querySelector(this.getAttribute(\'href\'));
         if (target) {
           target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
+            behavior: \'smooth\',
+            block: \'start\'
           });
         }
       });
     });
 
     // Table of contents highlight
-    window.addEventListener('scroll', function() {
-      const sections = document.querySelectorAll('section[id]');
-      const tocLinks = document.querySelectorAll('.table-of-contents a');
+    window.addEventListener(\'scroll\', function() {
+      const sections = document.querySelectorAll(\'section[id]\');
+      const tocLinks = document.querySelectorAll(\'.table-of-contents a\');
       
-      let current = '';
+      let current = \'\';
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
         if (pageYOffset >= sectionTop - 100) {
-          current = section.getAttribute('id');
+          current = section.getAttribute(\'id\');
         }
       });
 
       tocLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + current) {
-          link.classList.add('active');
+        link.classList.remove(\'active\');
+        if (link.getAttribute(\'href\') === \'#\' + current) {
+          link.classList.add(\'active\');
         }
       });
     });

@@ -29,108 +29,24 @@
   <meta property="twitter:image" content="https://toolspark.store/assets/xml-sitemap-generator.jpg">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   
   <!-- Theme Color -->
   <meta name="theme-color" content="#2563EB">
   
-  <!-- Core Web Vitals Optimization -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
-  
-  <!-- Critical CSS -->
-  <style>
-    body{font-family:'Outfit',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6;color:#0F172A;background:#F8FAFC;margin:0;padding:0}
-    .container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
-    .header{background:#fff;border-bottom:1px solid #E2E8F0;position:sticky;top:0;z-index:100}
-    .navbar{padding:1rem 0}
-    .nav-container{display:flex;justify-content:space-between;align-items:center}
-    .brand-link{display:flex;align-items:center;gap:.75rem;text-decoration:none}
-    .brand-name{font-size:1.5rem;font-weight:700;color:#0F172A}
-    .hero{padding:80px 0;background:linear-gradient(135deg,#f8fafc 0%,#e2e8f0 100%)}
-    .hero-title{font-size:3rem;font-weight:700;color:#0F172A;margin-bottom:1rem}
-    .hero-description{font-size:1.25rem;color:#475569;margin-bottom:2rem}
-    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:12px 24px;border:none;border-radius:8px;font-weight:600;text-decoration:none;transition:all 0.2s ease}
-    .btn-primary{background:#2563EB;color:#fff}
-    .btn-primary:hover{background:#1D4ED8;transform:translateY(-1px)}
-  </style>
-  
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- Styles -->
+  <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/premium.css">
-  <link rel="stylesheet" href="css/core-web-vitals.css">
   <link rel="stylesheet" href="css/xml-sitemap-generator.css">
-  
-  <!-- Schema.org Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "XML Sitemap Generator",
-    "description": "Generate XML sitemaps for SEO with our free online sitemap generator",
-    "url": "https://toolspark.store/xml-sitemap-generator",
-    "applicationCategory": "SEO",
-    "operatingSystem": "Any",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    }
-  }
-  </script>
 </head>
 <body>
-  <!-- Header -->
-  
-  <header class="header">
-    <nav class="navbar">
-      <div class="container">
-        <div class="nav-container">
-          <a href="/" class="brand-link">
-            <div class="brand-logo">
-              <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
-            </div>
-            <span class="brand-name">Tools Park</span>
-          </a>
-          <div class="nav-menu-desktop">
-            <a href="/" class="nav-link">Home</a>
-            <a href="/tools" class="nav-link">Tools</a>
-            <a href="/blog" class="nav-link">Blog</a>
-            <a href="/about" class="nav-link">About</a>
-            <a href="/contact" class="nav-link">Contact</a>
-            <a href="/tools" class="btn btn-primary">Use Tools Free</a>
-          </div>
-          <div class="nav-mobile-toggle">
-            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
-              <svg class="menu-icon menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-              <svg class="menu-icon menu-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="nav-menu-mobile hidden" id="mobile-menu">
-          <div class="mobile-menu-content">
-            <a href="/" class="mobile-nav-link">Home</a>
-            <a href="/tools" class="mobile-nav-link">Tools</a>
-            <a href="/blog" class="mobile-nav-link">Blog</a>
-            <a href="/about" class="mobile-nav-link">About</a>
-            <a href="/contact" class="mobile-nav-link">Contact</a>
-            <a href="/tools" class="mobile-nav-link">Use Tools Free</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <div data-component="components/header.html"></div>
 
   <!-- Main Content -->
   <main>
@@ -180,7 +96,7 @@
             <p>Learn the best practices and get the most out of our XML Sitemap Generator with our comprehensive guide.</p>
           </div>
           <div class="how-to-use-button">
-            <a href="blog-xml-sitemap-generator.html" class="btn btn-outline-primary">
+            <a href="/blog/xml-sitemap-generator" class="btn btn-outline-primary">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
               </svg>
@@ -222,10 +138,6 @@
                     <div class="section-header">
                       <h3>URLs to Include</h3>
                       <button class="btn btn-secondary" onclick="addUrlInput()">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <line x1="12" y1="5" x2="12" y2="19"></line>
-                          <line x1="5" y1="12" x2="19" y2="12"></line>
-                        </svg>
                         Add URL
                       </button>
                     </div>
@@ -283,9 +195,6 @@
                   </div>
                   
                   <button class="btn btn-primary" onclick="simulateCrawl()">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
-                    </svg>
                     Start Crawling
                   </button>
                 </div>
@@ -320,11 +229,6 @@
                   </div>
                   
                   <button class="btn btn-primary" onclick="importUrls()">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path>
-                      <polyline points="7 10 12 15 17 10"></polyline>
-                      <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg>
                     Import URLs
                   </button>
                 </div>
@@ -350,9 +254,6 @@
             <!-- Generate Button -->
             <div class="generate-section">
               <button class="btn btn-primary btn-lg generate-btn" onclick="generateSitemap()">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                </svg>
                 Generate Sitemap
               </button>
             </div>
@@ -375,34 +276,18 @@
                 
                 <div class="action-buttons">
                   <button class="btn btn-primary" onclick="downloadSitemap()">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path>
-                      <polyline points="7 10 12 15 17 10"></polyline>
-                      <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg>
                     Download XML
                   </button>
                   
                   <button class="btn btn-secondary" onclick="copySitemap()">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"></path>
-                      <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
-                    </svg>
                     Copy XML
                   </button>
                   
                   <button class="btn btn-secondary" onclick="validateSitemap()">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
                     Validate
                   </button>
                   
                   <button class="btn btn-secondary" onclick="resetGenerator()">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M1 4v6h6"></path>
-                      <path d="M3.51 15a9 9 0 102.13-9.36L1 10"></path>
-                    </svg>
                     Reset
                   </button>
                 </div>
@@ -411,10 +296,6 @@
               <div class="xml-preview">
                 <div class="preview-header">
                   <h4>XML Preview</h4>
-                  <div class="preview-actions">
-                    <button class="btn btn-sm" onclick="formatXml()">Format</button>
-                    <button class="btn btn-sm" onclick="minifyXml()">Minify</button>
-                  </div>
                 </div>
                 <div class="xml-output" id="xml-output">
                   <pre><code id="xml-content"></code></pre>
@@ -514,7 +395,7 @@
         </div>
         
         <div class="tools-grid">
-          <a href="schema-generator.html" class="tool-card">
+          <a href="/schema-generator" class="tool-card">
             <div class="tool-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
@@ -524,7 +405,7 @@
             <p class="tool-description">Generate structured data for better SEO</p>
           </a>
           
-          <a href="meta-tag-generator.html" class="tool-card">
+          <a href="/meta-tag-generator" class="tool-card">
             <div class="tool-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
@@ -534,7 +415,7 @@
             <p class="tool-description">Create meta tags for better search rankings</p>
           </a>
           
-          <a href="json-formatter.html" class="tool-card">
+          <a href="/json-formatter" class="tool-card">
             <div class="tool-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path>
@@ -579,110 +460,11 @@
   </section>
   </main>
 
-  <!-- Footer -->
-  
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3 class="footer-brand-name">Tools Park</h3>
-          <p class="footer-description">
-            Tools Park provides fast, free, and practical tools for SEO, calculators, text formatting, and developer workflows.
-          </p>
-        </div>
-        <div>
-          <h4 class="footer-title">Popular Tools</h4>
-          <ul class="footer-links">
-            <li><a href="/word-counter">Word Counter</a></li>
-            <li><a href="/age-calculator">Age Calculator</a></li>
-            <li><a href="/json-formatter">JSON Formatter</a></li>
-            <li><a href="/xml-sitemap-generator">XML Sitemap Generator</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Company</h4>
-          <ul class="footer-links">
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/terms-of-service">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Connect</h4>
-          <ul class="footer-links">
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="https://x.com" rel="nofollow noopener" target="_blank">X</a></li>
-            <li><a href="https://www.linkedin.com" rel="nofollow noopener" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com" rel="nofollow noopener" target="_blank">GitHub</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="copyright">&copy; 2026 Tools Park. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <div data-component="components/footer.html"></div>
 
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Is the XML Sitemap Generator tool free?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, this tool is free to use with no signup required."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does this tool work on mobile?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, the tool is mobile-friendly and works on modern browsers."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is my data stored?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No, your data is processed in-browser to protect privacy."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- Mobile Menu Script -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const menuOpenIcon = document.querySelector('.menu-open');
-      const menuCloseIcon = document.querySelector('.menu-close');
-
-      if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', function() {
-          const isHidden = mobileMenu.classList.contains('hidden');
-          
-          if (isHidden) {
-            mobileMenu.classList.remove('hidden');
-            menuOpenIcon.classList.add('hidden');
-            menuCloseIcon.classList.remove('hidden');
-          } else {
-            mobileMenu.classList.add('hidden');
-            menuOpenIcon.classList.remove('hidden');
-            menuCloseIcon.classList.add('hidden');
-          }
-        });
-      }
-    });
-  </script>
+  <!-- Scripts -->
+  <script src="js/components.js"></script>
+  <script src="js/site.js"></script>
 
   <!-- Sitemap Generator Script -->
   <script>
@@ -799,30 +581,47 @@
       const defaultFreq = document.getElementById('import-freq').value;
       const defaultPriority = document.getElementById('import-priority').value;
 
-      if (!importText.trim()) {
+      if (!importText) {
         alert('Please enter URLs to import');
         return;
       }
 
-      const urls = importText.split('\n').filter(url => url.trim());
-      
-      // Clear existing URLs
+      const urls = importText.split('\n').map(u => u.trim()).filter(u => u !== '');
+      if (urls.length === 0) {
+        alert('No valid URLs found');
+        return;
+      }
+
+      // Try to determine base URL
+      try {
+        const firstUrl = new URL(urls[0]);
+        document.getElementById('base-url').value = `${firstUrl.protocol}//${firstUrl.host}`;
+      } catch (e) {
+        // Fallback if not a full URL
+      }
+
+      // Add URLs to list
       const urlList = document.getElementById('url-list');
       urlList.innerHTML = '';
 
-      // Add imported URLs
       urls.forEach(url => {
+        let path = url;
+        try {
+          const u = new URL(url);
+          path = u.pathname + u.search + u.hash;
+        } catch (e) {}
+
         const newItem = document.createElement('div');
         newItem.className = 'url-input-item';
         newItem.innerHTML = `
-          <input type="text" placeholder="Page URL (relative to base)" class="url-path" value="${url}">
+          <input type="text" placeholder="Page URL (relative to base)" class="url-path" value="${path}">
           <input type="text" placeholder="Page title" class="url-title" value="">
           <select class="url-freq">
             <option value="daily" ${defaultFreq === 'daily' ? 'selected' : ''}>Daily</option>
             <option value="weekly" ${defaultFreq === 'weekly' ? 'selected' : ''}>Weekly</option>
             <option value="monthly" ${defaultFreq === 'monthly' ? 'selected' : ''}>Monthly</option>
-            <option value="yearly" ${defaultFreq === 'yearly' ? 'selected' : ''}>Yearly</option>
-            <option value="never" ${defaultFreq === 'never' ? 'selected' : ''}>Never</option>
+            <option value="yearly">Yearly</option>
+            <option value="never">Never</option>
           </select>
           <input type="number" placeholder="Priority" class="url-priority" min="0" max="1" step="0.1" value="${defaultPriority}">
           <button class="remove-btn" onclick="removeUrlInput(this)">×</button>
@@ -830,116 +629,59 @@
         urlList.appendChild(newItem);
       });
 
-      // Switch to manual method
       switchMethod('manual');
-
       alert(`Imported ${urls.length} URLs`);
     }
 
     function generateSitemap() {
-      const baseUrl = document.getElementById('base-url').value;
-      const lastmodDate = document.getElementById('lastmod-date').value;
-      const schemaNamespace = document.getElementById('schema-namespace').value || 'http://www.sitemaps.org/schemas/sitemap/0.9';
+      const baseUrl = document.getElementById('base-url').value.replace(/\/$/, '');
+      const schema = document.getElementById('schema-namespace').value || 'http://www.sitemaps.org/schemas/sitemap/0.9';
+      const lastmod = document.getElementById('lastmod-date').value;
 
       if (!baseUrl) {
         alert('Please enter a base URL');
         return;
       }
 
-      // Collect URL data
-      const urlItems = document.querySelectorAll('.url-input-item');
-      sitemapData = [];
+      const items = document.querySelectorAll('.url-input-item');
+      let xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="${schema}">\n`;
 
-      urlItems.forEach(item => {
-        const path = item.querySelector('.url-path').value;
-        const title = item.querySelector('.url-title').value;
+      items.forEach(item => {
+        const path = item.querySelector('.url-path').value.replace(/^\//, '');
         const freq = item.querySelector('.url-freq').value;
         const priority = item.querySelector('.url-priority').value;
 
-        if (path) {
-          sitemapData.push({
-            url: baseUrl + path,
-            title: title || path,
-            lastmod: lastmodDate,
-            changefreq: freq,
-            priority: priority
-          });
-        }
+        xml += `  <url>\n`;
+        xml += `    <loc>${baseUrl}/${path}</loc>\n`;
+        if (lastmod) xml += `    <lastmod>${lastmod}</lastmod>\n`;
+        xml += `    <changefreq>${freq}</changefreq>\n`;
+        xml += `    <priority>${priority}</priority>\n`;
+        xml += `  </url>\n`;
       });
 
-      if (sitemapData.length === 0) {
-        alert('Please add at least one URL');
-        return;
-      }
+      xml += `</urlset>`;
 
-      // Generate XML
-      const xml = generateXML(sitemapData, schemaNamespace);
-      
-      // Display results
+      // Show results
       document.getElementById('xml-content').textContent = xml;
-      document.getElementById('url-count').textContent = sitemapData.length;
-      document.getElementById('file-size').textContent = formatFileSize(new Blob([xml]).size);
       document.getElementById('sitemap-results').style.display = 'block';
+      document.getElementById('url-count').textContent = items.length;
+      document.getElementById('file-size').textContent = (xml.length / 1024).toFixed(2) + ' KB';
 
       // Scroll to results
       document.getElementById('sitemap-results').scrollIntoView({ behavior: 'smooth' });
     }
 
-    function generateXML(urls, namespace) {
-      let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
-      xml += `<urlset xmlns="${namespace}">\n`;
-
-      urls.forEach(url => {
-        xml += `  <url>\n`;
-        xml += `    <loc>${escapeXml(url.url)}</loc>\n`;
-        
-        if (url.lastmod) {
-          xml += `    <lastmod>${url.lastmod}</lastmod>\n`;
-        }
-        
-        if (url.changefreq) {
-          xml += `    <changefreq>${url.changefreq}</changefreq>\n`;
-        }
-        
-        if (url.priority) {
-          xml += `    <priority>${url.priority}</priority>\n`;
-        }
-        
-        xml += `  </url>\n`;
-      });
-
-      xml += `</urlset>`;
-      return xml;
-    }
-
-    function escapeXml(text) {
-      return text
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&apos;');
-    }
-
-    function formatFileSize(bytes) {
-      if (bytes === 0) return '0 Bytes';
-      const k = 1024;
-      const sizes = ['Bytes', 'KB', 'MB', 'GB'];
-      const i = Math.floor(Math.log(bytes) / Math.log(k));
-      return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
-    }
-
     function downloadSitemap() {
       const xml = document.getElementById('xml-content').textContent;
       const blob = new Blob([xml], { type: 'application/xml' });
-      const url = window.URL.createObjectURL(blob);
+      const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
       a.download = 'sitemap.xml';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
-      window.URL.revokeObjectURL(url);
+      URL.revokeObjectURL(url);
     }
 
     function copySitemap() {
@@ -951,87 +693,29 @@
 
     function validateSitemap() {
       const xml = document.getElementById('xml-content').textContent;
-      const validationResults = document.getElementById('validation-results');
-      const validationStatus = document.getElementById('validation-status');
+      const results = document.getElementById('validation-results');
+      const status = document.getElementById('validation-status');
 
-      // Basic validation
-      const issues = [];
+      results.style.display = 'block';
       
-      if (!xml.includes('<?xml version="1.0"')) {
-        issues.push('Missing XML declaration');
+      // Simple client-side validation
+      try {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(xml, "application/xml");
+        const error = doc.querySelector('parsererror');
+        
+        if (error) {
+          status.innerHTML = `<div class="error">❌ XML Syntax Error: ${error.textContent}</div>`;
+        } else {
+          status.innerHTML = `<div class="success">✅ XML structure is valid!</div>`;
+        }
+      } catch (e) {
+        status.innerHTML = `<div class="error">❌ Validation failed: ${e.message}</div>`;
       }
-      
-      if (!xml.includes('<urlset')) {
-        issues.push('Missing urlset element');
-      }
-      
-      if (!xml.includes('</urlset>')) {
-        issues.push('Missing closing urlset tag');
-      }
-
-      // Count URLs
-      const urlCount = (xml.match(/<url>/g) || []).length;
-      
-      if (issues.length === 0) {
-        validationStatus.innerHTML = `
-          <div class="validation-success">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-            <strong>Valid XML Sitemap</strong>
-            <p>Found ${urlCount} URLs in the sitemap</p>
-          </div>
-        `;
-      } else {
-        validationStatus.innerHTML = `
-          <div class="validation-error">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="15" y1="9" x2="9" y2="15"></line>
-              <line x1="9" y1="9" x2="15" y2="15"></line>
-            </svg>
-            <strong>Validation Issues Found</strong>
-            <ul>${issues.map(issue => `<li>${issue}</li>`).join('')}</ul>
-          </div>
-        `;
-      }
-
-      validationResults.style.display = 'block';
-      validationResults.scrollIntoView({ behavior: 'smooth' });
-    }
-
-    function formatXml() {
-      const xml = document.getElementById('xml-content').textContent;
-      // Simple XML formatting (add proper indentation)
-      const formatted = xml
-        .replace(/></g, '>\n')
-        .replace(/<(\w+)/g, '<$1')
-        .replace(/<\/(\w+)>/g, '</$1>')
-        .split('\n')
-        .map(line => {
-          const depth = (line.match(/^\s*<\//) ? line.match(/^\s*<\/\w+/)[0].length - 2 : 
-                      (line.match(/^\s*<\w+/) ? line.match(/^\s*<\w+/)[0].length - 1 : 0));
-          return '  '.repeat(Math.floor(depth / 2)) + line.trim();
-        })
-        .join('\n');
-      
-      document.getElementById('xml-content').textContent = formatted;
-    }
-
-    function minifyXml() {
-      const xml = document.getElementById('xml-content').textContent;
-      const minified = xml
-        .replace(/>\s+</g, '><')
-        .replace(/\s+/g, ' ')
-        .trim();
-      
-      document.getElementById('xml-content').textContent = minified;
     }
 
     function resetGenerator() {
       document.getElementById('base-url').value = '';
-      document.getElementById('crawl-url').value = '';
-      document.getElementById('import-text').value = '';
       document.getElementById('url-list').innerHTML = `
         <div class="url-input-item">
           <input type="text" placeholder="Page URL (relative to base)" class="url-path" value="/">
@@ -1048,17 +732,25 @@
         </div>
       `;
       document.getElementById('sitemap-results').style.display = 'none';
-      document.getElementById('validation-results').style.display = 'none';
-      
-      // Reset date to today
-      document.getElementById('lastmod-date').value = new Date().toISOString().split('T')[0];
-      
-      // Scroll to top
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
 
-  <!-- Performance Script -->
-  <script src="js/performance.js"></script>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "XML Sitemap Generator - Tools Park",
+    "description": "Free online XML sitemap generator for SEO.",
+    "url": "https://toolspark.store/xml-sitemap-generator",
+    "applicationCategory": "SEOApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
 </body>
 </html>

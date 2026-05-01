@@ -29,108 +29,24 @@
   <meta property="twitter:image" content="https://toolspark.store/assets/unit-converter.jpg">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   
   <!-- Theme Color -->
   <meta name="theme-color" content="#2563EB">
   
-  <!-- Core Web Vitals Optimization -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
-  
-  <!-- Critical CSS -->
-  <style>
-    body{font-family:'Outfit',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6;color:#0F172A;background:#F8FAFC;margin:0;padding:0}
-    .container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
-    .header{background:#fff;border-bottom:1px solid #E2E8F0;position:sticky;top:0;z-index:100}
-    .navbar{padding:1rem 0}
-    .nav-container{display:flex;justify-content:space-between;align-items:center}
-    .brand-link{display:flex;align-items:center;gap:.75rem;text-decoration:none}
-    .brand-name{font-size:1.5rem;font-weight:700;color:#0F172A}
-    .hero{padding:80px 0;background:linear-gradient(135deg,#f8fafc 0%,#e2e8f0 100%)}
-    .hero-title{font-size:3rem;font-weight:700;color:#0F172A;margin-bottom:1rem}
-    .hero-description{font-size:1.25rem;color:#475569;margin-bottom:2rem}
-    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:12px 24px;border:none;border-radius:8px;font-weight:600;text-decoration:none;transition:all 0.2s ease}
-    .btn-primary{background:#2563EB;color:#fff}
-    .btn-primary:hover{background:#1D4ED8;transform:translateY(-1px)}
-  </style>
-  
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- Styles -->
+  <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/premium.css">
-  <link rel="stylesheet" href="css/core-web-vitals.css">
   <link rel="stylesheet" href="css/unit-converter.css">
-  
-  <!-- Schema.org Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Unit Converter",
-    "description": "Convert between different units of measurement with our free online unit converter",
-    "url": "https://toolspark.store/unit-converter",
-    "applicationCategory": "Utility",
-    "operatingSystem": "Any",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    }
-  }
-  </script>
 </head>
 <body>
-  <!-- Header -->
-  
-  <header class="header">
-    <nav class="navbar">
-      <div class="container">
-        <div class="nav-container">
-          <a href="/" class="brand-link">
-            <div class="brand-logo">
-              <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
-            </div>
-            <span class="brand-name">Tools Park</span>
-          </a>
-          <div class="nav-menu-desktop">
-            <a href="/" class="nav-link">Home</a>
-            <a href="/tools" class="nav-link">Tools</a>
-            <a href="/blog" class="nav-link">Blog</a>
-            <a href="/about" class="nav-link">About</a>
-            <a href="/contact" class="nav-link">Contact</a>
-            <a href="/tools" class="btn btn-primary">Use Tools Free</a>
-          </div>
-          <div class="nav-mobile-toggle">
-            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
-              <svg class="menu-icon menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-              <svg class="menu-icon menu-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="nav-menu-mobile hidden" id="mobile-menu">
-          <div class="mobile-menu-content">
-            <a href="/" class="mobile-nav-link">Home</a>
-            <a href="/tools" class="mobile-nav-link">Tools</a>
-            <a href="/blog" class="mobile-nav-link">Blog</a>
-            <a href="/about" class="mobile-nav-link">About</a>
-            <a href="/contact" class="mobile-nav-link">Contact</a>
-            <a href="/tools" class="mobile-nav-link">Use Tools Free</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <div data-component="components/header.html"></div>
 
   <!-- Main Content -->
   <main>
@@ -180,7 +96,7 @@
             <p>Learn the best practices and get the most out of our Unit Converter with our comprehensive guide.</p>
           </div>
           <div class="how-to-use-button">
-            <a href="blog-unit-converter.html" class="btn btn-outline-primary">
+            <a href="/blog/unit-converter" class="btn btn-outline-primary">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
               </svg>
@@ -611,7 +527,7 @@
         </div>
         
         <div class="tools-grid">
-          <a href="age-calculator.html" class="tool-card">
+          <a href="/age-calculator" class="tool-card">
             <div class="tool-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -621,7 +537,7 @@
             <p class="tool-description">Calculate your exact age in years, months, and days</p>
           </a>
           
-          <a href="percentage-calculator.html" class="tool-card">
+          <a href="/percentage-calculator" class="tool-card">
             <div class="tool-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
@@ -631,7 +547,7 @@
             <p class="tool-description">Calculate percentages instantly with various calculation types</p>
           </a>
           
-          <a href="loan-calculator.html" class="tool-card">
+          <a href="/loan-calculator" class="tool-card">
             <div class="tool-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
@@ -672,110 +588,11 @@
   </section>
   </main>
 
-  <!-- Footer -->
-  
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3 class="footer-brand-name">Tools Park</h3>
-          <p class="footer-description">
-            Tools Park provides fast, free, and practical tools for SEO, calculators, text formatting, and developer workflows.
-          </p>
-        </div>
-        <div>
-          <h4 class="footer-title">Popular Tools</h4>
-          <ul class="footer-links">
-            <li><a href="/word-counter">Word Counter</a></li>
-            <li><a href="/age-calculator">Age Calculator</a></li>
-            <li><a href="/json-formatter">JSON Formatter</a></li>
-            <li><a href="/xml-sitemap-generator">XML Sitemap Generator</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Company</h4>
-          <ul class="footer-links">
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/terms-of-service">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Connect</h4>
-          <ul class="footer-links">
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="https://x.com" rel="nofollow noopener" target="_blank">X</a></li>
-            <li><a href="https://www.linkedin.com" rel="nofollow noopener" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com" rel="nofollow noopener" target="_blank">GitHub</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="copyright">&copy; 2026 Tools Park. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <div data-component="components/footer.html"></div>
 
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Is the Unit Converter tool free?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, this tool is free to use with no signup required."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does this tool work on mobile?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, the tool is mobile-friendly and works on modern browsers."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is my data stored?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No, your data is processed in-browser to protect privacy."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- Mobile Menu Script -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const menuOpenIcon = document.querySelector('.menu-open');
-      const menuCloseIcon = document.querySelector('.menu-close');
-
-      if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', function() {
-          const isHidden = mobileMenu.classList.contains('hidden');
-          
-          if (isHidden) {
-            mobileMenu.classList.remove('hidden');
-            menuOpenIcon.classList.add('hidden');
-            menuCloseIcon.classList.remove('hidden');
-          } else {
-            mobileMenu.classList.add('hidden');
-            menuOpenIcon.classList.remove('hidden');
-            menuCloseIcon.classList.add('hidden');
-          }
-        });
-      }
-    });
-  </script>
+  <!-- Scripts -->
+  <script src="js/components.js"></script>
+  <script src="js/site.js"></script>
 
   <!-- Unit Converter Script -->
   <script>
@@ -798,12 +615,6 @@
         pound: 2.20462,
         ounce: 35.274,
         ton: 0.001
-      },
-      temperature: {
-        // Special handling for temperature
-        celsius: 'celsius',
-        fahrenheit: 'fahrenheit',
-        kelvin: 'kelvin'
       },
       area: {
         'square-meter': 1,
@@ -833,198 +644,140 @@
         hour: 1/3600,
         day: 1/86400,
         week: 1/604800,
-        month: 1/2629746, // Average month
-        year: 1/31556952   // Average year
+        month: 1/2629746,
+        year: 1/31556952
       },
       data: {
         byte: 1,
         kilobyte: 1/1024,
-        megabyte: 1/1048576,
-        gigabyte: 1/1073741824,
-        terabyte: 1/1099511627776,
-        petabyte: 1/1125899906842624
+        megabyte: 1/Math.pow(1024, 2),
+        gigabyte: 1/Math.pow(1024, 3),
+        terabyte: 1/Math.pow(1024, 4),
+        petabyte: 1/Math.pow(1024, 5)
       }
     };
 
-    let currentCategory = 'length';
-    let conversionHistory = [];
-
-    // Initialize event listeners
-    document.addEventListener('DOMContentLoaded', function() {
-      // Category tabs
-      document.querySelectorAll('.category-tab').forEach(tab => {
-        tab.addEventListener('click', function() {
-          switchCategory(this.dataset.category);
-        });
-      });
-
-      // Input fields
-      Object.keys(conversionFactors).forEach(category => {
-        const input = document.getElementById(`${category}-input`);
-        if (input) {
-          input.addEventListener('input', function() {
-            performConversion(category);
-          });
-        }
-      });
-
-      // Unit selects
-      Object.keys(conversionFactors).forEach(category => {
-        const fromSelect = document.getElementById(`${category}-from`);
-        const toSelect = document.getElementById(`${category}-to`);
-        
-        if (fromSelect) {
-          fromSelect.addEventListener('change', function() {
-            performConversion(category);
-          });
-        }
-        
-        if (toSelect) {
-          toSelect.addEventListener('change', function() {
-            performConversion(category);
-          });
-        }
-      });
-    });
-
-    function switchCategory(category) {
-      // Update tabs
-      document.querySelectorAll('.category-tab').forEach(tab => {
-        tab.classList.remove('active');
-      });
-      document.querySelector(`[data-category="${category}"]`).classList.add('active');
-
-      // Update panels
-      document.querySelectorAll('.converter-panel').forEach(panel => {
-        panel.classList.remove('active');
-      });
-      document.getElementById(`${category}-panel`).classList.add('active');
-
-      currentCategory = category;
-    }
-
-    function performConversion(category) {
-      const input = document.getElementById(`${category}-input`);
+    function convert(category) {
       const fromUnit = document.getElementById(`${category}-from`).value;
       const toUnit = document.getElementById(`${category}-to`).value;
-      const output = document.getElementById(`${category}-output`);
+      const inputVal = parseFloat(document.getElementById(`${category}-input`).value);
+      const outputField = document.getElementById(`${category}-output`);
 
-      if (!input.value || input.value === '') {
-        output.value = '';
-        return;
-      }
-
-      const value = parseFloat(input.value);
-      if (isNaN(value)) {
-        output.value = '';
+      if (isNaN(inputVal)) {
+        outputField.value = '';
         return;
       }
 
       let result;
-      
       if (category === 'temperature') {
-        result = convertTemperature(value, fromUnit, toUnit);
+        result = convertTemperature(inputVal, fromUnit, toUnit);
       } else {
-        result = convertUnit(value, fromUnit, toUnit, category);
+        // Convert to base unit then to target unit
+        const factors = conversionFactors[category];
+        const baseVal = inputVal / factors[fromUnit];
+        result = baseVal * factors[toUnit];
       }
 
-      output.value = result.toFixed(6).replace(/\.?0+$/, '');
-      
-      // Add to history
-      addToHistory(category, value, fromUnit, result, toUnit);
+      outputField.value = formatResult(result);
+      addToHistory(inputVal, fromUnit, result, toUnit, category);
     }
 
-    function convertUnit(value, fromUnit, toUnit, category) {
-      const factors = conversionFactors[category];
-      
-      // Convert to base unit first
-      const baseValue = value / factors[fromUnit];
-      
-      // Then convert from base unit to target unit
-      return baseValue * factors[toUnit];
-    }
-
-    function convertTemperature(value, fromUnit, toUnit) {
-      // Convert to Celsius first
+    function convertTemperature(value, from, to) {
       let celsius;
-      switch (fromUnit) {
-        case 'celsius':
-          celsius = value;
-          break;
-        case 'fahrenheit':
-          celsius = (value - 32) * 5/9;
-          break;
-        case 'kelvin':
-          celsius = value - 273.15;
-          break;
-      }
+      if (from === 'celsius') celsius = value;
+      else if (from === 'fahrenheit') celsius = (value - 32) * 5/9;
+      else if (from === 'kelvin') celsius = value - 273.15;
 
-      // Convert from Celsius to target unit
-      switch (toUnit) {
-        case 'celsius':
-          return celsius;
-        case 'fahrenheit':
-          return celsius * 9/5 + 32;
-        case 'kelvin':
-          return celsius + 273.15;
+      if (to === 'celsius') return celsius;
+      if (to === 'fahrenheit') return (celsius * 9/5) + 32;
+      if (to === 'kelvin') return celsius + 273.15;
+    }
+
+    function formatResult(num) {
+      if (num === 0) return 0;
+      const absNum = Math.abs(num);
+      if (absNum < 0.00001 || absNum > 1000000000) {
+        return num.toExponential(4);
       }
+      return parseFloat(num.toFixed(6));
     }
 
     function swapUnits(category) {
       const fromSelect = document.getElementById(`${category}-from`);
       const toSelect = document.getElementById(`${category}-to`);
-      
       const temp = fromSelect.value;
       fromSelect.value = toSelect.value;
       toSelect.value = temp;
-      
-      performConversion(category);
+      convert(category);
     }
 
-    function addToHistory(category, fromValue, fromUnit, toValue, toUnit) {
-      const conversion = {
-        category,
-        fromValue,
-        fromUnit,
-        toValue,
-        toValue: toValue.toFixed(4),
-        toUnit,
-        timestamp: new Date().toLocaleTimeString()
-      };
-
-      // Add to beginning of history
-      conversionHistory.unshift(conversion);
-      
-      // Keep only last 10 conversions
-      if (conversionHistory.length > 10) {
-        conversionHistory = conversionHistory.slice(0, 10);
-      }
-
-      updateHistoryDisplay();
-    }
-
-    function updateHistoryDisplay() {
+    function addToHistory(input, from, output, to, category) {
       const historyList = document.getElementById('history-list');
-      
-      if (conversionHistory.length === 0) {
-        historyList.innerHTML = '<p class="no-history">No conversions yet. Start converting to see your history.</p>';
-        return;
+      const noHistory = historyList.querySelector('.no-history');
+      if (noHistory) noHistory.remove();
+
+      const item = document.createElement('div');
+      item.className = 'history-item';
+      item.innerHTML = `
+        <span class="history-category">${category}</span>
+        <span class="history-calc">${input} ${from} = ${output} ${to}</span>
+      `;
+
+      historyList.insertBefore(item, historyList.firstChild);
+
+      // Keep only last 10 items
+      if (historyList.children.length > 10) {
+        historyList.lastChild.remove();
       }
-
-      const historyHTML = conversionHistory.map(conv => `
-        <div class="history-item">
-          <div class="history-conversion">
-            ${conv.fromValue} ${conv.fromUnit} = ${conv.toValue} ${conv.toUnit}
-          </div>
-          <div class="history-time">${conv.timestamp}</div>
-        </div>
-      `).join('');
-
-      historyList.innerHTML = historyHTML;
     }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Tab switching
+      const tabs = document.querySelectorAll('.category-tab');
+      const panels = document.querySelectorAll('.converter-panel');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          const category = this.getAttribute('data-category');
+          
+          tabs.forEach(t => t.classList.remove('active'));
+          panels.forEach(p => p.classList.remove('active'));
+          
+          this.classList.add('active');
+          document.getElementById(`${category}-panel`).classList.add('active');
+        });
+      });
+
+      // Add event listeners to all inputs and selects
+      const categories = Object.keys(conversionFactors).concat(['temperature']);
+      categories.forEach(category => {
+        const input = document.getElementById(`${category}-input`);
+        const fromSelect = document.getElementById(`${category}-from`);
+        const toSelect = document.getElementById(`${category}-to`);
+
+        if (input) input.addEventListener('input', () => convert(category));
+        if (fromSelect) fromSelect.addEventListener('change', () => convert(category));
+        if (toSelect) toSelect.addEventListener('change', () => convert(category));
+      });
+    });
   </script>
 
-  <!-- Performance Script -->
-  <script src="js/performance.js"></script>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Unit Converter - Tools Park",
+    "description": "Free online unit converter for all measurement types.",
+    "url": "https://toolspark.store/unit-converter",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
 </body>
 </html>

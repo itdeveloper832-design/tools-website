@@ -46,52 +46,7 @@
   <link rel="stylesheet" href="css/tools-common.css">
 </head>
 <body>
-  <!-- Header -->
-  
-  <header class="header">
-    <nav class="navbar">
-      <div class="container">
-        <div class="nav-container">
-          <a href="/" class="brand-link">
-            <div class="brand-logo">
-              <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
-            </div>
-            <span class="brand-name">Tools Park</span>
-          </a>
-          <div class="nav-menu-desktop">
-            <a href="/" class="nav-link">Home</a>
-            <a href="/tools" class="nav-link">Tools</a>
-            <a href="/blog" class="nav-link">Blog</a>
-            <a href="/about" class="nav-link">About</a>
-            <a href="/contact" class="nav-link">Contact</a>
-            <a href="/tools" class="btn btn-primary">Use Tools Free</a>
-          </div>
-          <div class="nav-mobile-toggle">
-            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
-              <svg class="menu-icon menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-              <svg class="menu-icon menu-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="nav-menu-mobile hidden" id="mobile-menu">
-          <div class="mobile-menu-content">
-            <a href="/" class="mobile-nav-link">Home</a>
-            <a href="/tools" class="mobile-nav-link">Tools</a>
-            <a href="/blog" class="mobile-nav-link">Blog</a>
-            <a href="/about" class="mobile-nav-link">About</a>
-            <a href="/contact" class="mobile-nav-link">Contact</a>
-            <a href="/tools" class="mobile-nav-link">Use Tools Free</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <div data-component="components/header.html"></div>
 
   <!-- Main Content -->
   <main>
@@ -110,7 +65,7 @@
           </h1>
           
           <p class="blog-description">
-            Master HTML minification techniques to boost your website's performance. Learn professional strategies, tools, and best practices for reducing HTML file sizes and improving Core Web Vitals.
+            Master HTML minification techniques to boost your website\'s performance. Learn professional strategies, tools, and best practices for reducing HTML file sizes and improving Core Web Vitals.
           </p>
         </div>
       </div>
@@ -140,11 +95,11 @@
             <!-- Introduction -->
             <section id="introduction" class="blog-section">
               <h2>Introduction: Why HTML Minification Matters</h2>
-              <p>In today's fast-paced digital world, every millisecond counts. Website speed directly impacts user experience, conversion rates, and search engine rankings. HTML minification is one of the most effective and easiest ways to improve your website's performance without sacrificing functionality.</p>
+              <p>In today\'s fast-paced digital world, every millisecond counts. Website speed directly impacts user experience, conversion rates, and search engine rankings. HTML minification is one of the most effective and easiest ways to improve your website\'s performance without sacrificing functionality.</p>
               
               <p><strong>HTML minification removes unnecessary characters from your HTML code</strong> without changing its functionality. This includes whitespace, comments, and redundant characters that browsers ignore but still need to download. Studies show that minified HTML can reduce file sizes by <strong>20-60%</strong>, leading to significantly faster page loads.</p>
               
-              <p>With Google's Core Web Vitals becoming a crucial ranking factor, optimizing your HTML is no longer optional—it's essential for competitive advantage. This comprehensive guide will walk you through everything you need to know about HTML minification, from basic techniques to advanced optimization strategies.</p>
+              <p>With Google\'s Core Web Vitals becoming a crucial ranking factor, optimizing your HTML is no longer optional—it\'s essential for competitive advantage. This comprehensive guide will walk you through everything you need to know about HTML minification, from basic techniques to advanced optimization strategies.</p>
             </section>
 
             <!-- How it Works -->
@@ -155,16 +110,16 @@
               <p>HTML minifiers remove several types of unnecessary content:</p>
               
               <ul>
-                <li><strong>Whitespace</strong> - Spaces, tabs, and newlines that aren't required for HTML parsing</li>
-                <li><strong>Comments</strong> - HTML comments (<!-- comment -->) that browsers ignore</li>
+                <li><strong>Whitespace</strong> - Spaces, tabs, and newlines that aren\'t required for HTML parsing</li>
+                <li><strong>Comments</strong> - HTML comments (&lt;!-- comment --&gt;) that browsers ignore</li>
                 <li><strong>Optional closing tags</strong> - Tags that can be safely omitted in HTML5</li>
                 <li><strong>Quote attributes</strong> - Quotes around attribute values when not strictly necessary</li>
                 <li><strong>Empty attributes</strong> - Attributes with empty values that can be simplified</li>
-                <li><strong>Redundant attributes</strong> - Default attribute values that don't need to be specified</li>
+                <li><strong>Redundant attributes</strong> - Default attribute values that don\'t need to be specified</li>
               </ul>
               
               <h3>Before and After Example</h3>
-              <p>Here's a practical example of HTML minification:</p>
+              <p>Here\'s a practical example of HTML minification:</p>
               
               <h4>Before Minification:</h4>
               <pre><code>&lt;!DOCTYPE html&gt;
@@ -219,17 +174,17 @@
 &lt;script src="html5shiv.js"&gt;&lt;/script&gt;
 &lt;![endif]--&gt;
 
-// Can be removed if you don't support IE8</code></pre>
+// Can be removed if you don\'t support IE8</code></pre>
               
               <h3>3. Inline CSS and JavaScript</h3>
               <p>Minify and inline small CSS/JS files to reduce HTTP requests:</p>
               <pre><code>// Before
-&lt;link rel="stylesheet" href="small.css"&gt;
-&lt;script src="small.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;script src="main.js"&gt;&lt;/script&gt;
 
 // After (minified and inlined)
 &lt;style&gt;body{margin:0;padding:0}&lt;/style&gt;
-&lt;script&gt;console.log('Hello')&lt;/script&gt;</code></pre>
+&lt;script&gt;console.log(\'Hello\')&lt;/script&gt;</code></pre>
               
               <h3>4. SVG Optimization</h3>
               <p>Minify inline SVG content:</p>
@@ -257,7 +212,7 @@
               <h2>Best HTML Minifier Tools</h2>
               
               <h3>1. Tools Park HTML Minifier</h3>
-              <p>Our <a href="html-minifier.html">free HTML minifier</a> offers professional-grade features:</p>
+              <p>Our <a href="/html-minifier">free HTML minifier</a> offers professional-grade features:</p>
               <ul>
                 <li>✅ Instant minification with real-time preview</li>
                 <li>✅ Advanced options (preserve comments, quotes, etc.)</li>
@@ -269,7 +224,7 @@
               
               <h3>2. HTMLMinifier (JavaScript)</h3>
               <p>Popular JavaScript library for programmatic minification:</p>
-              <pre><code>const { minify } = require('html-minifier-terser');
+              <pre><code>const { minify } = require(\'html-minifier-terser\');
 
 const result = await minify(html, {
     collapseWhitespace: true,
@@ -294,19 +249,19 @@ const result = await minify(html, {
 })</code></pre>
               
               <h4>Gulp (gulp-htmlmin)</h4>
-              <pre><code>const htmlmin = require('gulp-htmlmin');
+              <pre><code>const htmlmin = require(\'gulp-htmlmin\');
 
-gulp.task('minify', () => {
-    return gulp.src('src/*.html')
+gulp.task(\'minify\', () => {
+    return gulp.src(\'src/*.html\')
         .pipe(htmlmin({
             collapseWhitespace: true,
             removeComments: true
         }))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest(\'dist\'));
 });</code></pre>
               
               <h4>Vite (vite-plugin-html)</h4>
-              <pre><code>import { createHtmlPlugin } from 'vite-plugin-html';
+              <pre><code>import { createHtmlPlugin } from \'vite-plugin-html\';
 
 export default {
     plugins: [
@@ -339,7 +294,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          node-version: \'16\'
       - name: Install dependencies
         run: npm install
       - name: Minify HTML
@@ -351,7 +306,7 @@ jobs:
               <pre><code>{
   "scripts": {
     "minify": "html-minifier --input-dir src --output-dir dist --collapse-whitespace --remove-comments",
-    "minify:watch": "nodemon --watch src --ext html --exec 'npm run minify'",
+    "minify:watch": "nodemon --watch src --ext html --exec \'npm run minify\'",
     "build": "npm run minify && npm run optimize-images && npm run minify-css"
   }
 }</code></pre>
@@ -359,12 +314,12 @@ jobs:
               <h3>Development vs Production</h3>
               <p>Set up different configurations for development and production:</p>
               <pre><code>// Development (unminified for debugging)
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === \'development\') {
     // Serve unminified HTML
 }
 
 // Production (minified for performance)
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === \'production\') {
     // Serve minified HTML
 }</code></pre>
               
@@ -372,13 +327,13 @@ if (process.env.NODE_ENV === 'production') {
               <p>Minify HTML on the fly for dynamic content:</p>
               
               <h4>Node.js Express</h4>
-              <pre><code>const { minify } = require('html-minifier-terser');
-const express = require('express');
+              <pre><code>const { minify } = require(\'html-minifier-terser\');
+const express = require(\'express\');
 
 app.use(async (req, res, next) => {
     const originalSend = res.send;
     res.send = function(body) {
-        if (typeof body === 'string' && req.accepts('html')) {
+        if (typeof body === \'string\' && req.accepts(\'html\')) {
             body = minify(body, {
                 collapseWhitespace: true,
                 removeComments: true
@@ -436,8 +391,8 @@ const result = await minify(html, {
               <h3>Common Pitfalls to Avoid</h3>
               
               <h4>1. Over-Minification</h4>
-              <p>Don't remove elements that might be needed:</p>
-              <pre><code>// Don't remove these
+              <p>Don\'t remove elements that might be needed:</p>
+              <pre><code>// Don\'t remove these
 &lt;meta charset="utf-8"&gt;
 &lt;meta name="viewport" content="width=device-width"&gt;
 
@@ -447,7 +402,7 @@ const result = await minify(html, {
               
               <h4>2. Breaking Conditional Comments</h4>
               <p>Be careful with IE conditional comments:</p>
-              <pre><code>// Don't minify these incorrectly
+              <pre><code>// Don\'t minify these incorrectly
 &lt;!--[if lte IE 8]&gt;
     &lt;link rel="stylesheet" href="ie8.css"&gt;
 &lt;![endif]--&gt;</code></pre>
@@ -504,7 +459,7 @@ const reduction = ((originalSize - minifiedSize) / originalSize) * 100;
               
               <h4>Chrome DevTools</h4>
               <pre><code>// Use Performance API
-const perfData = performance.getEntriesByType('navigation')[0];
+const perfData = performance.getEntriesByType(\'navigation\')[0];
 console.log(`Load time: ${perfData.loadEventEnd - perfData.loadEventStart}ms`);</code></pre>
               
               <h4>Lighthouse Audits</h4>
@@ -551,7 +506,7 @@ console.log(`Load time: ${perfData.loadEventEnd - perfData.loadEventStart}ms`);<
               </ol>
               
               <h3>Next Steps</h3>
-              <p>Ready to optimize your HTML? Start with our <a href="html-minifier.html">free online HTML minifier</a> to see immediate improvements. Then integrate minification into your development workflow for consistent performance gains.</p>
+              <p>Ready to optimize your HTML? Start with our <a href="/html-minifier">free online HTML minifier</a> to see immediate improvements. Then integrate minification into your development workflow for consistent performance gains.</p>
               
               <p>Remember: HTML minification is just one piece of the web performance puzzle. Combine it with CSS/JS minification, image optimization, and other techniques for maximum impact.</p>
               
@@ -565,7 +520,7 @@ console.log(`Load time: ${perfData.loadEventEnd - perfData.loadEventStart}ms`);<
             <div class="sidebar-card tool-card">
               <h3>Try Our HTML Minifier</h3>
               <p>Minify HTML files instantly with our professional tool. Reduce file sizes and improve page speed.</p>
-              <a href="html-minifier.html" class="btn btn-primary btn-block">
+              <a href="/html-minifier" class="btn btn-primary btn-block">
                 Minify HTML
               </a>
             </div>
@@ -575,13 +530,13 @@ console.log(`Load time: ${perfData.loadEventEnd - perfData.loadEventStart}ms`);<
               <h3>Related Articles</h3>
               <ul>
                 <li>
-                  <a href="blog-image-compression-seo-post.html">How to Compress Images Without Losing Quality</a>
+                  <a href="/blog-image-compression-seo-post">How to Compress Images Without Losing Quality</a>
                 </li>
                 <li>
-                  <a href="blog-json-formatter.html">Best JSON Formatter for Developers</a>
+                  <a href="/blog-json-formatter">Best JSON Formatter for Developers</a>
                 </li>
                 <li>
-                  <a href="blog-base64-encoding.html">What is Base64 Encoding? Beginner Guide</a>
+                  <a href="/blog-base64-encoding">What is Base64 Encoding? Beginner Guide</a>
                 </li>
               </ul>
             </div>
@@ -602,96 +557,55 @@ console.log(`Load time: ${perfData.loadEventEnd - perfData.loadEventStart}ms`);<
     </section>
   </main>
 
-  <!-- Footer -->
-  
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3 class="footer-brand-name">Tools Park</h3>
-          <p class="footer-description">
-            Tools Park provides fast, free, and practical tools for SEO, calculators, text formatting, and developer workflows.
-          </p>
-        </div>
-        <div>
-          <h4 class="footer-title">Popular Tools</h4>
-          <ul class="footer-links">
-            <li><a href="/word-counter">Word Counter</a></li>
-            <li><a href="/age-calculator">Age Calculator</a></li>
-            <li><a href="/json-formatter">JSON Formatter</a></li>
-            <li><a href="/xml-sitemap-generator">XML Sitemap Generator</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Company</h4>
-          <ul class="footer-links">
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/terms-of-service">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Connect</h4>
-          <ul class="footer-links">
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="https://x.com" rel="nofollow noopener" target="_blank">X</a></li>
-            <li><a href="https://www.linkedin.com" rel="nofollow noopener" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com" rel="nofollow noopener" target="_blank">GitHub</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="copyright">&copy; 2026 Tools Park. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <div data-component="components/footer.html"></div>
 
   <!-- JavaScript -->
+  <script src="js/components.js"></script>
+  <script src="js/site.js"></script>
   <script>
     // Mobile menu toggle
-    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-      const mobileMenu = document.getElementById('mobile-menu');
-      const menuOpen = this.querySelector('.menu-open');
-      const menuClose = this.querySelector('.menu-close');
+    document.getElementById(\'mobile-menu-btn\').addEventListener(\'click\', function() {
+      const mobileMenu = document.getElementById(\'mobile-menu\');
+      const menuOpen = this.querySelector(\'.menu-open\');
+      const menuClose = this.querySelector(\'.menu-close\');
       
-      mobileMenu.classList.toggle('hidden');
-      menuOpen.classList.toggle('hidden');
-      menuClose.classList.toggle('hidden');
+      mobileMenu.classList.toggle(\'hidden\');
+      menuOpen.classList.toggle(\'hidden\');
+      menuClose.classList.toggle(\'hidden\');
     });
 
     // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+    document.querySelectorAll(\'a[href^="#"]\').forEach(anchor => {
+      anchor.addEventListener(\'click\', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const target = document.querySelector(this.getAttribute(\'href\'));
         if (target) {
           target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
+            behavior: \'smooth\',
+            block: \'start\'
           });
         }
       });
     });
 
     // Table of contents highlight
-    window.addEventListener('scroll', function() {
-      const sections = document.querySelectorAll('section[id]');
-      const tocLinks = document.querySelectorAll('.table-of-contents a');
+    window.addEventListener(\'scroll\', function() {
+      const sections = document.querySelectorAll(\'section[id]\');
+      const tocLinks = document.querySelectorAll(\'.table-of-contents a\');
       
-      let current = '';
+      let current = \'\';
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
         if (pageYOffset >= sectionTop - 100) {
-          current = section.getAttribute('id');
+          current = section.getAttribute(\'id\');
         }
       });
 
       tocLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + current) {
-          link.classList.add('active');
+        link.classList.remove(\'active\');
+        if (link.getAttribute(\'href\') === \'#\' + current) {
+          link.classList.add(\'active\');
         }
       });
     });

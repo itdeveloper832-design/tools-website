@@ -29,7 +29,6 @@
   <meta property="twitter:image" content="https://toolspark.store/assets/schema-generator-twitter.jpg">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   
@@ -42,57 +41,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- Styles -->
+  <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/premium.css">
   <link rel="stylesheet" href="css/schema-generator.css">
   <link rel="stylesheet" href="css/tools-common.css">
 </head>
 <body>
-  <!-- Header -->
-  
-  <header class="header">
-    <nav class="navbar">
-      <div class="container">
-        <div class="nav-container">
-          <a href="/" class="brand-link">
-            <div class="brand-logo">
-              <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
-            </div>
-            <span class="brand-name">Tools Park</span>
-          </a>
-          <div class="nav-menu-desktop">
-            <a href="/" class="nav-link">Home</a>
-            <a href="/tools" class="nav-link">Tools</a>
-            <a href="/blog" class="nav-link">Blog</a>
-            <a href="/about" class="nav-link">About</a>
-            <a href="/contact" class="nav-link">Contact</a>
-            <a href="/tools" class="btn btn-primary">Use Tools Free</a>
-          </div>
-          <div class="nav-mobile-toggle">
-            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
-              <svg class="menu-icon menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-              <svg class="menu-icon menu-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="nav-menu-mobile hidden" id="mobile-menu">
-          <div class="mobile-menu-content">
-            <a href="/" class="mobile-nav-link">Home</a>
-            <a href="/tools" class="mobile-nav-link">Tools</a>
-            <a href="/blog" class="mobile-nav-link">Blog</a>
-            <a href="/about" class="mobile-nav-link">About</a>
-            <a href="/contact" class="mobile-nav-link">Contact</a>
-            <a href="/tools" class="mobile-nav-link">Use Tools Free</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <div data-component="components/header.html"></div>
 
   <!-- Main Content -->
   <main>
@@ -251,7 +206,7 @@
         <section class="related-tools">
           <h2>Related SEO Tools</h2>
           <div class="tools-grid">
-            <a href="schema-detector.html" class="tool-card">
+            <a href="/schema-detector" class="tool-card">
               <div class="tool-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v6a2 2 0 002 2h2m0-8h2a2 2 0 012 2v6a2 2 0 01-2 2H9m0-8v8"></path>
@@ -260,7 +215,7 @@
               <h3>Schema Markup Detector</h3>
               <p>Detect and analyze schema markup on any website for SEO optimization</p>
             </a>
-            <a href="meta-tag-generator.html" class="tool-card">
+            <a href="/meta-tag-generator" class="tool-card">
               <div class="tool-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
@@ -269,23 +224,14 @@
               <h3>Meta Tag Generator</h3>
               <p>Generate SEO-optimized meta tags for better search rankings</p>
             </a>
-            <a href="sitemap-generator.html" class="tool-card">
+            <a href="/xml-sitemap-generator" class="tool-card">
               <div class="tool-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
                 </svg>
               </div>
               <h3>Sitemap Generator</h3>
               <p>Create XML sitemaps to help search engines crawl your site</p>
-            </a>
-            <a href="robots-txt-generator.html" class="tool-card">
-              <div class="tool-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                </svg>
-              </div>
-              <h3>Robots.txt Generator</h3>
-              <p>Generate robots.txt files to control search engine crawling</p>
             </a>
           </div>
         </section>
@@ -320,57 +266,19 @@
   </section>
   </main>
 
-  <!-- Footer -->
-  
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3 class="footer-brand-name">Tools Park</h3>
-          <p class="footer-description">
-            Tools Park provides fast, free, and practical tools for SEO, calculators, text formatting, and developer workflows.
-          </p>
-        </div>
-        <div>
-          <h4 class="footer-title">Popular Tools</h4>
-          <ul class="footer-links">
-            <li><a href="/word-counter">Word Counter</a></li>
-            <li><a href="/age-calculator">Age Calculator</a></li>
-            <li><a href="/json-formatter">JSON Formatter</a></li>
-            <li><a href="/xml-sitemap-generator">XML Sitemap Generator</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Company</h4>
-          <ul class="footer-links">
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/terms-of-service">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Connect</h4>
-          <ul class="footer-links">
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="https://x.com" rel="nofollow noopener" target="_blank">X</a></li>
-            <li><a href="https://www.linkedin.com" rel="nofollow noopener" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com" rel="nofollow noopener" target="_blank">GitHub</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="copyright">&copy; 2026 Tools Park. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <div data-component="components/footer.html"></div>
+
+  <!-- Scripts -->
+  <script src="js/components.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/schema-generator.js"></script>
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Schema Markup Generator",
+    "name": "Schema Markup Generator - Tools Park",
     "description": "Free schema markup generator tool to create JSON-LD structured data for better SEO. Generate Article, FAQ, Product, Organization, and more schema types.",
     "url": "https://toolspark.store/schema-generator",
     "applicationCategory": "SEOApplication",
@@ -379,64 +287,8 @@
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD"
-    },
-    "featureList": [
-      "Article Schema Generation",
-      "FAQ Schema Creation",
-      "Product Schema Markup",
-      "Organization Schema",
-      "LocalBusiness Schema",
-      "JSON-LD Format Output",
-      "Copy to Clipboard",
-      "Download JSON File"
-    ]
+    }
   }
   </script>
-
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is JSON-LD schema markup?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "JSON-LD (JavaScript Object Notation for Linked Data) is the recommended format by Google for implementing structured data. It's easier to implement and maintain compared to other formats like Microdata or RDFa."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I add schema markup to my website?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "After generating your schema markup with our tool, copy the JSON-LD code and paste it into the <head> section of your HTML page, wrapped in <script type=\"application/ld+json\"> tags."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is this schema generator free to use?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, our schema markup generator is completely free to use. There are no limitations, registration requirements, or hidden costs."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How can I test my generated schema markup?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Use Google's Rich Results Test tool or Schema.org validator to test your generated markup. These tools will identify any errors and show how your content might appear in search results."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- Scripts -->
-  <script src="js/schema-generator.js"></script>
-  <script src="js/main.js"></script>
 </body>
 </html>

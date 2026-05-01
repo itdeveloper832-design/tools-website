@@ -12,24 +12,23 @@
   <meta name="keywords" content="compress image online, image compressor, reduce image size, image compression, optimize image, image optimizer, free image compressor, compress jpg, compress png, image size reducer, online image compression tool, compress images without losing quality, image file size reducer">
   <meta name="author" content="Tools Park">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://toolspark.store/image-compressor.html">
+  <link rel="canonical" href="https://toolspark.store/image-compressor">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://toolspark.store/image-compressor.html">
+  <meta property="og:url" content="https://toolspark.store/image-compressor">
   <meta property="og:title" content="Free Image Compressor Online - Reduce Image Size Without Losing Quality">
   <meta property="og:description" content="Compress images online for free. Reduce JPG, PNG, and WebP file sizes without losing quality. Fast, secure, and easy to use.">
   <meta property="og:image" content="https://toolspark.store/assets/image-compressor-og.jpg">
   
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://toolspark.store/image-compressor.html">
+  <meta property="twitter:url" content="https://toolspark.store/image-compressor">
   <meta property="twitter:title" content="Free Image Compressor Online">
   <meta property="twitter:description" content="Compress images online for free. Reduce file sizes without losing quality.">
   <meta property="twitter:image" content="https://toolspark.store/assets/image-compressor-twitter.jpg">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   
@@ -42,58 +41,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- Styles -->
+  <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/premium.css">
-  <link rel="stylesheet" href="css/schema-generator.css">
   <link rel="stylesheet" href="css/image-compressor.css">
   <link rel="stylesheet" href="css/tools-common.css">
 </head>
 <body>
-  <!-- Header -->
-  
-  <header class="header">
-    <nav class="navbar">
-      <div class="container">
-        <div class="nav-container">
-          <a href="/" class="brand-link">
-            <div class="brand-logo">
-              <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
-            </div>
-            <span class="brand-name">Tools Park</span>
-          </a>
-          <div class="nav-menu-desktop">
-            <a href="/" class="nav-link">Home</a>
-            <a href="/tools" class="nav-link">Tools</a>
-            <a href="/blog" class="nav-link">Blog</a>
-            <a href="/about" class="nav-link">About</a>
-            <a href="/contact" class="nav-link">Contact</a>
-            <a href="/tools" class="btn btn-primary">Use Tools Free</a>
-          </div>
-          <div class="nav-mobile-toggle">
-            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
-              <svg class="menu-icon menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-              <svg class="menu-icon menu-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="nav-menu-mobile hidden" id="mobile-menu">
-          <div class="mobile-menu-content">
-            <a href="/" class="mobile-nav-link">Home</a>
-            <a href="/tools" class="mobile-nav-link">Tools</a>
-            <a href="/blog" class="mobile-nav-link">Blog</a>
-            <a href="/about" class="mobile-nav-link">About</a>
-            <a href="/contact" class="mobile-nav-link">Contact</a>
-            <a href="/tools" class="mobile-nav-link">Use Tools Free</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <div data-component="components/header.html"></div>
 
   <!-- Main Content -->
   <main>
@@ -133,8 +87,8 @@
               <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
               </svg>
-              Privacy Protected
             </div>
+            <div class="feature-item">Privacy Protected</div>
           </div>
         </div>
       </div>
@@ -187,9 +141,6 @@
                 </div>
               </div>
               <button class="btn btn-primary" id="download-all-btn" style="display: none;">
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"></path>
-                </svg>
                 Download All
               </button>
             </div>
@@ -214,7 +165,7 @@
               </svg>
             </div>
             <h3>Lightning Fast</h3>
-            <p>Compress images instantly with our optimized algorithms. No waiting time, just instant results.</p>
+            <p>Compress images instantly with our optimized algorithms. No waiting time, just immediate results.</p>
           </div>
           
           <div class="feature-card">
@@ -255,7 +206,7 @@
       <div class="container">
         <h2>Related Image Tools</h2>
         <div class="tools-grid">
-          <a href="#" class="tool-card">
+          <div class="tool-card">
             <div class="tool-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -264,9 +215,9 @@
             <h3>Image Resizer</h3>
             <p>Resize images to any dimensions while maintaining quality.</p>
             <span class="tool-badge coming-soon">Coming Soon</span>
-          </a>
+          </div>
           
-          <a href="#" class="tool-card">
+          <div class="tool-card">
             <div class="tool-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
@@ -275,58 +226,17 @@
             <h3>Image Format Converter</h3>
             <p>Convert images between JPG, PNG, WebP, and other formats.</p>
             <span class="tool-badge coming-soon">Coming Soon</span>
-          </a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3 class="footer-brand-name">Tools Park</h3>
-          <p class="footer-description">
-            Tools Park provides fast, free, and practical tools for SEO, calculators, text formatting, and developer workflows.
-          </p>
-        </div>
-        <div>
-          <h4 class="footer-title">Popular Tools</h4>
-          <ul class="footer-links">
-            <li><a href="/word-counter">Word Counter</a></li>
-            <li><a href="/age-calculator">Age Calculator</a></li>
-            <li><a href="/json-formatter">JSON Formatter</a></li>
-            <li><a href="/xml-sitemap-generator">XML Sitemap Generator</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Company</h4>
-          <ul class="footer-links">
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/terms-of-service">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Connect</h4>
-          <ul class="footer-links">
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="https://x.com" rel="nofollow noopener" target="_blank">X</a></li>
-            <li><a href="https://www.linkedin.com" rel="nofollow noopener" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com" rel="nofollow noopener" target="_blank">GitHub</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="copyright">&copy; 2026 Tools Park. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <div data-component="components/footer.html"></div>
 
-  <!-- JavaScript -->
+  <!-- Scripts -->
+  <script src="js/components.js"></script>
+  <script src="js/site.js"></script>
   <script>
     // Image Compressor Script
     class ImageCompressor {
@@ -452,6 +362,7 @@
       async compressImage(imageId) {
         const imageData = this.images.find(img => img.id === imageId);
         const imageItem = document.getElementById(`image-${imageId}`);
+        if (!imageItem) return;
         const compressBtn = imageItem.querySelector('.compress-btn');
 
         compressBtn.textContent = 'Compressing...';
@@ -481,7 +392,8 @@
       }
 
       updateImageDisplay(imageData) {
-        const imageItem = document.getElementById(`image-${imageId}`);
+        const imageItem = document.getElementById(`image-${imageData.id}`);
+        if (!imageItem) return;
         const compressedSizeStat = imageItem.querySelector('.compressed-size');
         const compressionRatioStat = imageItem.querySelector('.compression-ratio');
         const compressBtn = imageItem.querySelector('.compress-btn');
@@ -518,7 +430,7 @@
       removeImage(imageId) {
         this.images = this.images.filter(img => img.id !== imageId);
         const imageItem = document.getElementById(`image-${imageId}`);
-        imageItem.remove();
+        if (imageItem) imageItem.remove();
         this.updateUI();
         this.updateSummary();
       }

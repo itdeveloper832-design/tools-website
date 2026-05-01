@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | ToolsPark</title>
+  <meta name="description" content="The page you are looking for does not exist. Return to ToolsPark to access 50+ free online tools.">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/premium.css">
+  <style>
+    .error-container {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .error-code {
+      font-size: 8rem;
+      font-weight: 800;
+      color: var(--primary-color, #2563EB);
+      line-height: 1;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .error-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .error-message {
+      font-size: 1.125rem;
+      color: #64748B;
+      max-width: 500px;
+      margin-bottom: 2rem;
+    }
+    .error-actions {
+      display: flex;
+      gap: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div data-component="components/header.html"></div>
+
+  <main class="container">
+    <div class="error-container">
+      <div class="error-code">404</div>
+      <h1 class="error-title">Oops! Page Not Found</h1>
+      <p class="error-message">
+        The page you're looking for seems to have wandered off. Don't worry, our 50+ tools are still here to help you.
+      </p>
+      <div class="error-actions">
+        <a href="/" class="btn btn-primary">Go Home</a>
+        <a href="/tools" class="btn btn-secondary">Browse Tools</a>
+      </div>
+    </div>
+  </main>
+
+  <div data-component="components/footer.html"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

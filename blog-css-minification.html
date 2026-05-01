@@ -79,50 +79,7 @@
 <body>
   <!-- Header -->
   
-  <header class="header">
-    <nav class="navbar">
-      <div class="container">
-        <div class="nav-container">
-          <a href="/" class="brand-link">
-            <div class="brand-logo">
-              <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
-            </div>
-            <span class="brand-name">Tools Park</span>
-          </a>
-          <div class="nav-menu-desktop">
-            <a href="/" class="nav-link">Home</a>
-            <a href="/tools" class="nav-link">Tools</a>
-            <a href="/blog" class="nav-link">Blog</a>
-            <a href="/about" class="nav-link">About</a>
-            <a href="/contact" class="nav-link">Contact</a>
-            <a href="/tools" class="btn btn-primary">Use Tools Free</a>
-          </div>
-          <div class="nav-mobile-toggle">
-            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
-              <svg class="menu-icon menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-              <svg class="menu-icon menu-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="nav-menu-mobile hidden" id="mobile-menu">
-          <div class="mobile-menu-content">
-            <a href="/" class="mobile-nav-link">Home</a>
-            <a href="/tools" class="mobile-nav-link">Tools</a>
-            <a href="/blog" class="mobile-nav-link">Blog</a>
-            <a href="/about" class="mobile-nav-link">About</a>
-            <a href="/contact" class="mobile-nav-link">Contact</a>
-            <a href="/tools" class="mobile-nav-link">Use Tools Free</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <div data-component="components/header.html"></div>
 
   <!-- Main Content -->
   <main>
@@ -133,7 +90,7 @@
           <div class="article-breadcrumb">
             <a href="/">Home</a>
             <span class="separator">/</span>
-            <a href="tools.html">Tools</a>
+            <a href="/tools">Tools</a>
             <span class="separator">/</span>
             <span class="current">CSS Minification Guide</span>
           </div>
@@ -165,7 +122,7 @@
           
           <div class="article-excerpt">
             <p>
-              CSS minification is one of the most effective ways to improve your website's loading speed. In this comprehensive guide, you'll learn how to reduce CSS file sizes by up to 80% using proven techniques and tools.
+              CSS minification is one of the most effective ways to improve your website\'s loading speed. In this comprehensive guide, you\'ll learn how to reduce CSS file sizes by up to 80% using proven techniques and tools.
             </p>
           </div>
         </div>
@@ -180,11 +137,11 @@
           <div class="article-main">
             <div class="article-intro">
               <p>
-                Did you know that unoptimized CSS files can slow down your website by 2-3 seconds? In today's fast-paced digital world, every millisecond counts. CSS minification is a simple yet powerful technique that can dramatically improve your website's performance and user experience.
+                Did you know that unoptimized CSS files can slow down your website by 2-3 seconds? In today\'s fast-paced digital world, every millisecond counts. CSS minification is a simple yet powerful technique that can dramatically improve your website\'s performance and user experience.
               </p>
               
               <p>
-                According to Google's research, <strong>53% of mobile users abandon sites that take longer than 3 seconds to load</strong>. By minifying your CSS, you can reduce file sizes by up to 80%, leading to faster load times and better search engine rankings.
+                According to Google\'s research, <strong>53% of mobile users abandon sites that take longer than 3 seconds to load</strong>. By minifying your CSS, you can reduce file sizes by up to 80%, leading to faster load times and better search engine rankings.
               </p>
             </div>
 
@@ -214,7 +171,7 @@
               <ul>
                 <li><strong>Whitespace removal</strong> - Spaces, tabs, and line breaks</li>
                 <li><strong>Comment elimination</strong> - All CSS comments are removed</li>
-                <strong>Character optimization</strong> - Long color codes become short (e.g., #ffffff → #fff)</li>
+                <li><strong>Character optimization</strong> - Long color codes become short (e.g., #ffffff → #fff)</li>
                 <li><strong>Unit optimization</strong> - Unnecessary units are removed (e.g., 0px → 0)</li>
                 <li><strong>Semicolon removal</strong> - Last semicolon in declarations is removed</li>
               </ul>
@@ -289,7 +246,7 @@
               <h2>How CSS Minification Works</h2>
               
               <p>
-                CSS minification follows a systematic approach to optimize your stylesheets while maintaining functionality. Here's the step-by-step process:
+                CSS minification follows a systematic approach to optimize your stylesheets while maintaining functionality. Here\'s the step-by-step process:
               </p>
               
               <div class="process-steps">
@@ -297,7 +254,7 @@
                   <div class="step-number">1</div>
                   <div class="step-content">
                     <h4>Comment Removal</h4>
-                    <p>All CSS comments (/* ... */) are completely removed as they don't affect functionality.</p>
+                    <p>All CSS comments (/* ... */) are completely removed as they don\'t affect functionality.</p>
                   </div>
                 </div>
                 
@@ -390,7 +347,7 @@
               </div>
               
               <p>
-                <strong>Recommendation:</strong> Use automatic minification tools for production websites. They're faster, more reliable, and provide better optimization. Manual minification is great for learning the concepts but isn't practical for regular use.
+                <strong>Recommendation:</strong> Use automatic minification tools for production websites. They\'re faster, more reliable, and provide better optimization. Manual minification is great for learning the concepts but isn\'t practical for regular use.
               </p>
             </section>
 
@@ -508,7 +465,7 @@
                     <p>Free web-based CSS minifiers</p>
                   </div>
                   <ul>
-                    <li><a href="css-minifier.html">ToolsPark CSS Minifier</a> - Free, secure, no upload required</li>
+                    <li><a href="/css-minifier">ToolsPark CSS Minifier</a> - Free, secure, no upload required</li>
                     <li>CSS Minifier (cssminifier.com) - Simple interface</li>
                     <li>Minify.org - Multiple format support</li>
                     <li>CleanCSS - Advanced optimization options</li>
@@ -565,7 +522,7 @@
               <div class="cta-section">
                 <h3>Ready to Minify Your CSS?</h3>
                 <p>Try our free CSS Minifier tool to optimize your stylesheets instantly:</p>
-                <a href="css-minifier.html" class="btn btn-primary btn-lg">
+                <a href="/css-minifier" class="btn btn-primary btn-lg">
                   <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                   </svg>
@@ -595,7 +552,7 @@
             <div class="sidebar-widget">
               <h3>Related Tools</h3>
               <div class="related-tools">
-                <a href="html-minifier.html" class="related-tool">
+                <a href="/html-minifier" class="related-tool">
                   <div class="tool-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
@@ -607,7 +564,7 @@
                   </div>
                 </a>
                 
-                <a href="json-formatter.html" class="related-tool">
+                <a href="/json-formatter" class="related-tool">
                   <div class="tool-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
@@ -619,7 +576,7 @@
                   </div>
                 </a>
                 
-                <a href="image-compressor.html" class="related-tool">
+                <a href="/image-compressor" class="related-tool">
                   <div class="tool-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -682,7 +639,7 @@
             </div>
             <div class="article-content">
               <div class="article-category">Optimization</div>
-              <h3><a href="blog-html-minification.html">How to Minify HTML for Better Performance</a></h3>
+              <h3><a href="/blog-html-minifier">How to Minify HTML for Better Performance</a></h3>
               <p>Learn HTML minification techniques to reduce file sizes and improve loading times.</p>
               <div class="article-meta">
                 <span class="read-time">5 min read</span>
@@ -701,7 +658,7 @@
             </div>
             <div class="article-content">
               <div class="article-category">Performance</div>
-              <h3><a href="blog-image-compression-seo-post.html">Image Compression for SEO Success</a></h3>
+              <h3><a href="/blog-image-compression-seo-post">Image Compression for SEO Success</a></h3>
               <p>Master image optimization techniques to boost your SEO rankings and user experience.</p>
               <div class="article-meta">
                 <span class="read-time">6 min read</span>
@@ -720,7 +677,7 @@
             </div>
             <div class="article-content">
               <div class="article-category">Development</div>
-              <h3><a href="blog-json-formatter.html">JSON Formatting Best Practices</a></h3>
+              <h3><a href="/blog-json-formatter">JSON Formatting Best Practices</a></h3>
               <p>Learn how to properly format and structure JSON data for better readability.</p>
               <div class="article-meta">
                 <span class="read-time">4 min read</span>
@@ -733,70 +690,57 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3 class="footer-brand-name">Tools Park</h3>
-          <p class="footer-description">
-            Tools Park provides fast, free, and practical tools for SEO, calculators, text formatting, and developer workflows.
-          </p>
-        </div>
-        <div>
-          <h4 class="footer-title">Popular Tools</h4>
-          <ul class="footer-links">
-            <li><a href="/word-counter">Word Counter</a></li>
-            <li><a href="/age-calculator">Age Calculator</a></li>
-            <li><a href="/json-formatter">JSON Formatter</a></li>
-            <li><a href="/xml-sitemap-generator">XML Sitemap Generator</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Company</h4>
-          <ul class="footer-links">
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/terms-of-service">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Connect</h4>
-          <ul class="footer-links">
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="https://x.com" rel="nofollow noopener" target="_blank">X</a></li>
-            <li><a href="https://www.linkedin.com" rel="nofollow noopener" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com" rel="nofollow noopener" target="_blank">GitHub</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="copyright">&copy; 2026 Tools Park. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <div data-component="components/footer.html"></div>
 
-  <!-- Mobile Menu Script -->
+  <!-- JavaScript -->
+  <script src="js/components.js"></script>
+  <script src="js/site.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const menuOpenIcon = document.querySelector('.menu-open');
-      const menuCloseIcon = document.querySelector('.menu-close');
+    document.addEventListener(\'DOMContentLoaded\', function() {
+      // Smooth scrolling for anchor links
+      document.querySelectorAll(\'a[href^="#"]\').forEach(anchor => {
+        anchor.addEventListener(\'click\', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute(\'href\'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: \'smooth\',
+              block: \'start\'
+            });
+          }
+        });
+      });
 
-      if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', function() {
-          const isHidden = mobileMenu.classList.contains('hidden');
-          
-          if (isHidden) {
-            mobileMenu.classList.remove('hidden');
-            menuOpenIcon.classList.add('hidden');
-            menuCloseIcon.classList.remove('hidden');
-          } else {
-            mobileMenu.classList.add('hidden');
-            menuOpenIcon.classList.remove('hidden');
+      // Share buttons
+      const shareButtons = document.querySelectorAll(\'.share-btn\');
+      shareButtons.forEach(btn => {
+        btn.addEventListener(\'click\', function() {
+          const platform = this.dataset.platform;
+          const url = encodeURIComponent(window.location.href);
+          const title = encodeURIComponent(document.title);
+          let shareUrl = \'\';
+
+          switch(platform) {
+            case \'twitter\':
+              shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+              break;
+            case \'facebook\':
+              shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+              break;
+            case \'linkedin\':
+              shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+              break;
+          }
+
+          if (shareUrl) {
+            window.open(shareUrl, \'_blank\', \'width=600,height=400\');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>den');
             menuCloseIcon.classList.add('hidden');
           }
         });

@@ -29,108 +29,25 @@
   <meta property="twitter:image" content="https://toolspark.store/assets/loan-calculator.jpg">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   
   <!-- Theme Color -->
   <meta name="theme-color" content="#2563EB">
   
-  <!-- Core Web Vitals Optimization -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
-  
-  <!-- Critical CSS -->
-  <style>
-    body{font-family:'Outfit',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6;color:#0F172A;background:#F8FAFC;margin:0;padding:0}
-    .container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
-    .header{background:#fff;border-bottom:1px solid #E2E8F0;position:sticky;top:0;z-index:100}
-    .navbar{padding:1rem 0}
-    .nav-container{display:flex;justify-content:space-between;align-items:center}
-    .brand-link{display:flex;align-items:center;gap:.75rem;text-decoration:none}
-    .brand-name{font-size:1.5rem;font-weight:700;color:#0F172A}
-    .hero{padding:80px 0;background:linear-gradient(135deg,#f8fafc 0%,#e2e8f0 100%)}
-    .hero-title{font-size:3rem;font-weight:700;color:#0F172A;margin-bottom:1rem}
-    .hero-description{font-size:1.25rem;color:#475569;margin-bottom:2rem}
-    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:12px 24px;border:none;border-radius:8px;font-weight:600;text-decoration:none;transition:all 0.2s ease}
-    .btn-primary{background:#2563EB;color:#fff}
-    .btn-primary:hover{background:#1D4ED8;transform:translateY(-1px)}
-  </style>
-  
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- Styles -->
+  <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/premium.css">
-  <link rel="stylesheet" href="css/core-web-vitals.css">
   <link rel="stylesheet" href="css/loan-calculator.css">
-  
-  <!-- Schema.org Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Loan Calculator",
-    "description": "Calculate loan EMI, monthly payments, and total interest with our free loan calculator",
-    "url": "https://toolspark.store/loan-calculator",
-    "applicationCategory": "Finance",
-    "operatingSystem": "Any",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    }
-  }
-  </script>
+  <link rel="stylesheet" href="css/tools-common.css">
 </head>
 <body>
-  <!-- Header -->
-  
-  <header class="header">
-    <nav class="navbar">
-      <div class="container">
-        <div class="nav-container">
-          <a href="/" class="brand-link">
-            <div class="brand-logo">
-              <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
-            </div>
-            <span class="brand-name">Tools Park</span>
-          </a>
-          <div class="nav-menu-desktop">
-            <a href="/" class="nav-link">Home</a>
-            <a href="/tools" class="nav-link">Tools</a>
-            <a href="/blog" class="nav-link">Blog</a>
-            <a href="/about" class="nav-link">About</a>
-            <a href="/contact" class="nav-link">Contact</a>
-            <a href="/tools" class="btn btn-primary">Use Tools Free</a>
-          </div>
-          <div class="nav-mobile-toggle">
-            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
-              <svg class="menu-icon menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-              <svg class="menu-icon menu-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="nav-menu-mobile hidden" id="mobile-menu">
-          <div class="mobile-menu-content">
-            <a href="/" class="mobile-nav-link">Home</a>
-            <a href="/tools" class="mobile-nav-link">Tools</a>
-            <a href="/blog" class="mobile-nav-link">Blog</a>
-            <a href="/about" class="mobile-nav-link">About</a>
-            <a href="/contact" class="mobile-nav-link">Contact</a>
-            <a href="/tools" class="mobile-nav-link">Use Tools Free</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <div data-component="components/header.html"></div>
 
   <!-- Main Content -->
   <main>
@@ -180,7 +97,7 @@
             <p>Learn the best practices and get the most out of our Loan Calculator with our comprehensive guide.</p>
           </div>
           <div class="how-to-use-button">
-            <a href="blog-loan-calculator.html" class="btn btn-outline-primary">
+            <a href="/blog/loan-calculator" class="btn btn-outline-primary">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
               </svg>
@@ -226,12 +143,6 @@
                 <h3>Quick Loan Types</h3>
                 <div class="loan-types">
                   <button class="loan-type-btn" onclick="setLoanType('home')">
-                    <div class="loan-icon">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
-                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                      </svg>
-                    </div>
                     <div class="loan-info">
                       <h4>Home Loan</h4>
                       <p>6.5% - 8.5% interest</p>
@@ -239,11 +150,6 @@
                   </button>
                   
                   <button class="loan-type-btn" onclick="setLoanType('personal')">
-                    <div class="loan-icon">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                      </svg>
-                    </div>
                     <div class="loan-info">
                       <h4>Personal Loan</h4>
                       <p>10% - 18% interest</p>
@@ -251,13 +157,6 @@
                   </button>
                   
                   <button class="loan-type-btn" onclick="setLoanType('car')">
-                    <div class="loan-icon">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 17a2 2 0 104 0h4a2 2 0 104 0h4a2 2 0 104 0h4a2 2 0 104 0"></path>
-                        <path d="M12 15V3"></path>
-                        <path d="M5 9l7-7 7 7"></path>
-                      </svg>
-                    </div>
                     <div class="loan-info">
                       <h4>Car Loan</h4>
                       <p>7% - 12% interest</p>
@@ -267,9 +166,6 @@
               </div>
               
               <button class="btn btn-primary btn-lg calculate-btn" onclick="calculateLoan()">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                </svg>
                 Calculate EMI
               </button>
             </div>
@@ -279,11 +175,6 @@
               
               <div class="results-grid">
                 <div class="result-card">
-                  <div class="result-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
-                    </svg>
-                  </div>
                   <div class="result-content">
                     <h4>Monthly EMI</h4>
                     <div class="result-value" id="monthly-emi">$0</div>
@@ -291,11 +182,6 @@
                 </div>
                 
                 <div class="result-card">
-                  <div class="result-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                  </div>
                   <div class="result-content">
                     <h4>Total Interest</h4>
                     <div class="result-value" id="total-interest">$0</div>
@@ -303,11 +189,6 @@
                 </div>
                 
                 <div class="result-card">
-                  <div class="result-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                  </div>
                   <div class="result-content">
                     <h4>Total Payment</h4>
                     <div class="result-value" id="total-payment">$0</div>
@@ -330,11 +211,9 @@
                   </div>
                   <div class="breakdown-legend">
                     <div class="legend-item">
-                      <div class="legend-color principal-color"></div>
                       <span>Principal: <strong id="principal-percent">0%</strong></span>
                     </div>
                     <div class="legend-item">
-                      <div class="legend-color interest-color"></div>
                       <span>Interest: <strong id="interest-percent">0%</strong></span>
                     </div>
                   </div>
@@ -362,29 +241,11 @@
               
               <div class="action-buttons">
                 <button class="btn btn-secondary" onclick="shareResult()">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"></path>
-                    <polyline points="16 6 12 2 8 6"></polyline>
-                    <line x1="12" y1="2" x2="12" y2="15"></line>
-                  </svg>
                   Share Result
                 </button>
                 
                 <button class="btn btn-secondary" onclick="resetCalculator()">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M1 4v6h6"></path>
-                    <path d="M3.51 15a9 9 0 102.13-9.36L1 10"></path>
-                  </svg>
                   Calculate Again
-                </button>
-                
-                <button class="btn btn-secondary" onclick="downloadReport()">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path>
-                    <polyline points="7 10 12 15 17 10"></polyline>
-                    <line x1="12" y1="15" x2="12" y2="3"></line>
-                  </svg>
-                  Download Report
                 </button>
               </div>
             </div>
@@ -474,7 +335,7 @@
         </div>
         
         <div class="tools-grid">
-          <a href="age-calculator.html" class="tool-card">
+          <a href="/age-calculator" class="tool-card">
             <div class="tool-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -484,7 +345,7 @@
             <p class="tool-description">Calculate your exact age in years, months, and days</p>
           </a>
           
-          <a href="percentage-calculator.html" class="tool-card">
+          <a href="/percentage-calculator" class="tool-card">
             <div class="tool-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
@@ -494,7 +355,7 @@
             <p class="tool-description">Calculate percentages instantly with various calculation types</p>
           </a>
           
-          <a href="unit-converter.html" class="tool-card">
+          <a href="/unit-converter" class="tool-card">
             <div class="tool-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path>
@@ -535,110 +396,11 @@
   </section>
   </main>
 
-  <!-- Footer -->
-  
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3 class="footer-brand-name">Tools Park</h3>
-          <p class="footer-description">
-            Tools Park provides fast, free, and practical tools for SEO, calculators, text formatting, and developer workflows.
-          </p>
-        </div>
-        <div>
-          <h4 class="footer-title">Popular Tools</h4>
-          <ul class="footer-links">
-            <li><a href="/word-counter">Word Counter</a></li>
-            <li><a href="/age-calculator">Age Calculator</a></li>
-            <li><a href="/json-formatter">JSON Formatter</a></li>
-            <li><a href="/xml-sitemap-generator">XML Sitemap Generator</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Company</h4>
-          <ul class="footer-links">
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/terms-of-service">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Connect</h4>
-          <ul class="footer-links">
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="https://x.com" rel="nofollow noopener" target="_blank">X</a></li>
-            <li><a href="https://www.linkedin.com" rel="nofollow noopener" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com" rel="nofollow noopener" target="_blank">GitHub</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="copyright">&copy; 2026 Tools Park. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <div data-component="components/footer.html"></div>
 
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Is the Loan Calculator tool free?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, this tool is free to use with no signup required."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does this tool work on mobile?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, the tool is mobile-friendly and works on modern browsers."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is my data stored?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No, your data is processed in-browser to protect privacy."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- Mobile Menu Script -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const menuOpenIcon = document.querySelector('.menu-open');
-      const menuCloseIcon = document.querySelector('.menu-close');
-
-      if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', function() {
-          const isHidden = mobileMenu.classList.contains('hidden');
-          
-          if (isHidden) {
-            mobileMenu.classList.remove('hidden');
-            menuOpenIcon.classList.add('hidden');
-            menuCloseIcon.classList.remove('hidden');
-          } else {
-            mobileMenu.classList.add('hidden');
-            menuOpenIcon.classList.remove('hidden');
-            menuCloseIcon.classList.add('hidden');
-          }
-        });
-      }
-    });
-  </script>
+  <!-- Scripts -->
+  <script src="js/components.js"></script>
+  <script src="js/site.js"></script>
 
   <!-- Loan Calculator Script -->
   <script>
@@ -694,9 +456,6 @@
       
       // Show results
       document.getElementById('loan-results').style.display = 'block';
-      
-      // Scroll to results
-      document.getElementById('loan-results').scrollIntoView({ behavior: 'smooth' });
     }
     
     function updateBreakdownChart() {
@@ -793,45 +552,24 @@
       // Scroll to top
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    
-    function downloadReport() {
-      const reportContent = `
-Loan Calculation Report
-=====================
-
-Loan Amount: $${loanResults.principal.toFixed(2)}
-Interest Rate: ${loanResults.annualRate}%
-Loan Term: ${loanResults.years} years
-
-Results:
---------
-Monthly EMI: $${loanResults.emi.toFixed(2)}
-Total Interest: $${loanResults.totalInterest.toFixed(2)}
-Total Payment: $${loanResults.totalPayment.toFixed(2)}
-
-Payment Breakdown:
-------------------
-Principal: ${(loanResults.principal / loanResults.totalPayment * 100).toFixed(1)}%
-Interest: ${(loanResults.totalInterest / loanResults.totalPayment * 100).toFixed(1)}%
-
-Generated on: ${new Date().toLocaleString()}
-Generated by: Tools Park Loan Calculator
-${window.location.href}
-      `;
-      
-      const blob = new Blob([reportContent], { type: 'text/plain' });
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'loan-calculation-report.txt';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      window.URL.revokeObjectURL(url);
-    }
   </script>
 
-  <!-- Performance Script -->
-  <script src="js/performance.js"></script>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Loan Calculator - Tools Park",
+    "description": "Free online loan calculator for EMI and interest calculations.",
+    "url": "https://toolspark.store/loan-calculator",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
 </body>
 </html>
