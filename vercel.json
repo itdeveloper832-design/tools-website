@@ -1,0 +1,47 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/tools", "destination": "/tools.html" },
+    { "source": "/blog", "destination": "/blog.html" },
+    { "source": "/blog/:slug", "destination": "/blog-:slug.html" },
+    { "source": "/pages/about", "destination": "/about.html" },
+    { "source": "/pages/contact", "destination": "/contact.html" },
+    { "source": "/pages/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/pages/terms", "destination": "/terms-of-service.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/terms-of-service", "destination": "/terms-of-service.html" },
+    { "source": "/tools/:tool", "destination": "/tools/:tool.html" },
+    { "source": "/age-calculator", "destination": "/age-calculator.html" },
+    { "source": "/percentage-calculator", "destination": "/percentage-calculator.html" },
+    { "source": "/unit-converter", "destination": "/unit-converter.html" },
+    { "source": "/loan-calculator", "destination": "/loan-calculator.html" },
+    { "source": "/xml-sitemap-generator", "destination": "/xml-sitemap-generator.html" },
+    { "source": "/blog-age-calculator", "destination": "/blog-age-calculator.html" },
+    { "source": "/blog-percentage-calculator", "destination": "/blog-percentage-calculator.html" },
+    { "source": "/blog-unit-converter", "destination": "/blog-unit-converter.html" },
+    { "source": "/blog-loan-calculator", "destination": "/blog-loan-calculator.html" },
+    { "source": "/blog-xml-sitemap-generator", "destination": "/blog-xml-sitemap-generator.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    }
+  ]
+}

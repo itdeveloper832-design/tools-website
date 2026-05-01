@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://toolspark.store/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://toolspark.store/tools</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolspark.store/blog</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url><loc>https://toolspark.store/age-calculator</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://toolspark.store/base64-encoder</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://toolspark.store/css-minifier</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://toolspark.store/html-minifier</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://toolspark.store/image-compressor</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://toolspark.store/javascript-minifier</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://toolspark.store/json-formatter</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://toolspark.store/loan-calculator</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://toolspark.store/meta-tag-generator</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://toolspark.store/password-generator</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://toolspark.store/percentage-calculator</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://toolspark.store/schema-detector</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://toolspark.store/schema-generator</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://toolspark.store/text-case-converter</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://toolspark.store/unit-converter</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://toolspark.store/word-counter</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://toolspark.store/xml-sitemap-generator</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <url><loc>https://toolspark.store/blog/age-calculator</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://toolspark.store/blog/base64-encoding</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://toolspark.store/blog/css-minification</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://toolspark.store/blog/html-minifier</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://toolspark.store/blog/image-compression-seo-post</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://toolspark.store/blog/javascript-minification</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://toolspark.store/blog/json-formatter</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://toolspark.store/blog/loan-calculator</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://toolspark.store/blog/percentage-calculator</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://toolspark.store/blog/strong-passwords</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://toolspark.store/blog/unit-converter</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://toolspark.store/blog/word-counter-seo-post</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://toolspark.store/blog/xml-sitemap-generator</loc><lastmod>2026-03-31</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+
+  <url><loc>https://toolspark.store/about</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://toolspark.store/contact</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://toolspark.store/privacy-policy</loc><lastmod>2026-03-31</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://toolspark.store/terms-of-service</loc><lastmod>2026-03-31</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+</urlset>

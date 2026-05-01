@@ -1,0 +1,23 @@
+{
+  "name": "Tools Park - Professional Tools Collection",
+  "short_name": "Tools Park",
+  "description": "23+ free professional tools for productivity",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2563eb",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["productivity", "utilities", "tools"],
+  "lang": "en"
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Tools - EduTools</title>
+  <meta name="description" content="Browse our collection of 20+ free educational tools for students and teachers.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://toolspark.store/tools">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  
+  <header class="header">
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-container">
+          <a href="/" class="brand-link">
+            <div class="brand-logo">
+              <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <span class="brand-name">Tools Park</span>
+          </a>
+          <div class="nav-menu-desktop">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/tools" class="nav-link">Tools</a>
+            <a href="/blog" class="nav-link">Blog</a>
+            <a href="/about" class="nav-link">About</a>
+            <a href="/contact" class="nav-link">Contact</a>
+            <a href="/tools" class="btn btn-primary">Use Tools Free</a>
+          </div>
+          <div class="nav-mobile-toggle">
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+              <svg class="menu-icon menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+              <svg class="menu-icon menu-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="nav-menu-mobile hidden" id="mobile-menu">
+          <div class="mobile-menu-content">
+            <a href="/" class="mobile-nav-link">Home</a>
+            <a href="/tools" class="mobile-nav-link">Tools</a>
+            <a href="/blog" class="mobile-nav-link">Blog</a>
+            <a href="/about" class="mobile-nav-link">About</a>
+            <a href="/contact" class="mobile-nav-link">Contact</a>
+            <a href="/tools" class="mobile-nav-link">Use Tools Free</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="bg-gradient-to-r-from-blue-600-to-purple-600 text-white py-16">
+    <div class="container text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Educational Tools</h1>
+      <p class="text-xl opacity-90 max-w-2xl mx-auto">
+        Discover our complete collection of free tools designed to enhance your learning and teaching experience
+      </p>
+    </div>
+  </section>
+
+  <!-- Tools Grid -->
+  <section class="py-16">
+    <div class="container">
+      <!-- Search and Filter -->
+      <div class="mb-8">
+        <div class="search-container">
+          <div class="relative">
+            <input type="text" id="search-tools" placeholder="Search tools..." 
+                   class="search-input">
+            <div class="search-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="tools-grid">
+        <!-- Tools will be loaded here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="footer-brand-name">Tools Park</h3>
+          <p class="footer-description">
+            Tools Park provides fast, free, and practical tools for SEO, calculators, text formatting, and developer workflows.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-title">Popular Tools</h4>
+          <ul class="footer-links">
+            <li><a href="/word-counter">Word Counter</a></li>
+            <li><a href="/age-calculator">Age Calculator</a></li>
+            <li><a href="/json-formatter">JSON Formatter</a></li>
+            <li><a href="/xml-sitemap-generator">XML Sitemap Generator</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms-of-service">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Connect</h4>
+          <ul class="footer-links">
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="https://x.com" rel="nofollow noopener" target="_blank">X</a></li>
+            <li><a href="https://www.linkedin.com" rel="nofollow noopener" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com" rel="nofollow noopener" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Tools Park. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
